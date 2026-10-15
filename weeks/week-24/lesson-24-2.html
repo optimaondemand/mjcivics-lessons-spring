@@ -1,0 +1,502 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>M/J Civics &mdash; 7.5 Lesson: Taxes, the Whiskey Rebellion, and Public Services</title>
+<style>
+    body { margin: 0; padding: 0; font-family: "Segoe UI", Roboto, Helvetica, Arial, sans-serif; background: #f4f6fa; }
+    .canvas-frame { max-width: 1100px; margin: 0 auto; background: #ffffff; box-shadow: 0 2px 8px rgba(0,0,0,0.08); }
+
+    /* ===== WIDGET CSS (byte-consistent across this site) ===== */
+    .optima-widget { background: linear-gradient(135deg, #E8F6FB 0%, #F4F9FC 100%); border: 1px solid #C5DCE5; border-left: 5px solid #2196D0; border-radius: 8px; padding: 18px 22px; margin: 18px 0; }
+    .widget-kicker { font-size: 11px; color: #1B6A94; margin-bottom: 10px; letter-spacing: 0.4px; }
+    .widget-question { font-size: 17px; color: #0E1C42; margin-bottom: 14px; line-height: 1.55; }
+    .widget-row { background: #FFFFFF; border: 1px solid #D0D9E8; border-radius: 6px; padding: 12px 14px; margin-bottom: 10px; }
+    .widget-row-prompt { font-size: 15px; color: #0E1C42; margin-bottom: 8px; line-height: 1.5; font-style: italic; }
+    .widget-options { display: flex; flex-wrap: wrap; gap: 8px; }
+    .widget-options button { background: #FFFFFF; border: 1.5px solid #D0D9E8; border-radius: 8px; padding: 8px 14px; font-size: 14px; color: #0E1C42; cursor: pointer; transition: all 0.15s; font-family: inherit; }
+    .widget-options button:hover { background: #F4F6FA; border-color: #55C8E8; }
+    .widget-options button.selected { background: #0E1C42; color: #FFFFFF; border-color: #0E1C42; }
+    .widget-options button.correct { background: #D8F0DD; border-color: #2A9D5C; color: #1A6B3D; }
+    .widget-options button.incorrect { background: #FDECEC; border-color: #C0392B; color: #8A1F16; }
+    .widget-feedback { background: #FFFFFF; border-left: 3px solid #C7922C; padding: 10px 14px; font-size: 15px; color: #1a2340; line-height: 1.55; margin: 10px 0; display: none; border-radius: 4px; }
+    .widget-feedback.show { display: block; }
+    .row-feedback { padding: 8px 12px; margin-top: 8px; font-size: 14px; border-radius: 4px; line-height: 1.5; }
+    .row-feedback.correct { background: #D8F0DD; border-left: 3px solid #2A9D5C; color: #1A6B3D; }
+    .row-feedback.incorrect { background: #FDECEC; border-left: 3px solid #C0392B; color: #8A1F16; }
+    .widget-reset { background: transparent; border: 1px solid #C7922C; color: #C7922C; border-radius: 6px; padding: 6px 12px; font-size: 12px; cursor: pointer; font-family: inherit; margin-top: 6px; }
+    .widget-reset:hover { background: #FDF3E3; }
+    .ow-scale .widget-options { justify-content: space-between; }
+    .ow-scale .widget-options button { flex: 1; text-align: center; }
+    .ow-flip { background: #FFFFFF; border: 1px solid #D0D9E8; border-radius: 8px; padding: 18px 20px; cursor: pointer; text-align: center; }
+    .ow-flip .ow-flip-back { display: none; color: #1a2340; }
+    .ow-flip.flipped .ow-flip-front { display: none; }
+    .ow-flip.flipped .ow-flip-back { display: block; }
+
+    /* ===== VOCABULARY GLOSSARY (byte-consistent across this site) ===== */
+    .callout { border-radius: 6px; padding: 14px 20px; margin: 14px 0; }
+    .callout .callout-kicker { font-size: 12px; font-weight: bold; margin-bottom: 8px; letter-spacing: 0.4px; }
+    .callout.glossary { background: #EEF1F8; border-left: 5px solid #0E1C42; }
+    .callout.glossary .callout-kicker { color: #0E1C42; }
+    .callout.glossary.foreign { background: #F3EEFB; border-left: 5px solid #7B3FA0; }
+    .callout.glossary.foreign .callout-kicker { color: #5B2E7E; }
+    .glossary-note { font-size: 13px; color: #666; margin: 0 0 10px; }
+    dl.glossary-list { margin: 0; padding: 0; }
+    dl.glossary-list dt { font-weight: bold; color: #0E1C42; font-size: 16px; margin-top: 10px; }
+    dl.glossary-list dt:first-child { margin-top: 0; }
+    dl.glossary-list .phonetic { font-weight: normal; font-style: italic; color: #6b7a99; font-size: 13px; }
+    dl.glossary-list dd { margin: 2px 0 0 0; font-size: 15px; color: #1a2340; line-height: 1.5; }
+
+    /* ===== GLOSS/HOVER/AUDIO (ported from 06MJWorldHistory's validated gloss.css, 2026-07-31 Session 2) ===== */
+    .gloss { position: relative; border-bottom: 1px dotted #2196D0; font-weight: 600; color: #0E1C42; cursor: help; }
+    .gloss:hover .gloss-tip, .gloss:focus .gloss-tip, .gloss.gloss-open .gloss-tip { display: block; }
+    .gloss-tip { display: none; position: absolute; left: 0; bottom: 100%; margin-bottom: 8px; width: 260px; max-width: 70vw; background: #0E1C42; color: #fff; font-weight: normal; font-size: 13px; line-height: 1.5; padding: 10px 12px; border-radius: 6px; box-shadow: 0 4px 14px rgba(0,0,0,0.25); z-index: 20; }
+    .gloss-tip .gloss-pron { color: #55C8E8; display: block; margin-bottom: 4px; font-style: italic; }
+    .gloss-audio { display: inline-flex; align-items: center; justify-content: center; border: none; background: none; cursor: pointer; font-size: 12px; padding: 0 0 0 2px; vertical-align: middle; color: #1B6A94; }
+    .gloss-audio:hover { color: #0E1C42; }
+    .wrapper-pointer { font-size: 14px; color: #0E1C42; background: #EEF1F8; border-left: 4px solid #6b7a99; border-radius: 4px; padding: 10px 14px; margin: 0 0 18px; }
+
+    /* ===== FIGURE MINI-BIOGRAPHY SIDEBAR ===== */
+    .callout.biography { background: #FBF7EC; border-left: 5px solid #C7922C; display: flex; gap: 16px; align-items: flex-start; }
+    .callout.biography .bio-portrait { width: 110px; height: auto; max-height: 140px; object-fit: cover; border: 1px solid #D0D9E8; border-radius: 4px; flex-shrink: 0; }
+    .callout.biography .bio-body { flex: 1; min-width: 0; }
+    .callout.biography .callout-kicker { color: #8a6010; }
+    .callout.biography .bio-credit { font-size: 12px; color: #6b7a99; font-style: italic; margin-top: 8px; }
+</style>
+</head>
+<body>
+<div class="canvas-frame">
+
+<!-- ===== HEADER ===== -->
+<div style="background: #0E1C42; border-bottom: 5px solid #55C8E8; padding: 22px 34px;">
+    <div style="display: flex; align-items: center; gap: 14px; margin-bottom: 10px;">
+        <div style="width: 52px; height: 52px; border-radius: 50%; background: #FFFFFF; display: flex; align-items: center; justify-content: center; flex-shrink: 0;"><img src="https://raw.githubusercontent.com/optimaondemand/optima-assets/eeb0b335630058906d52f478028361d352253a93/images/Optima%20Final%20Circle%20-%20Owl%20Only.png" alt="Optima Academy" style="width: 50px; height: 40px; object-fit: contain;" /></div>
+        <div>
+            <div style="font-size: 28px; color: #ffffff; line-height: 1.2;">Optima Academy Online</div>
+            <div style="font-size: 12px; color: #55c8e8;">An Education Experience Company</div>
+        </div>
+    </div>
+    <div style="font-size: 36px; color: #ffffff; margin-bottom: 6px;">M/J CIVICS</div>
+</div>
+
+<!-- ===== METADATA STRIP ===== -->
+<div style="background: #FFFFFF; border-bottom: 2px solid #D0D9E8; display: flex; flex-wrap: wrap;">
+    <div style="flex: 1; min-width: 140px; padding: 12px 16px; border-right: 1px solid #D0D9E8;">
+        <div style="font-size: 11px; color: #6b7a99; margin-bottom: 4px;">Quarter / Module</div>
+        <div style="font-size: 17px; color: #0e1c42;">Q3 &middot; Module 7</div>
+        <div style="font-size: 12px; color: #666;">Money and Markets</div>
+    </div>
+    <div style="flex: 1; min-width: 140px; padding: 12px 16px; border-right: 1px solid #D0D9E8;">
+        <div style="font-size: 11px; color: #6b7a99; margin-bottom: 4px;">Lesson</div>
+        <div style="font-size: 17px; color: #0e1c42;">7.5 Lesson: Taxes, the Whiskey Rebellion, and Public Services</div>
+    </div>
+    <div style="flex: 1; min-width: 140px; padding: 12px 16px; border-right: 1px solid #D0D9E8;">
+        <div style="font-size: 11px; color: #6b7a99; margin-bottom: 4px;">Topic</div>
+        <div style="font-size: 17px; color: #0e1c42;">Taxes, the Whiskey Rebellion, and Public Services</div>
+    </div>
+    <div style="flex: 1; min-width: 140px; padding: 12px 16px;">
+        <div style="font-size: 11px; color: #6b7a99; margin-bottom: 4px;">Discussion Focus</div>
+        <div style="font-size: 17px; color: #0e1c42;">Hamilton&rsquo;s Debt Plan: Fair to Whom?</div>
+    </div>
+</div>
+
+<!-- ===== BODY WRAPPER ===== -->
+<div style="padding: 24px 34px;">
+
+<!-- ═══════════════════════════════════════════════════════════════════════
+     OPTIMA READ-ALOUD PLAYER — drop-in snippet for GitHub-hosted lesson pages
+     ═══════════════════════════════════════════════════════════════════════
+
+     WHAT IT DOES
+       Adds a "Listen" player that reads the page aloud using the browser's
+       built-in Web Speech API (no accounts, no API keys, works offline once
+       the page is loaded). The paragraph currently being read is highlighted
+       in pale gold and scrolled into view. Works inside a Canvas iframe.
+
+     WHERE TO PASTE
+       Into any GitHub-hosted Optima lesson page (the full-HTML-document kind,
+       NOT Canvas RCE pages — the RCE strips <script>). Paste this whole block
+       just inside the body wrapper, right BEFORE the first content card.
+
+     OPTIONS
+       • Add  data-ra-skip  to any element the reader should NOT read
+         (e.g. the local preview banner, decorative text, answer keys).
+       • Add  data-readaloud-root  to one container to limit reading to it.
+         Default scope: the .canvas-frame wrapper, else <body>.
+
+     NOTES
+       • The player never reads itself, <button> labels, or hidden elements
+         (so unrevealed widget feedback stays unread until shown).
+       • If the browser has no speech voices, the player disables itself
+         with a friendly message instead of breaking the page.
+-->
+<div id="optima-read-aloud">
+<style>
+    #optima-read-aloud { background: linear-gradient(135deg, #E8F6FB 0%, #F4F9FC 100%); border: 1px solid #C5DCE5; border-left: 5px solid #2196D0; border-radius: 8px; padding: 14px 18px; margin: 0 0 20px 0; }
+    #optima-read-aloud .ora-kicker { font-size: 11px; color: #1B6A94; letter-spacing: 0.4px; margin-bottom: 10px; }
+    #optima-read-aloud .ora-controls { display: flex; flex-wrap: wrap; align-items: center; gap: 10px; }
+    #optima-read-aloud .ora-controls button { border-radius: 8px; padding: 8px 16px; font-size: 14px; cursor: pointer; font-family: inherit; transition: all 0.15s; }
+    #ora-play { background: #0E1C42; color: #FFFFFF; border: 1.5px solid #0E1C42; }
+    #ora-play:hover:enabled { background: #1B2D5E; }
+    #ora-play:disabled { background: #D0D9E8; border-color: #D0D9E8; color: #6b7a99; cursor: default; }
+    #ora-stop { background: #FFFFFF; color: #0E1C42; border: 1.5px solid #D0D9E8; }
+    #ora-stop:hover:enabled { background: #F4F6FA; border-color: #55C8E8; }
+    #ora-stop:disabled { color: #999; border-color: #E4E9F2; cursor: default; }
+    #optima-read-aloud .ora-speed { font-size: 12px; color: #6b7a99; display: flex; align-items: center; gap: 6px; }
+    #ora-rate { font-family: inherit; font-size: 13px; color: #0E1C42; border: 1.5px solid #D0D9E8; border-radius: 6px; padding: 5px 8px; background: #FFFFFF; }
+    #ora-status { font-size: 12px; color: #666; }
+    .ora-highlight { background: #FDF3E3 !important; box-shadow: inset 4px 0 0 #C7922C; border-radius: 4px; transition: background 0.2s; }
+</style>
+    <div class="ora-kicker">&#128266; READ ALOUD: LISTEN TO THIS PAGE</div>
+    <div class="ora-controls">
+        <button id="ora-play" type="button" aria-label="Listen to this page">&#9654;&#65039; Listen</button>
+        <button id="ora-stop" type="button" aria-label="Stop reading" disabled>&#9632; Stop</button>
+        <label class="ora-speed">Speed
+            <select id="ora-rate" aria-label="Reading speed">
+                <option value="0.8">Slower</option>
+                <option value="1" selected>Normal</option>
+                <option value="1.25">Faster</option>
+            </select>
+        </label>
+        <span id="ora-status" role="status" aria-live="polite"></span>
+    </div>
+<script>
+(function () {
+    "use strict";
+    var playBtn  = document.getElementById("ora-play");
+    var stopBtn  = document.getElementById("ora-stop");
+    var rateSel  = document.getElementById("ora-rate");
+    var statusEl = document.getElementById("ora-status");
+
+    if (!("speechSynthesis" in window) || !("SpeechSynthesisUtterance" in window)) {
+        playBtn.disabled = true;
+        rateSel.disabled = true;
+        statusEl.textContent = "Read-aloud is not supported in this browser.";
+        return;
+    }
+
+    var LABEL_PLAY   = "▶️ Listen";
+    var LABEL_PAUSE  = "⏸️ Pause";
+    var LABEL_RESUME = "▶️ Resume";
+    var BLOCK_SEL = "p, li, h1, h2, h3, h4, h5, h6, blockquote, td, th, dt, dd, figcaption, div";
+    var SKIP_SEL  = "#optima-read-aloud, [data-ra-skip], button, script, style, select, noscript, iframe";
+
+    var queue = [];        // [{ el, text }] — one entry per sentence
+    var idx = 0;
+    var playing = false, paused = false, stopping = false;
+    var currentBlock = null;
+    var currentUtterance = null;  // held to dodge a Chrome garbage-collection bug
+
+    var voices = [];
+    function loadVoices() { voices = window.speechSynthesis.getVoices(); }
+    loadVoices();
+    if ("onvoiceschanged" in window.speechSynthesis) {
+        window.speechSynthesis.onvoiceschanged = loadVoices;
+    }
+    function pickVoice() {
+        if (!voices.length) loadVoices();
+        var en = voices.filter(function (v) { return /^en/i.test(v.lang); });
+        return en.filter(function (v) { return /natural/i.test(v.name); })[0]
+            || en.filter(function (v) { return /google us english/i.test(v.name); })[0]
+            || en.filter(function (v) { return v.default; })[0]
+            || en[0] || null;
+    }
+
+    function isVisible(el) {
+        return !!(el.offsetWidth || el.offsetHeight || el.getClientRects().length);
+    }
+
+    // Walk text nodes, attach each to its nearest block ancestor, split into sentences.
+    function collectQueue() {
+        var root = document.querySelector("[data-readaloud-root]")
+                || document.querySelector(".canvas-frame")
+                || document.body;
+        var walker = document.createTreeWalker(root, NodeFilter.SHOW_TEXT, null, false);
+        var items = [];   // [{ el, text }] — one entry per block, in reading order
+        var node;
+        while ((node = walker.nextNode())) {
+            if (!/\S/.test(node.textContent)) continue;
+            var el = node.parentElement;
+            if (!el || el.closest(SKIP_SEL)) continue;
+            if (!isVisible(el)) continue;
+            var block = el.closest(BLOCK_SEL) || root;
+            var last = items[items.length - 1];
+            if (last && last.el === block) last.text += " " + node.textContent;
+            else items.push({ el: block, text: node.textContent });
+        }
+        var q = [];
+        items.forEach(function (item) {
+            var clean = item.text.replace(/\s+/g, " ").trim();
+            if (!clean) return;
+            var sentences = clean.match(/[^.!?]+[.!?]+[”"')\]]*\s*|[^.!?]+$/g) || [clean];
+            sentences.forEach(function (s) {
+                s = s.trim();
+                if (s) q.push({ el: item.el, text: s });
+            });
+        });
+        return q;
+    }
+
+    function highlight(el) {
+        if (el === currentBlock) return;
+        clearHighlight();
+        currentBlock = el;
+        if (el && el !== document.body) {
+            el.classList.add("ora-highlight");
+            try { el.scrollIntoView({ behavior: "smooth", block: "nearest" }); } catch (e) {}
+        }
+    }
+    function clearHighlight() {
+        if (currentBlock) currentBlock.classList.remove("ora-highlight");
+        currentBlock = null;
+    }
+
+    function speakNext() {
+        if (idx >= queue.length) { finish("Finished reading this page."); return; }
+        var item = queue[idx];
+        highlight(item.el);
+        var u = new SpeechSynthesisUtterance(item.text);
+        u.rate = parseFloat(rateSel.value) || 1;
+        var v = pickVoice();
+        if (v) u.voice = v;
+        u.onend = function () {
+            if (stopping) return;
+            idx++;
+            speakNext();
+        };
+        u.onerror = function (e) {
+            if (stopping || e.error === "canceled" || e.error === "interrupted") return;
+            idx++;
+            speakNext();
+        };
+        currentUtterance = u;
+        window.speechSynthesis.speak(u);
+        statusEl.textContent = "Reading… " + (idx + 1) + " / " + queue.length;
+    }
+
+    function finish(message) {
+        playing = false;
+        paused = false;
+        clearHighlight();
+        playBtn.textContent = LABEL_PLAY;
+        stopBtn.disabled = true;
+        statusEl.textContent = message || "";
+        currentUtterance = null;
+    }
+
+    playBtn.addEventListener("click", function () {
+        if (playing && !paused) {
+            window.speechSynthesis.pause();
+            paused = true;
+            playBtn.textContent = LABEL_RESUME;
+            statusEl.textContent = "Paused";
+            return;
+        }
+        if (playing && paused) {
+            window.speechSynthesis.resume();
+            paused = false;
+            playBtn.textContent = LABEL_PAUSE;
+            statusEl.textContent = "Reading… " + (idx + 1) + " / " + queue.length;
+            return;
+        }
+        queue = collectQueue();
+        if (!queue.length) { statusEl.textContent = "Nothing to read on this page."; return; }
+        idx = 0;
+        stopping = false;
+        playing = true;
+        paused = false;
+        window.speechSynthesis.cancel();
+        playBtn.textContent = LABEL_PAUSE;
+        stopBtn.disabled = false;
+        speakNext();
+    });
+
+    stopBtn.addEventListener("click", function () {
+        stopping = true;
+        window.speechSynthesis.cancel();
+        finish("");
+    });
+
+    // Changing speed mid-read restarts the current sentence at the new rate.
+    rateSel.addEventListener("change", function () {
+        if (!playing || paused) return;
+        stopping = true;
+        window.speechSynthesis.cancel();
+        setTimeout(function () { stopping = false; speakNext(); }, 60);
+    });
+
+    window.addEventListener("pagehide", function () { window.speechSynthesis.cancel(); });
+})();
+</script>
+</div>
+<!-- ═══ END OPTIMA READ-ALOUD PLAYER ═══ -->
+
+    <!-- Title strip -->
+    <div style="background: #EEF1F8; border-left: 5px solid #0E1C42; border-radius: 7px; padding: 18px 22px; margin-bottom: 20px;">
+        <div style="font-size: 11px; color: #0e1c42; margin-bottom: 6px;">7.5 Lesson: Taxes, the Whiskey Rebellion, and Public Services</div>
+        <div style="font-size: 22px; color: #0e1c42; margin-bottom: 4px;">Taxes, the Whiskey Rebellion, and Public Services</div>
+        <div style="font-size: 16px; color: #666;">Lesson</div>
+    </div>
+
+    <div style="background: #FFFFFF; border-top: 3px solid #C7922C; border: 1px solid #D0D9E8; border-radius: 8px; padding: 20px 24px; margin-bottom: 20px;">
+        <div style="font-size: 11px; color: #c7922c; margin-bottom: 12px;">&#128214; TODAY'S FOCUS</div>
+        <div style="font-size: 20px; color: #0e1c42; font-style: italic; margin-bottom: 10px;">What will free citizens pay for, and what will they refuse?</div>
+        <div style="font-size: 18px; color: #1a2340; line-height: 1.65;">Hamilton&rsquo;s plan needed money to pay the debt, and money meant taxes. This lesson follows a tax on whiskey that led to armed protest, and it shows how taxes work for you today.</div>
+    </div>
+
+    <div style="background: #FFFFFF; border: 1px solid #D0D9E8; border-radius: 8px; padding: 20px 24px; margin-bottom: 20px;">
+        <div style="font-size: 11px; color: #c7922c; margin-bottom: 14px;">&#127919; BY THE END OF THIS LESSON YOU WILL BE ABLE TO&hellip;</div>
+        <div style="display: flex; align-items: flex-start; gap: 12px; margin-bottom: 12px;">
+            <div style="min-width: 26px; height: 26px; border-radius: 50%; background: #C7922C; color: #fff; font-size: 13px; display: flex; align-items: center; justify-content: center; flex-shrink: 0;">1</div>
+            <div style="font-size: 18px; color: #1a2340; line-height: 1.65;"><strong>I will be able to</strong> name the main kinds of federal, state, and local taxes and what each level pays for</div>
+        </div>
+        <div style="display: flex; align-items: flex-start; gap: 12px; margin-bottom: 12px;">
+            <div style="min-width: 26px; height: 26px; border-radius: 50%; background: #C7922C; color: #fff; font-size: 13px; display: flex; align-items: center; justify-content: center; flex-shrink: 0;">2</div>
+            <div style="font-size: 18px; color: #1a2340; line-height: 1.65;"><strong>I will be able to</strong> explain why the whiskey tax angered farmers in the West and how Washington answered</div>
+        </div>
+        <div style="display: flex; align-items: flex-start; gap: 12px; margin-bottom: 0px;">
+            <div style="min-width: 26px; height: 26px; border-radius: 50%; background: #C7922C; color: #fff; font-size: 13px; display: flex; align-items: center; justify-content: center; flex-shrink: 0;">3</div>
+            <div style="font-size: 18px; color: #1a2340; line-height: 1.65;"><strong>I will be able to</strong> describe how the 16th Amendment changed the way the nation raises money</div>
+        </div>
+    </div>
+
+    <div style="background: #FFFFFF; border: 1px solid #D0D9E8; border-radius: 8px; padding: 20px 24px; margin-bottom: 20px;">
+        <div style="font-size: 11px; color: #c7922c; margin-bottom: 14px;">&#128203; WHAT YOU NEED FOR THIS LESSON</div>
+        <div style="display: flex; align-items: flex-start; gap: 10px; margin-bottom: 8px; border-left: 3px solid #D0D9E8; padding-left: 14px;"><span style="color: #c7922c; font-size: 18px; flex-shrink: 0;">&#9654;</span>
+            <div style="font-size: 18px; color: #1a2340; line-height: 1.6;">A notebook and something to write with, for your own notes.</div>
+        </div>
+    </div>
+
+    <div style="background: #FFFFFF; border-top: 3px solid #C7922C; border: 1px solid #D0D9E8; border-radius: 8px; padding: 20px 24px; margin-bottom: 20px;">
+        <div style="font-size: 11px; color: #c7922c; margin-bottom: 14px; display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 8px;"><span>&#128218; PART 1 &middot; The Whiskey Tax</span><span style="background: #C7922C; color: #fff; font-size: 13px; padding: 3px 10px; border-radius: 10px; white-space: nowrap;">14 min</span></div>
+
+        <div class="callout glossary">
+            <div class="callout-kicker">&#128214; Glossary of Subject Vocabulary</div>
+            <p class="glossary-note">A few words worth knowing before you read.</p>
+            <dl class="glossary-list">
+                <dt id="gloss-excise">excise tax <span class="phonetic">(EK-syze tax)</span> <button class="gloss-audio" data-term="excise tax" aria-label="Play pronunciation of excise tax" onclick="speakGloss(event,'excise tax')">&#128266;</button></dt>
+                <dd>A tax on a particular product, such as whiskey, gasoline, or tobacco.</dd>
+                <dt id="gloss-income-tax">income tax <span class="phonetic">(IN-kum tax)</span> <button class="gloss-audio" data-term="income tax" aria-label="Play pronunciation of income tax" onclick="speakGloss(event,'income tax')">&#128266;</button></dt>
+                <dd>A tax on the money a person or business earns.</dd>
+                <dt id="gloss-insurrection">insurrection <span class="phonetic">(in-sur-EK-shun)</span> <button class="gloss-audio" data-term="insurrection" aria-label="Play pronunciation of insurrection" onclick="speakGloss(event,'insurrection')">&#128266;</button></dt>
+                <dd>A violent uprising against a government.</dd>
+                <dt id="gloss-militia">militia <span class="phonetic">(muh-LISH-uh)</span> <button class="gloss-audio" data-term="militia" aria-label="Play pronunciation of militia" onclick="speakGloss(event,'militia')">&#128266;</button></dt>
+                <dd>A force of citizens, not full-time soldiers, who are called up to serve in an emergency.</dd>
+                <dt id="gloss-pardon">pardon <span class="phonetic">(PAR-dun)</span> <button class="gloss-audio" data-term="pardon" aria-label="Play pronunciation of pardon" onclick="speakGloss(event,'pardon')">&#128266;</button></dt>
+                <dd>An official act of forgiveness that frees a person from punishment for a crime.</dd>
+                <dt id="gloss-payroll-tax">payroll tax <span class="phonetic">(PAY-rohl tax)</span> <button class="gloss-audio" data-term="payroll tax" aria-label="Play pronunciation of payroll tax" onclick="speakGloss(event,'payroll tax')">&#128266;</button></dt>
+                <dd>A tax taken from paychecks to pay for Social Security and Medicare.</dd>
+                <dt id="gloss-property-tax">property tax <span class="phonetic">(PROP-er-tee tax)</span> <button class="gloss-audio" data-term="property tax" aria-label="Play pronunciation of property tax" onclick="speakGloss(event,'property tax')">&#128266;</button></dt>
+                <dd>A yearly tax on land and buildings, used mostly by local governments.</dd>
+            </dl>
+        </div>
+
+        <h3 style="font-size: 20px; color: #0e1c42; margin: 18px 0 8px 0;">Paying for the Debt</h3>
+        <p style="font-size: 17px; color: #1a2340; line-height: 1.65; margin: 0 0 10px 0;">Hamilton&rsquo;s plan promised to pay the nation&rsquo;s debts. To do that, the government needed steady income. Most of it came from taxes on goods that came in through the ports. But more was needed, and in 1791 Congress passed an <strong><span class="gloss" tabindex="0">excise tax<button class="gloss-audio" aria-label="Play pronunciation" onclick="speakGloss(event,'excise tax')">&#128266;</button><span class="gloss-tip"><span class="gloss-pron">EK-syze tax</span>A tax on a particular product, such as whiskey, gasoline, or tobacco.</span></span></strong> on whiskey made in the United States.</p>
+        <p style="font-size: 17px; color: #1a2340; line-height: 1.65; margin: 0 0 10px 0;">To easterners the tax looked sensible. It fell on a product that people could do without, and the money would help pay the debt. To farmers on the western frontier it looked very different. Think about the land. Western Pennsylvania lay across the Appalachian Mountains, far from eastern cities. There were few good roads, and moving heavy goods over the mountains was slow and costly. A farmer with a wagonload of grain could earn little at market once the cost of the trip was paid.</p>
+        <p style="font-size: 17px; color: #1a2340; line-height: 1.65; margin: 0 0 10px 0;">Whiskey solved the problem. A farmer could turn bulky grain into whiskey, which was worth much more for its weight. A pack horse could carry a load of whiskey that held the value of many times as much grain. Whiskey was also used almost like money in places where coins were scarce. So the <span class="gloss" tabindex="0">excise tax<button class="gloss-audio" aria-label="Play pronunciation" onclick="speakGloss(event,'excise tax')">&#128266;</button><span class="gloss-tip"><span class="gloss-pron">EK-syze tax</span>A tax on a particular product, such as whiskey, gasoline, or tobacco.</span></span> was not a tax on a luxury. It fell on the one product that let a frontier farmer reach a market. Many of them felt that the new government was taxing them for being far away.</p>
+        <p style="font-size: 17px; color: #1a2340; line-height: 1.65; margin: 0 0 10px 0;">They also remembered the Revolution. Only twenty years before, Americans had protested taxes passed by a government they did not control. Now some westerners said that a distant Congress was doing the same thing, and they met, signed petitions, and refused to pay. Tax collectors were threatened, and some were beaten.</p>
+    </div>
+
+    <div style="background: #FFFFFF; border-top: 3px solid #C7922C; border: 1px solid #D0D9E8; border-radius: 8px; padding: 20px 24px; margin-bottom: 20px;">
+        <div style="font-size: 11px; color: #c7922c; margin-bottom: 14px; display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 8px;"><span>&#128218; PART 2 &middot; Washington Chooses</span><span style="background: #C7922C; color: #fff; font-size: 13px; padding: 3px 10px; border-radius: 10px; white-space: nowrap;">12 min</span></div>
+        <h3 style="font-size: 20px; color: #0e1c42; margin: 18px 0 8px 0;">The Whiskey Rebellion, 1794</h3>
+        <p style="font-size: 17px; color: #1a2340; line-height: 1.65; margin: 0 0 10px 0;">By the summer of 1794 the protest had grown into an <strong><span class="gloss" tabindex="0">insurrection<button class="gloss-audio" aria-label="Play pronunciation" onclick="speakGloss(event,'insurrection')">&#128266;</button><span class="gloss-tip"><span class="gloss-pron">in-sur-EK-shun</span>A violent uprising against a government.</span></span></strong>. In July, a crowd attacked the home of a tax inspector near Pittsburgh. Thousands of armed men gathered, and talk of breaking away from the nation was heard in the West.</p>
+        <p style="font-size: 17px; color: #1a2340; line-height: 1.65; margin: 0 0 10px 0;">President Washington had to decide. If a law could be defied by an armed crowd, the national government would not be a government at all. This was the first big test of whether the new Constitution could enforce its own laws against citizens. Under the Constitution, he could call out the state militias to put down an <span class="gloss" tabindex="0">insurrection<button class="gloss-audio" aria-label="Play pronunciation" onclick="speakGloss(event,'insurrection')">&#128266;</button><span class="gloss-tip"><span class="gloss-pron">in-sur-EK-shun</span>A violent uprising against a government.</span></span>.</p>
+        <p style="font-size: 17px; color: #1a2340; line-height: 1.65; margin: 0 0 10px 0;">Washington chose force first, and mercy after. In August 1794 he issued a proclamation ordering the rebels to go home. At the same time, he sent commissioners to talk with them, and he called up a <span class="gloss" tabindex="0">militia<button class="gloss-audio" aria-label="Play pronunciation" onclick="speakGloss(event,'militia')">&#128266;</button><span class="gloss-tip"><span class="gloss-pron">muh-LISH-uh</span>A force of citizens, not full-time soldiers, who are called up to serve in an emergency.</span></span> army of about thirteen thousand men from Pennsylvania, New Jersey, Maryland, and Virginia. Washington himself rode with the troops for part of the way, and Hamilton went with them. When the army marched west in the autumn, the rebels melted away. Only a few were arrested. Two men were convicted of treason, and Washington <strong><span class="gloss" tabindex="0">pardoned<button class="gloss-audio" aria-label="Play pronunciation" onclick="speakGloss(event,'pardon')">&#128266;</button><span class="gloss-tip"><span class="gloss-pron">PAR-dun</span>An official act of forgiveness that frees a person from punishment for a crime.</span></span></strong> both of them.</p>
+        <p style="font-size: 17px; color: #1a2340; line-height: 1.65; margin: 0 0 10px 0;">The outcome was not certain. Washington might have waited and let the protest burn itself out, and the national government would have looked weak. He might have punished hard, and he would have made martyrs of farmers. He did neither. He showed that the republic would enforce its laws and also that it could be merciful. The tax was repealed in 1802, after Jefferson became President.</p>
+        <p style="font-size: 17px; color: #1a2340; line-height: 1.65; margin: 0 0 10px 0;">The rebellion taught lessons to both sides. The farmers learned that the new government was not a distant king and that it would act. They also learned that they had a better road open to them. In a republic, citizens who dislike a law can petition Congress, write to newspapers, and vote against the lawmakers who passed it. Many western farmers did just that, and they helped to elect Jefferson. The government learned that it could keep order without bloodshed, and that a show of strength, followed by forgiveness, can win back citizens who were angry.</p>
+    </div>
+
+    <div style="background: #FFFFFF; border-top: 3px solid #C7922C; border: 1px solid #D0D9E8; border-radius: 8px; padding: 20px 24px; margin-bottom: 20px;">
+        <div style="font-size: 11px; color: #c7922c; margin-bottom: 14px; display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 8px;"><span>&#128218; PART 3 &middot; Taxes and Services Today</span><span style="background: #C7922C; color: #fff; font-size: 13px; padding: 3px 10px; border-radius: 10px; white-space: nowrap;">12 min</span></div>
+        <h3 style="font-size: 20px; color: #0e1c42; margin: 18px 0 8px 0;">Who Taxes What</h3>
+        <p style="font-size: 17px; color: #1a2340; line-height: 1.65; margin: 0 0 10px 0;">Every level of government raises money. At the national level, the largest sources are the <strong><span class="gloss" tabindex="0">income tax<button class="gloss-audio" aria-label="Play pronunciation" onclick="speakGloss(event,'income tax')">&#128266;</button><span class="gloss-tip"><span class="gloss-pron">IN-kum tax</span>A tax on the money a person or business earns.</span></span></strong> and the <strong><span class="gloss" tabindex="0">payroll tax<button class="gloss-audio" aria-label="Play pronunciation" onclick="speakGloss(event,'payroll tax')">&#128266;</button><span class="gloss-tip"><span class="gloss-pron">PAY-rohl tax</span>A tax taken from paychecks to pay for Social Security and Medicare.</span></span></strong>. The <span class="gloss" tabindex="0">income tax<button class="gloss-audio" aria-label="Play pronunciation" onclick="speakGloss(event,'income tax')">&#128266;</button><span class="gloss-tip"><span class="gloss-pron">IN-kum tax</span>A tax on the money a person or business earns.</span></span> comes out of what people and businesses earn. The <span class="gloss" tabindex="0">payroll tax<button class="gloss-audio" aria-label="Play pronunciation" onclick="speakGloss(event,'payroll tax')">&#128266;</button><span class="gloss-tip"><span class="gloss-pron">PAY-rohl tax</span>A tax taken from paychecks to pay for Social Security and Medicare.</span></span> comes out of paychecks and pays for Social Security and Medicare. States rely heavily on sales taxes, which are added to the price of what you buy. Florida has no <span class="gloss" tabindex="0">income tax<button class="gloss-audio" aria-label="Play pronunciation" onclick="speakGloss(event,'income tax')">&#128266;</button><span class="gloss-tip"><span class="gloss-pron">IN-kum tax</span>A tax on the money a person or business earns.</span></span> on people at all. Local governments depend mostly on <strong><span class="gloss" tabindex="0">property taxes<button class="gloss-audio" aria-label="Play pronunciation" onclick="speakGloss(event,'property tax')">&#128266;</button><span class="gloss-tip"><span class="gloss-pron">PROP-er-tee tax</span>A yearly tax on land and buildings, used mostly by local governments.</span></span></strong>, which are paid on land and buildings and used for schools, police, and fire protection.</p>
+        <p style="font-size: 17px; color: #1a2340; line-height: 1.65; margin: 0 0 10px 0;">The national <span class="gloss" tabindex="0">income tax<button class="gloss-audio" aria-label="Play pronunciation" onclick="speakGloss(event,'income tax')">&#128266;</button><span class="gloss-tip"><span class="gloss-pron">IN-kum tax</span>A tax on the money a person or business earns.</span></span> was not always possible. The Constitution limited direct taxes, and the Supreme Court struck down an <span class="gloss" tabindex="0">income tax<button class="gloss-audio" aria-label="Play pronunciation" onclick="speakGloss(event,'income tax')">&#128266;</button><span class="gloss-tip"><span class="gloss-pron">IN-kum tax</span>A tax on the money a person or business earns.</span></span> in the 1890s. In 1913 the states ratified the 16th Amendment, which lets Congress tax incomes. Over the next decades, that tax grew into the main source of money for the national government, and it helped pay for defense, roads, and programs for older Americans.</p>
+        <p style="font-size: 17px; color: #1a2340; line-height: 1.65; margin: 0 0 10px 0;">You meet all of these taxes in a normal week. Suppose you buy a pair of shoes. Part of the price is sales tax, which goes to the state and the county. A parent&rsquo;s paycheck shows money taken out for <span class="gloss" tabindex="0">income tax<button class="gloss-audio" aria-label="Play pronunciation" onclick="speakGloss(event,'income tax')">&#128266;</button><span class="gloss-tip"><span class="gloss-pron">IN-kum tax</span>A tax on the money a person or business earns.</span></span> and <span class="gloss" tabindex="0">payroll tax<button class="gloss-audio" aria-label="Play pronunciation" onclick="speakGloss(event,'payroll tax')">&#128266;</button><span class="gloss-tip"><span class="gloss-pron">PAY-rohl tax</span>A tax taken from paychecks to pay for Social Security and Medicare.</span></span> before it ever reaches the bank. Your family&rsquo;s home is taxed by the county each year, and that money helps pay for your school. Each level of government takes a share, and each spends its share on a different set of jobs. Knowing which tax pays for which service helps a citizen ask good questions at a public meeting.</p>
+        <h3 style="font-size: 20px; color: #0e1c42; margin: 18px 0 8px 0;">What a Government Owes Its People</h3>
+        <p style="font-size: 17px; color: #1a2340; line-height: 1.65; margin: 0 0 10px 0;">Citizens do not only pay. They expect things in return. The Preamble says the Constitution was written to &ldquo;promote the general welfare.&rdquo; That is why governments run schools, build roads, protect the public, and keep courts open. Citizens may disagree about how much a government should do, and how much it should tax to do it. That argument is part of self-government. But the argument starts from the same fact Washington faced. A government that cannot raise money cannot keep its promises, and a government that takes too much from its citizens loses their trust.</p>
+    </div>
+
+    <div style="background: #FFFFFF; border-top: 3px solid #0E1C42; border: 1px solid #D0D9E8; border-radius: 8px; padding: 20px 24px; margin-bottom: 20px;">
+        <div style="font-size: 11px; color: #c7922c; margin-bottom: 16px;">&#10145;&#65039; WHAT YOU'LL DO NEXT</div>
+        <div style="display: flex; align-items: flex-start; gap: 14px; margin-bottom: 16px;">
+            <div style="min-width: 34px; height: 34px; border-radius: 50%; background: #0E1C42; color: #fff; font-size: 16px; display: flex; align-items: center; justify-content: center; flex-shrink: 0;">1</div>
+            <div>
+                <div style="font-size: 18px; color: #0e1c42; margin-bottom: 4px;"><strong>7.6 Primary Source: Washington, Proclamation on the Whiskey Rebellion (1794)</strong> (Canvas)</div>
+                <div style="font-size: 16px; color: #1a2340; line-height: 1.55;">Read part of the President&rsquo;s proclamation to the western counties and answer two questions.</div>
+            </div>
+        </div>
+    </div>
+
+    <div style="background: #FFFFFF; border-top: 3px solid #C7922C; border: 1px solid #D0D9E8; border-radius: 8px; padding: 20px 24px; margin-bottom: 20px;">
+        <div style="font-size: 11px; color: #c7922c; margin-bottom: 12px;">&#128170; CARRY THIS FORWARD</div>
+        <p style="font-size: 18px; color: #1a2340; line-height: 1.65; margin: 0;">A republic has to raise money, and its citizens have to be willing to pay. Washington showed that a government can enforce its laws and still be merciful. Taxes pay for the services you use every day. Next, see how the republic&rsquo;s economy works.</p>
+    </div>
+
+</div>
+
+<!-- ===== FOOTER ===== -->
+<div style="background: #0E1C42; border-top: 3px solid #55C8E8; padding: 18px 34px; text-align: center;">
+    <div style="font-size: 18px; color: #ffffff; margin-bottom: 6px;"><span style="color: #55c8e8;">Optima Academy Online</span> &middot; M/J CIVICS &middot; Quarter 3 &middot; Student Lesson Page</div>
+    <div style="font-size: 13px; color: rgba(255,255,255,0.65); margin-bottom: 4px;">7.5 Lesson: Taxes, the Whiskey Rebellion, and Public Services &middot; Taxes, the Whiskey Rebellion, and Public Services</div>
+    <div style="font-size: 12px; color: rgba(255,255,255,0.4);">&copy; Optima Academy Online &middot; An Education Experience Company</div>
+</div>
+
+</div>
+
+<!-- ===== WIDGET RUNTIME (byte-consistent across this site) ===== -->
+<script>
+function speakGloss(e, text) {
+  e.stopPropagation();
+  if ('speechSynthesis' in window) {
+    window.speechSynthesis.cancel();
+    var u = new SpeechSynthesisUtterance(text);
+    u.rate = 0.85;
+    window.speechSynthesis.speak(u);
+  }
+}
+(function () {
+  document.addEventListener('click', function (e) {
+    var reset = e.target.closest('.widget-reset');
+    if (reset) {
+      var w = reset.closest('.optima-widget');
+      w.querySelectorAll('.widget-options button').forEach(function (b) { b.classList.remove('selected', 'correct', 'incorrect'); });
+      w.querySelectorAll('.widget-feedback').forEach(function (f) { f.classList.remove('show'); f.textContent = ''; });
+      w.querySelectorAll('.row-feedback').forEach(function (f) { f.remove(); });
+      w.querySelectorAll('.ow-flip.flipped').forEach(function (c) { c.classList.remove('flipped'); });
+      if (w.classList.contains('ow-flip')) { w.classList.remove('flipped'); }
+      return;
+    }
+    var rBtn = e.target.closest('.ow-reflect .widget-options button');
+    if (rBtn) {
+      var rw = rBtn.closest('.optima-widget');
+      rw.querySelectorAll('.widget-options button').forEach(function (b) { b.classList.remove('selected'); });
+      rBtn.classList.add('selected');
+      var fb = rw.querySelector('.widget-feedback');
+      fb.textContent = rBtn.dataset.response || '';
+      fb.classList.add('show');
+      return;
+    }
+    var sBtn = e.target.closest('.ow-select .widget-row .widget-options button, .ow-scale .widget-row .widget-options button');
+    if (sBtn) {
+      var row = sBtn.closest('.widget-row');
+      var correct = row.dataset.correct;
+      row.querySelectorAll('.widget-options button').forEach(function (b) { b.classList.remove('selected', 'correct', 'incorrect'); });
+      var right = sBtn.dataset.choice === correct;
+      sBtn.classList.add(right ? 'correct' : 'incorrect');
+      var text = right ? (sBtn.dataset.fb || row.dataset.fb || 'Right.') : (sBtn.dataset.fb || row.dataset.hint || 'Not quite. Try again.');
+      var rf = row.querySelector('.row-feedback') || row.appendChild(document.createElement('div'));
+      rf.className = 'row-feedback ' + (right ? 'correct' : 'incorrect');
+      rf.textContent = text;
+      return;
+    }
+    var flip = e.target.closest('.ow-flip');
+    if (flip) { flip.classList.toggle('flipped'); return; }
+  });
+})();
+</script>
+
+</body>
+</html>
