@@ -1,0 +1,504 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>M/J Civics &mdash; 11.11 Lesson: Foreign Policy and International Organizations</title>
+<style>
+    body { margin: 0; padding: 0; font-family: "Segoe UI", Roboto, Helvetica, Arial, sans-serif; background: #f4f6fa; }
+    .canvas-frame { max-width: 1100px; margin: 0 auto; background: #ffffff; box-shadow: 0 2px 8px rgba(0,0,0,0.08); }
+
+    /* ===== WIDGET CSS (byte-consistent across this site) ===== */
+    .optima-widget { background: linear-gradient(135deg, #E8F6FB 0%, #F4F9FC 100%); border: 1px solid #C5DCE5; border-left: 5px solid #2196D0; border-radius: 8px; padding: 18px 22px; margin: 18px 0; }
+    .widget-kicker { font-size: 11px; color: #1B6A94; margin-bottom: 10px; letter-spacing: 0.4px; }
+    .widget-question { font-size: 17px; color: #0E1C42; margin-bottom: 14px; line-height: 1.55; }
+    .widget-row { background: #FFFFFF; border: 1px solid #D0D9E8; border-radius: 6px; padding: 12px 14px; margin-bottom: 10px; }
+    .widget-row-prompt { font-size: 15px; color: #0E1C42; margin-bottom: 8px; line-height: 1.5; font-style: italic; }
+    .widget-options { display: flex; flex-wrap: wrap; gap: 8px; }
+    .widget-options button { background: #FFFFFF; border: 1.5px solid #D0D9E8; border-radius: 8px; padding: 8px 14px; font-size: 14px; color: #0E1C42; cursor: pointer; transition: all 0.15s; font-family: inherit; }
+    .widget-options button:hover { background: #F4F6FA; border-color: #55C8E8; }
+    .widget-options button.selected { background: #0E1C42; color: #FFFFFF; border-color: #0E1C42; }
+    .widget-options button.correct { background: #D8F0DD; border-color: #2A9D5C; color: #1A6B3D; }
+    .widget-options button.incorrect { background: #FDECEC; border-color: #C0392B; color: #8A1F16; }
+    .widget-feedback { background: #FFFFFF; border-left: 3px solid #C7922C; padding: 10px 14px; font-size: 15px; color: #1a2340; line-height: 1.55; margin: 10px 0; display: none; border-radius: 4px; }
+    .widget-feedback.show { display: block; }
+    .row-feedback { padding: 8px 12px; margin-top: 8px; font-size: 14px; border-radius: 4px; line-height: 1.5; }
+    .row-feedback.correct { background: #D8F0DD; border-left: 3px solid #2A9D5C; color: #1A6B3D; }
+    .row-feedback.incorrect { background: #FDECEC; border-left: 3px solid #C0392B; color: #8A1F16; }
+    .widget-reset { background: transparent; border: 1px solid #C7922C; color: #C7922C; border-radius: 6px; padding: 6px 12px; font-size: 12px; cursor: pointer; font-family: inherit; margin-top: 6px; }
+    .widget-reset:hover { background: #FDF3E3; }
+    .ow-scale .widget-options { justify-content: space-between; }
+    .ow-scale .widget-options button { flex: 1; text-align: center; }
+    .ow-flip { background: #FFFFFF; border: 1px solid #D0D9E8; border-radius: 8px; padding: 18px 20px; cursor: pointer; text-align: center; }
+    .ow-flip .ow-flip-back { display: none; color: #1a2340; }
+    .ow-flip.flipped .ow-flip-front { display: none; }
+    .ow-flip.flipped .ow-flip-back { display: block; }
+
+    /* ===== VOCABULARY GLOSSARY (byte-consistent across this site) ===== */
+    .callout { border-radius: 6px; padding: 14px 20px; margin: 14px 0; }
+    .callout .callout-kicker { font-size: 12px; font-weight: bold; margin-bottom: 8px; letter-spacing: 0.4px; }
+    .callout.glossary { background: #EEF1F8; border-left: 5px solid #0E1C42; }
+    .callout.glossary .callout-kicker { color: #0E1C42; }
+    .callout.glossary.foreign { background: #F3EEFB; border-left: 5px solid #7B3FA0; }
+    .callout.glossary.foreign .callout-kicker { color: #5B2E7E; }
+    .glossary-note { font-size: 13px; color: #666; margin: 0 0 10px; }
+    dl.glossary-list { margin: 0; padding: 0; }
+    dl.glossary-list dt { font-weight: bold; color: #0E1C42; font-size: 16px; margin-top: 10px; }
+    dl.glossary-list dt:first-child { margin-top: 0; }
+    dl.glossary-list .phonetic { font-weight: normal; font-style: italic; color: #6b7a99; font-size: 13px; }
+    dl.glossary-list dd { margin: 2px 0 0 0; font-size: 15px; color: #1a2340; line-height: 1.5; }
+
+    /* ===== GLOSS/HOVER/AUDIO (ported from 06MJWorldHistory's validated gloss.css, 2026-07-31 Session 2) ===== */
+    .gloss { position: relative; border-bottom: 1px dotted #2196D0; font-weight: 600; color: #0E1C42; cursor: help; }
+    .gloss:hover .gloss-tip, .gloss:focus .gloss-tip, .gloss.gloss-open .gloss-tip { display: block; }
+    .gloss-tip { display: none; position: absolute; left: 0; bottom: 100%; margin-bottom: 8px; width: 260px; max-width: 70vw; background: #0E1C42; color: #fff; font-weight: normal; font-size: 13px; line-height: 1.5; padding: 10px 12px; border-radius: 6px; box-shadow: 0 4px 14px rgba(0,0,0,0.25); z-index: 20; }
+    .gloss-tip .gloss-pron { color: #55C8E8; display: block; margin-bottom: 4px; font-style: italic; }
+    .gloss-audio { display: inline-flex; align-items: center; justify-content: center; border: none; background: none; cursor: pointer; font-size: 12px; padding: 0 0 0 2px; vertical-align: middle; color: #1B6A94; }
+    .gloss-audio:hover { color: #0E1C42; }
+    .wrapper-pointer { font-size: 14px; color: #0E1C42; background: #EEF1F8; border-left: 4px solid #6b7a99; border-radius: 4px; padding: 10px 14px; margin: 0 0 18px; }
+
+    /* ===== FIGURE MINI-BIOGRAPHY SIDEBAR ===== */
+    .callout.biography { background: #FBF7EC; border-left: 5px solid #C7922C; display: flex; gap: 16px; align-items: flex-start; }
+    .callout.biography .bio-portrait { width: 110px; height: auto; max-height: 140px; object-fit: cover; border: 1px solid #D0D9E8; border-radius: 4px; flex-shrink: 0; }
+    .callout.biography .bio-body { flex: 1; min-width: 0; }
+    .callout.biography .callout-kicker { color: #8a6010; }
+    .callout.biography .bio-credit { font-size: 12px; color: #6b7a99; font-style: italic; margin-top: 8px; }
+</style>
+</head>
+<body>
+<div class="canvas-frame">
+
+<!-- ===== HEADER ===== -->
+<div style="background: #0E1C42; border-bottom: 5px solid #55C8E8; padding: 22px 34px;">
+    <div style="display: flex; align-items: center; gap: 14px; margin-bottom: 10px;">
+        <div style="width: 52px; height: 52px; border-radius: 50%; background: #FFFFFF; display: flex; align-items: center; justify-content: center; flex-shrink: 0;"><img src="https://raw.githubusercontent.com/optimaondemand/optima-assets/eeb0b335630058906d52f478028361d352253a93/images/Optima%20Final%20Circle%20-%20Owl%20Only.png" alt="Optima Academy" style="width: 50px; height: 40px; object-fit: contain;" /></div>
+        <div>
+            <div style="font-size: 28px; color: #ffffff; line-height: 1.2;">Optima Academy Online</div>
+            <div style="font-size: 12px; color: #55c8e8;">An Education Experience Company</div>
+        </div>
+    </div>
+    <div style="font-size: 36px; color: #ffffff; margin-bottom: 6px;">M/J CIVICS</div>
+</div>
+
+<!-- ===== METADATA STRIP ===== -->
+<div style="background: #FFFFFF; border-bottom: 2px solid #D0D9E8; display: flex; flex-wrap: wrap;">
+    <div style="flex: 1; min-width: 140px; padding: 12px 16px; border-right: 1px solid #D0D9E8;">
+        <div style="font-size: 11px; color: #6b7a99; margin-bottom: 4px;">Quarter / Module</div>
+        <div style="font-size: 17px; color: #0e1c42;">Q4 &middot; Module 11</div>
+        <div style="font-size: 12px; color: #666;">Policy and Practice</div>
+    </div>
+    <div style="flex: 1; min-width: 140px; padding: 12px 16px; border-right: 1px solid #D0D9E8;">
+        <div style="font-size: 11px; color: #6b7a99; margin-bottom: 4px;">Lesson</div>
+        <div style="font-size: 17px; color: #0e1c42;">11.11 Lesson: Foreign Policy and International Organizations</div>
+    </div>
+    <div style="flex: 1; min-width: 140px; padding: 12px 16px; border-right: 1px solid #D0D9E8;">
+        <div style="font-size: 11px; color: #6b7a99; margin-bottom: 4px;">Topic</div>
+        <div style="font-size: 17px; color: #0e1c42;">Foreign Policy and International Organizations</div>
+    </div>
+    <div style="flex: 1; min-width: 140px; padding: 12px 16px;">
+        <div style="font-size: 11px; color: #6b7a99; margin-bottom: 4px;">Discussion Focus</div>
+        <div style="font-size: 17px; color: #0e1c42;">Should America Lead the World?</div>
+    </div>
+</div>
+
+<!-- ===== BODY WRAPPER ===== -->
+<div style="padding: 24px 34px;">
+
+<!-- ═══════════════════════════════════════════════════════════════════════
+     OPTIMA READ-ALOUD PLAYER — drop-in snippet for GitHub-hosted lesson pages
+     ═══════════════════════════════════════════════════════════════════════
+
+     WHAT IT DOES
+       Adds a "Listen" player that reads the page aloud using the browser's
+       built-in Web Speech API (no accounts, no API keys, works offline once
+       the page is loaded). The paragraph currently being read is highlighted
+       in pale gold and scrolled into view. Works inside a Canvas iframe.
+
+     WHERE TO PASTE
+       Into any GitHub-hosted Optima lesson page (the full-HTML-document kind,
+       NOT Canvas RCE pages — the RCE strips <script>). Paste this whole block
+       just inside the body wrapper, right BEFORE the first content card.
+
+     OPTIONS
+       • Add  data-ra-skip  to any element the reader should NOT read
+         (e.g. the local preview banner, decorative text, answer keys).
+       • Add  data-readaloud-root  to one container to limit reading to it.
+         Default scope: the .canvas-frame wrapper, else <body>.
+
+     NOTES
+       • The player never reads itself, <button> labels, or hidden elements
+         (so unrevealed widget feedback stays unread until shown).
+       • If the browser has no speech voices, the player disables itself
+         with a friendly message instead of breaking the page.
+-->
+<div id="optima-read-aloud">
+<style>
+    #optima-read-aloud { background: linear-gradient(135deg, #E8F6FB 0%, #F4F9FC 100%); border: 1px solid #C5DCE5; border-left: 5px solid #2196D0; border-radius: 8px; padding: 14px 18px; margin: 0 0 20px 0; }
+    #optima-read-aloud .ora-kicker { font-size: 11px; color: #1B6A94; letter-spacing: 0.4px; margin-bottom: 10px; }
+    #optima-read-aloud .ora-controls { display: flex; flex-wrap: wrap; align-items: center; gap: 10px; }
+    #optima-read-aloud .ora-controls button { border-radius: 8px; padding: 8px 16px; font-size: 14px; cursor: pointer; font-family: inherit; transition: all 0.15s; }
+    #ora-play { background: #0E1C42; color: #FFFFFF; border: 1.5px solid #0E1C42; }
+    #ora-play:hover:enabled { background: #1B2D5E; }
+    #ora-play:disabled { background: #D0D9E8; border-color: #D0D9E8; color: #6b7a99; cursor: default; }
+    #ora-stop { background: #FFFFFF; color: #0E1C42; border: 1.5px solid #D0D9E8; }
+    #ora-stop:hover:enabled { background: #F4F6FA; border-color: #55C8E8; }
+    #ora-stop:disabled { color: #999; border-color: #E4E9F2; cursor: default; }
+    #optima-read-aloud .ora-speed { font-size: 12px; color: #6b7a99; display: flex; align-items: center; gap: 6px; }
+    #ora-rate { font-family: inherit; font-size: 13px; color: #0E1C42; border: 1.5px solid #D0D9E8; border-radius: 6px; padding: 5px 8px; background: #FFFFFF; }
+    #ora-status { font-size: 12px; color: #666; }
+    .ora-highlight { background: #FDF3E3 !important; box-shadow: inset 4px 0 0 #C7922C; border-radius: 4px; transition: background 0.2s; }
+</style>
+    <div class="ora-kicker">&#128266; READ ALOUD: LISTEN TO THIS PAGE</div>
+    <div class="ora-controls">
+        <button id="ora-play" type="button" aria-label="Listen to this page">&#9654;&#65039; Listen</button>
+        <button id="ora-stop" type="button" aria-label="Stop reading" disabled>&#9632; Stop</button>
+        <label class="ora-speed">Speed
+            <select id="ora-rate" aria-label="Reading speed">
+                <option value="0.8">Slower</option>
+                <option value="1" selected>Normal</option>
+                <option value="1.25">Faster</option>
+            </select>
+        </label>
+        <span id="ora-status" role="status" aria-live="polite"></span>
+    </div>
+<script>
+(function () {
+    "use strict";
+    var playBtn  = document.getElementById("ora-play");
+    var stopBtn  = document.getElementById("ora-stop");
+    var rateSel  = document.getElementById("ora-rate");
+    var statusEl = document.getElementById("ora-status");
+
+    if (!("speechSynthesis" in window) || !("SpeechSynthesisUtterance" in window)) {
+        playBtn.disabled = true;
+        rateSel.disabled = true;
+        statusEl.textContent = "Read-aloud is not supported in this browser.";
+        return;
+    }
+
+    var LABEL_PLAY   = "▶️ Listen";
+    var LABEL_PAUSE  = "⏸️ Pause";
+    var LABEL_RESUME = "▶️ Resume";
+    var BLOCK_SEL = "p, li, h1, h2, h3, h4, h5, h6, blockquote, td, th, dt, dd, figcaption, div";
+    var SKIP_SEL  = "#optima-read-aloud, [data-ra-skip], button, script, style, select, noscript, iframe";
+
+    var queue = [];        // [{ el, text }] — one entry per sentence
+    var idx = 0;
+    var playing = false, paused = false, stopping = false;
+    var currentBlock = null;
+    var currentUtterance = null;  // held to dodge a Chrome garbage-collection bug
+
+    var voices = [];
+    function loadVoices() { voices = window.speechSynthesis.getVoices(); }
+    loadVoices();
+    if ("onvoiceschanged" in window.speechSynthesis) {
+        window.speechSynthesis.onvoiceschanged = loadVoices;
+    }
+    function pickVoice() {
+        if (!voices.length) loadVoices();
+        var en = voices.filter(function (v) { return /^en/i.test(v.lang); });
+        return en.filter(function (v) { return /natural/i.test(v.name); })[0]
+            || en.filter(function (v) { return /google us english/i.test(v.name); })[0]
+            || en.filter(function (v) { return v.default; })[0]
+            || en[0] || null;
+    }
+
+    function isVisible(el) {
+        return !!(el.offsetWidth || el.offsetHeight || el.getClientRects().length);
+    }
+
+    // Walk text nodes, attach each to its nearest block ancestor, split into sentences.
+    function collectQueue() {
+        var root = document.querySelector("[data-readaloud-root]")
+                || document.querySelector(".canvas-frame")
+                || document.body;
+        var walker = document.createTreeWalker(root, NodeFilter.SHOW_TEXT, null, false);
+        var items = [];   // [{ el, text }] — one entry per block, in reading order
+        var node;
+        while ((node = walker.nextNode())) {
+            if (!/\S/.test(node.textContent)) continue;
+            var el = node.parentElement;
+            if (!el || el.closest(SKIP_SEL)) continue;
+            if (!isVisible(el)) continue;
+            var block = el.closest(BLOCK_SEL) || root;
+            var last = items[items.length - 1];
+            if (last && last.el === block) last.text += " " + node.textContent;
+            else items.push({ el: block, text: node.textContent });
+        }
+        var q = [];
+        items.forEach(function (item) {
+            var clean = item.text.replace(/\s+/g, " ").trim();
+            if (!clean) return;
+            var sentences = clean.match(/[^.!?]+[.!?]+[”"')\]]*\s*|[^.!?]+$/g) || [clean];
+            sentences.forEach(function (s) {
+                s = s.trim();
+                if (s) q.push({ el: item.el, text: s });
+            });
+        });
+        return q;
+    }
+
+    function highlight(el) {
+        if (el === currentBlock) return;
+        clearHighlight();
+        currentBlock = el;
+        if (el && el !== document.body) {
+            el.classList.add("ora-highlight");
+            try { el.scrollIntoView({ behavior: "smooth", block: "nearest" }); } catch (e) {}
+        }
+    }
+    function clearHighlight() {
+        if (currentBlock) currentBlock.classList.remove("ora-highlight");
+        currentBlock = null;
+    }
+
+    function speakNext() {
+        if (idx >= queue.length) { finish("Finished reading this page."); return; }
+        var item = queue[idx];
+        highlight(item.el);
+        var u = new SpeechSynthesisUtterance(item.text);
+        u.rate = parseFloat(rateSel.value) || 1;
+        var v = pickVoice();
+        if (v) u.voice = v;
+        u.onend = function () {
+            if (stopping) return;
+            idx++;
+            speakNext();
+        };
+        u.onerror = function (e) {
+            if (stopping || e.error === "canceled" || e.error === "interrupted") return;
+            idx++;
+            speakNext();
+        };
+        currentUtterance = u;
+        window.speechSynthesis.speak(u);
+        statusEl.textContent = "Reading… " + (idx + 1) + " / " + queue.length;
+    }
+
+    function finish(message) {
+        playing = false;
+        paused = false;
+        clearHighlight();
+        playBtn.textContent = LABEL_PLAY;
+        stopBtn.disabled = true;
+        statusEl.textContent = message || "";
+        currentUtterance = null;
+    }
+
+    playBtn.addEventListener("click", function () {
+        if (playing && !paused) {
+            window.speechSynthesis.pause();
+            paused = true;
+            playBtn.textContent = LABEL_RESUME;
+            statusEl.textContent = "Paused";
+            return;
+        }
+        if (playing && paused) {
+            window.speechSynthesis.resume();
+            paused = false;
+            playBtn.textContent = LABEL_PAUSE;
+            statusEl.textContent = "Reading… " + (idx + 1) + " / " + queue.length;
+            return;
+        }
+        queue = collectQueue();
+        if (!queue.length) { statusEl.textContent = "Nothing to read on this page."; return; }
+        idx = 0;
+        stopping = false;
+        playing = true;
+        paused = false;
+        window.speechSynthesis.cancel();
+        playBtn.textContent = LABEL_PAUSE;
+        stopBtn.disabled = false;
+        speakNext();
+    });
+
+    stopBtn.addEventListener("click", function () {
+        stopping = true;
+        window.speechSynthesis.cancel();
+        finish("");
+    });
+
+    // Changing speed mid-read restarts the current sentence at the new rate.
+    rateSel.addEventListener("change", function () {
+        if (!playing || paused) return;
+        stopping = true;
+        window.speechSynthesis.cancel();
+        setTimeout(function () { stopping = false; speakNext(); }, 60);
+    });
+
+    window.addEventListener("pagehide", function () { window.speechSynthesis.cancel(); });
+})();
+</script>
+</div>
+<!-- ═══ END OPTIMA READ-ALOUD PLAYER ═══ -->
+
+    <!-- Title strip -->
+    <div style="background: #EEF1F8; border-left: 5px solid #0E1C42; border-radius: 7px; padding: 18px 22px; margin-bottom: 20px;">
+        <div style="font-size: 11px; color: #0e1c42; margin-bottom: 6px;">11.11 Lesson: Foreign Policy and International Organizations</div>
+        <div style="font-size: 22px; color: #0e1c42; margin-bottom: 4px;">Foreign Policy and International Organizations</div>
+        <div style="font-size: 16px; color: #666;">Lesson</div>
+    </div>
+
+    <div style="background: #FFFFFF; border-top: 3px solid #C7922C; border: 1px solid #D0D9E8; border-radius: 8px; padding: 20px 24px; margin-bottom: 20px;">
+        <div style="font-size: 11px; color: #c7922c; margin-bottom: 12px;">&#128214; TODAY'S FOCUS</div>
+        <div style="font-size: 20px; color: #0e1c42; font-style: italic; margin-bottom: 10px;">What does a republic owe its own liberty when it deals with the rest of the world?</div>
+        <div style="font-size: 18px; color: #1a2340; line-height: 1.65;">A republic cannot choose to have no foreign policy. What it does abroad lands at home, in taxes, in soldiers, and in the safety of its citizens. This lesson follows how Americans have argued about their place in the world.</div>
+    </div>
+
+    <div style="background: #FFFFFF; border: 1px solid #D0D9E8; border-radius: 8px; padding: 20px 24px; margin-bottom: 20px;">
+        <div style="font-size: 11px; color: #c7922c; margin-bottom: 14px;">&#127919; BY THE END OF THIS LESSON YOU WILL BE ABLE TO&hellip;</div>
+        <div style="display: flex; align-items: flex-start; gap: 12px; margin-bottom: 12px;">
+            <div style="min-width: 26px; height: 26px; border-radius: 50%; background: #C7922C; color: #fff; font-size: 13px; display: flex; align-items: center; justify-content: center; flex-shrink: 0;">1</div>
+            <div style="font-size: 18px; color: #1a2340; line-height: 1.65;"><strong>I will be able to</strong> explain how foreign policy and domestic life are tied together</div>
+        </div>
+        <div style="display: flex; align-items: flex-start; gap: 12px; margin-bottom: 12px;">
+            <div style="min-width: 26px; height: 26px; border-radius: 50%; background: #C7922C; color: #fff; font-size: 13px; display: flex; align-items: center; justify-content: center; flex-shrink: 0;">2</div>
+            <div style="font-size: 18px; color: #1a2340; line-height: 1.65;"><strong>I will be able to</strong> describe the Monroe Doctrine, the fight over the League of Nations, and the Truman Doctrine</div>
+        </div>
+        <div style="display: flex; align-items: flex-start; gap: 12px; margin-bottom: 0px;">
+            <div style="min-width: 26px; height: 26px; border-radius: 50%; background: #C7922C; color: #fff; font-size: 13px; display: flex; align-items: center; justify-content: center; flex-shrink: 0;">3</div>
+            <div style="font-size: 18px; color: #1a2340; line-height: 1.65;"><strong>I will be able to</strong> name the United Nations and NATO and explain how the United States takes part</div>
+        </div>
+    </div>
+
+    <div style="background: #FFFFFF; border: 1px solid #D0D9E8; border-radius: 8px; padding: 20px 24px; margin-bottom: 20px;">
+        <div style="font-size: 11px; color: #c7922c; margin-bottom: 14px;">&#128203; WHAT YOU NEED FOR THIS LESSON</div>
+        <div style="display: flex; align-items: flex-start; gap: 10px; margin-bottom: 8px; border-left: 3px solid #D0D9E8; padding-left: 14px;"><span style="color: #c7922c; font-size: 18px; flex-shrink: 0;">&#9654;</span>
+            <div style="font-size: 18px; color: #1a2340; line-height: 1.6;">A notebook and something to write with, for your own notes.</div>
+        </div>
+    </div>
+
+    <div style="background: #FFFFFF; border-top: 3px solid #C7922C; border: 1px solid #D0D9E8; border-radius: 8px; padding: 20px 24px; margin-bottom: 20px;">
+        <div style="font-size: 11px; color: #c7922c; margin-bottom: 14px; display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 8px;"><span>&#128218; PART 1 &middot; Home and Abroad</span><span style="background: #C7922C; color: #fff; font-size: 13px; padding: 3px 10px; border-radius: 10px; white-space: nowrap;">13 min</span></div>
+
+        <div class="callout glossary">
+            <div class="callout-kicker">&#128214; Glossary of Subject Vocabulary</div>
+            <p class="glossary-note">A few words worth knowing before you read.</p>
+            <dl class="glossary-list">
+                <dt id="gloss-alliance">alliance <span class="phonetic">(uh-LY-ens)</span> <button class="gloss-audio" data-term="alliance" aria-label="Play pronunciation of alliance" onclick="speakGloss(event,'alliance')">&#128266;</button></dt>
+                <dd>A promise between countries to help defend one another.</dd>
+                <dt id="gloss-doctrine">doctrine <span class="phonetic">(DOK-trin)</span> <button class="gloss-audio" data-term="doctrine" aria-label="Play pronunciation of doctrine" onclick="speakGloss(event,'doctrine')">&#128266;</button></dt>
+                <dd>A statement of the principles a government will follow in a certain area of policy.</dd>
+                <dt id="gloss-foreign-policy">foreign policy <span class="phonetic">(FOR-in POL-ih-see)</span> <button class="gloss-audio" data-term="foreign policy" aria-label="Play pronunciation of foreign policy" onclick="speakGloss(event,'foreign policy')">&#128266;</button></dt>
+                <dd>A government&rsquo;s plan for how it will deal with other countries.</dd>
+                <dt id="gloss-isolationism">isolationism <span class="phonetic">(eye-suh-LAY-shun-iz-um)</span> <button class="gloss-audio" data-term="isolationism" aria-label="Play pronunciation of isolationism" onclick="speakGloss(event,'isolationism')">&#128266;</button></dt>
+                <dd>The belief that a country should stay out of other nations&rsquo; affairs and conflicts.</dd>
+                <dt id="gloss-treaty">treaty <span class="phonetic">(TREE-tee)</span> <button class="gloss-audio" data-term="treaty" aria-label="Play pronunciation of treaty" onclick="speakGloss(event,'treaty')">&#128266;</button></dt>
+                <dd>A formal agreement between countries. In the United States the President makes treaties, but two thirds of the Senate must approve them.</dd>
+            </dl>
+        </div>
+
+        <h3 style="font-size: 20px; color: #0e1c42; margin: 18px 0 8px 0;">Washington&rsquo;s Warning</h3>
+        <p style="font-size: 17px; color: #1a2340; line-height: 1.65; margin: 0 0 10px 0;">Every country has a <strong><span class="gloss" tabindex="0">foreign policy<button class="gloss-audio" aria-label="Play pronunciation" onclick="speakGloss(event,'foreign policy')">&#128266;</button><span class="gloss-tip"><span class="gloss-pron">FOR-in POL-ih-see</span>A government&rsquo;s plan for how it will deal with other countries.</span></span></strong>, a plan for dealing with other nations. In a republic, that policy is never separate from life at home. Wars cost money and lives. Trade changes prices and jobs. A <span class="gloss" tabindex="0">treaty<button class="gloss-audio" aria-label="Play pronunciation" onclick="speakGloss(event,'treaty')">&#128266;</button><span class="gloss-tip"><span class="gloss-pron">TREE-tee</span>A formal agreement between countries. In the United States the President makes treaties, but two thirds of the Senate must approve them.</span></span> may bind the country for years. So citizens have a stake in the choices their leaders make, and they have a voice, through votes, through the press, and through Congress. The Constitution divides the power too. The President makes <strong><span class="gloss" tabindex="0">treaties<button class="gloss-audio" aria-label="Play pronunciation" onclick="speakGloss(event,'treaty')">&#128266;</button><span class="gloss-tip"><span class="gloss-pron">TREE-tee</span>A formal agreement between countries. In the United States the President makes treaties, but two thirds of the Senate must approve them.</span></span></strong> and commands the army, but the Senate must approve <span class="gloss" tabindex="0">treaties<button class="gloss-audio" aria-label="Play pronunciation" onclick="speakGloss(event,'treaty')">&#128266;</button><span class="gloss-tip"><span class="gloss-pron">TREE-tee</span>A formal agreement between countries. In the United States the President makes treaties, but two thirds of the Senate must approve them.</span></span> by a two-thirds vote, and only Congress can declare war.</p>
+        <p style="font-size: 17px; color: #1a2340; line-height: 1.65; margin: 0 0 10px 0;">George Washington gave the first great advice. In his Farewell Address, he told Americans to deal fairly with all nations but to &ldquo;steer clear of permanent <span class="gloss" tabindex="0">alliances<button class="gloss-audio" aria-label="Play pronunciation" onclick="speakGloss(event,'alliance')">&#128266;</button><span class="gloss-tip"><span class="gloss-pron">uh-LY-ens</span>A promise between countries to help defend one another.</span></span>.&rdquo; The new republic was weak, and Europe was at war. Washington wanted time to grow strong. His advice later fed a belief called <strong><span class="gloss" tabindex="0">isolationism<button class="gloss-audio" aria-label="Play pronunciation" onclick="speakGloss(event,'isolationism')">&#128266;</button><span class="gloss-tip"><span class="gloss-pron">eye-suh-LAY-shun-iz-um</span>The belief that a country should stay out of other nations&rsquo; affairs and conflicts.</span></span></strong>, though Washington himself still supported trade and fair dealing with every country.</p>
+        <p style="font-size: 17px; color: #1a2340; line-height: 1.65; margin: 0 0 10px 0;">Washington gave a second warning. He said that a nation which feels strong love or strong hatred toward another country lets that feeling cloud its judgment. A republic, he thought, should decide its policy by its own interests and its own principles, not by loyalty to a foreign power. Many citizens today still judge a <span class="gloss" tabindex="0">foreign policy<button class="gloss-audio" aria-label="Play pronunciation" onclick="speakGloss(event,'foreign policy')">&#128266;</button><span class="gloss-tip"><span class="gloss-pron">FOR-in POL-ih-see</span>A government&rsquo;s plan for how it will deal with other countries.</span></span> by that standard.</p>
+        <h3 style="font-size: 20px; color: #0e1c42; margin: 18px 0 8px 0;">The Monroe Doctrine</h3>
+        <p style="font-size: 17px; color: #1a2340; line-height: 1.65; margin: 0 0 10px 0;">In 1823 President James Monroe added a second principle. Spain&rsquo;s colonies in Latin America had won their independence, and European kings talked of taking them back. Monroe told Congress that the Americas were no longer open to new colonies from Europe. He said the United States would regard any European effort to control the free nations of the Western Hemisphere as dangerous to its own peace and safety. In return, the United States would stay out of Europe&rsquo;s wars. This statement became known as the Monroe <strong><span class="gloss" tabindex="0">doctrine<button class="gloss-audio" aria-label="Play pronunciation" onclick="speakGloss(event,'doctrine')">&#128266;</button><span class="gloss-tip"><span class="gloss-pron">DOK-trin</span>A statement of the principles a government will follow in a certain area of policy.</span></span></strong>. At the time the United States had a small navy, and Great Britain&rsquo;s fleet did more to enforce it. But the idea lasted, and later Presidents used it often.</p>
+    </div>
+
+    <div style="background: #FFFFFF; border-top: 3px solid #C7922C; border: 1px solid #D0D9E8; border-radius: 8px; padding: 20px 24px; margin-bottom: 20px;">
+        <div style="font-size: 11px; color: #c7922c; margin-bottom: 14px; display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 8px;"><span>&#128218; PART 2 &middot; The Senate Says No</span><span style="background: #C7922C; color: #fff; font-size: 13px; padding: 3px 10px; border-radius: 10px; white-space: nowrap;">12 min</span></div>
+        <h3 style="font-size: 20px; color: #0e1c42; margin: 18px 0 8px 0;">The League of Nations</h3>
+        <p style="font-size: 17px; color: #1a2340; line-height: 1.65; margin: 0 0 10px 0;">For a century the United States mostly avoided European <strong><span class="gloss" tabindex="0">alliances<button class="gloss-audio" aria-label="Play pronunciation" onclick="speakGloss(event,'alliance')">&#128266;</button><span class="gloss-tip"><span class="gloss-pron">uh-LY-ens</span>A promise between countries to help defend one another.</span></span></strong>. Then came the First World War. In 1917 America joined the fight, and the war ended in 1918. President Woodrow Wilson helped write the peace <span class="gloss" tabindex="0">treaty<button class="gloss-audio" aria-label="Play pronunciation" onclick="speakGloss(event,'treaty')">&#128266;</button><span class="gloss-tip"><span class="gloss-pron">TREE-tee</span>A formal agreement between countries. In the United States the President makes treaties, but two thirds of the Senate must approve them.</span></span> at Versailles, and it included his greatest hope, the League of Nations, an organization of countries that promised to settle quarrels and to defend one another against attack.</p>
+        <p style="font-size: 17px; color: #1a2340; line-height: 1.65; margin: 0 0 10px 0;">Wilson brought the <span class="gloss" tabindex="0">treaty<button class="gloss-audio" aria-label="Play pronunciation" onclick="speakGloss(event,'treaty')">&#128266;</button><span class="gloss-tip"><span class="gloss-pron">TREE-tee</span>A formal agreement between countries. In the United States the President makes treaties, but two thirds of the Senate must approve them.</span></span> home, but the Senate had to approve it by two thirds. Some senators opposed the League outright, because they feared it would drag America into foreign wars. Others wanted changes to the <span class="gloss" tabindex="0">treaty<button class="gloss-audio" aria-label="Play pronunciation" onclick="speakGloss(event,'treaty')">&#128266;</button><span class="gloss-tip"><span class="gloss-pron">TREE-tee</span>A formal agreement between countries. In the United States the President makes treaties, but two thirds of the Senate must approve them.</span></span>. Wilson refused to accept those changes. In 1919 and 1920 the Senate voted on the <span class="gloss" tabindex="0">treaty<button class="gloss-audio" aria-label="Play pronunciation" onclick="speakGloss(event,'treaty')">&#128266;</button><span class="gloss-tip"><span class="gloss-pron">TREE-tee</span>A formal agreement between countries. In the United States the President makes treaties, but two thirds of the Senate must approve them.</span></span> and did not reach two thirds. The United States never joined the League.</p>
+        <p style="font-size: 17px; color: #1a2340; line-height: 1.65; margin: 0 0 10px 0;">Consider what might have happened if the Senate had approved it. Some believe the League would have been stronger with America as a member, and that the world might have avoided another great war. Others doubt it, and point out that the League had no army of its own. Either way, the vote shows a citizen&rsquo;s power. A <span class="gloss" tabindex="0">treaty<button class="gloss-audio" aria-label="Play pronunciation" onclick="speakGloss(event,'treaty')">&#128266;</button><span class="gloss-tip"><span class="gloss-pron">TREE-tee</span>A formal agreement between countries. In the United States the President makes treaties, but two thirds of the Senate must approve them.</span></span> needed the agreement of two thirds of the Senate, and senators answer to voters.</p>
+    </div>
+
+    <div style="background: #FFFFFF; border-top: 3px solid #C7922C; border: 1px solid #D0D9E8; border-radius: 8px; padding: 20px 24px; margin-bottom: 20px;">
+        <div style="font-size: 11px; color: #c7922c; margin-bottom: 14px; display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 8px;"><span>&#128218; PART 3 &middot; The United Nations, NATO, and Truman</span><span style="background: #C7922C; color: #fff; font-size: 13px; padding: 3px 10px; border-radius: 10px; white-space: nowrap;">13 min</span></div>
+        <h3 style="font-size: 20px; color: #0e1c42; margin: 18px 0 8px 0;">A New Order After War</h3>
+        <p style="font-size: 17px; color: #1a2340; line-height: 1.65; margin: 0 0 10px 0;">The attack on Pearl Harbor in December 1941 brought America into the Second World War. When the war ended in 1945, most Americans did not want to repeat the mistake of walking away. The United States helped found the United Nations that year, with its home in New York. The UN works to keep peace, settle quarrels, and help in disasters. In 1949 the United States and eleven other countries formed the North Atlantic <span class="gloss" tabindex="0">Treaty<button class="gloss-audio" aria-label="Play pronunciation" onclick="speakGloss(event,'treaty')">&#128266;</button><span class="gloss-tip"><span class="gloss-pron">TREE-tee</span>A formal agreement between countries. In the United States the President makes treaties, but two thirds of the Senate must approve them.</span></span> Organization, or NATO, an <strong><span class="gloss" tabindex="0">alliance<button class="gloss-audio" aria-label="Play pronunciation" onclick="speakGloss(event,'alliance')">&#128266;</button><span class="gloss-tip"><span class="gloss-pron">uh-LY-ens</span>A promise between countries to help defend one another.</span></span></strong> for mutual defense. Its main promise is that an attack on one member is an attack on all.</p>
+        <p style="font-size: 17px; color: #1a2340; line-height: 1.65; margin: 0 0 10px 0;">The memory of the failed League and of Pearl Harbor changed American opinion. Before the attack, many Americans were <span class="gloss" tabindex="0">isolationists<button class="gloss-audio" aria-label="Play pronunciation" onclick="speakGloss(event,'isolationism')">&#128266;</button><span class="gloss-tip"><span class="gloss-pron">eye-suh-LAY-shun-iz-um</span>The belief that a country should stay out of other nations&rsquo; affairs and conflicts.</span></span> and wanted to stay out of the war in Europe and Asia. After it, most agreed that the country could not simply stand apart from the world.</p>
+        <h3 style="font-size: 20px; color: #0e1c42; margin: 18px 0 8px 0;">The Truman Doctrine</h3>
+        <p style="font-size: 17px; color: #1a2340; line-height: 1.65; margin: 0 0 10px 0;">After the war, the Soviet Union and the United States became rivals. In 1947 Greece was fighting a civil war against communist rebels, and Turkey was under pressure from the Soviets. Britain could no longer afford to help them. President Harry Truman asked Congress for money for both countries. He said that the United States must support free peoples who are resisting being forced into a communist system. This became known as the Truman <strong><span class="gloss" tabindex="0">doctrine<button class="gloss-audio" aria-label="Play pronunciation" onclick="speakGloss(event,'doctrine')">&#128266;</button><span class="gloss-tip"><span class="gloss-pron">DOK-trin</span>A statement of the principles a government will follow in a certain area of policy.</span></span></strong>. Congress approved the aid, and it set the pattern for years of Cold War policy.</p>
+        <p style="font-size: 17px; color: #1a2340; line-height: 1.65; margin: 0 0 10px 0;">How do citizens take part? They vote for the President and for senators who approve <span class="gloss" tabindex="0">treaties<button class="gloss-audio" aria-label="Play pronunciation" onclick="speakGloss(event,'treaty')">&#128266;</button><span class="gloss-tip"><span class="gloss-pron">TREE-tee</span>A formal agreement between countries. In the United States the President makes treaties, but two thirds of the Senate must approve them.</span></span>. They follow the news and speak up. Some serve in the armed forces or work for groups that help people overseas. And after September 11, 2001, Americans saw again how events abroad can reach home. The answer to the opening question is still argued. Some say America should lead, because freedom is safer in a world of free nations. Others say America should be careful, because every commitment costs money and lives. A citizen should weigh both.</p>
+    </div>
+
+    <div style="background: #FFFFFF; border-top: 3px solid #0E1C42; border: 1px solid #D0D9E8; border-radius: 8px; padding: 20px 24px; margin-bottom: 20px;">
+        <div style="font-size: 11px; color: #c7922c; margin-bottom: 16px;">&#10145;&#65039; WHAT YOU'LL DO NEXT</div>
+        <div style="display: flex; align-items: flex-start; gap: 14px; margin-bottom: 16px;">
+            <div style="min-width: 34px; height: 34px; border-radius: 50%; background: #0E1C42; color: #fff; font-size: 16px; display: flex; align-items: center; justify-content: center; flex-shrink: 0;">1</div>
+            <div>
+                <div style="font-size: 18px; color: #0e1c42; margin-bottom: 4px;"><strong>11.12 Reading Quiz: Foreign Policy and International Organizations</strong> (Canvas)</div>
+                <div style="font-size: 16px; color: #1a2340; line-height: 1.55;">Five questions on how foreign policy connects to life at home, the Monroe Doctrine, the League of Nations, the United Nations and NATO, and the Truman Doctrine.</div>
+            </div>
+        </div>
+        <div style="display: flex; align-items: flex-start; gap: 14px; margin-bottom: 16px;">
+            <div style="min-width: 34px; height: 34px; border-radius: 50%; background: #0E1C42; color: #fff; font-size: 16px; display: flex; align-items: center; justify-content: center; flex-shrink: 0;">2</div>
+            <div>
+                <div style="font-size: 18px; color: #0e1c42; margin-bottom: 4px;"><strong>11.13 Primary Source: Monroe, Seventh Annual Message (1823)</strong> (Canvas)</div>
+                <div style="font-size: 16px; color: #1a2340; line-height: 1.55;">Read part of President Monroe&rsquo;s message to Congress and answer two questions.</div>
+            </div>
+        </div>
+    </div>
+
+    <div style="background: #FFFFFF; border-top: 3px solid #C7922C; border: 1px solid #D0D9E8; border-radius: 8px; padding: 20px 24px; margin-bottom: 20px;">
+        <div style="font-size: 11px; color: #c7922c; margin-bottom: 12px;">&#128170; CARRY THIS FORWARD</div>
+        <p style="font-size: 18px; color: #1a2340; line-height: 1.65; margin: 0;">Foreign policy and life at home are tied together. Washington warned against permanent alliances, and Monroe closed the Western Hemisphere to new colonies. The Senate refused the League of Nations, and after the Second World War America helped found the United Nations and NATO and issued the Truman Doctrine.</p>
+    </div>
+
+</div>
+
+<!-- ===== FOOTER ===== -->
+<div style="background: #0E1C42; border-top: 3px solid #55C8E8; padding: 18px 34px; text-align: center;">
+    <div style="font-size: 18px; color: #ffffff; margin-bottom: 6px;"><span style="color: #55c8e8;">Optima Academy Online</span> &middot; M/J CIVICS &middot; Quarter 4 &middot; Student Lesson Page</div>
+    <div style="font-size: 13px; color: rgba(255,255,255,0.65); margin-bottom: 4px;">11.11 Lesson: Foreign Policy and International Organizations &middot; Foreign Policy and International Organizations</div>
+    <div style="font-size: 12px; color: rgba(255,255,255,0.4);">&copy; Optima Academy Online &middot; An Education Experience Company</div>
+</div>
+
+</div>
+
+<!-- ===== WIDGET RUNTIME (byte-consistent across this site) ===== -->
+<script>
+function speakGloss(e, text) {
+  e.stopPropagation();
+  if ('speechSynthesis' in window) {
+    window.speechSynthesis.cancel();
+    var u = new SpeechSynthesisUtterance(text);
+    u.rate = 0.85;
+    window.speechSynthesis.speak(u);
+  }
+}
+(function () {
+  document.addEventListener('click', function (e) {
+    var reset = e.target.closest('.widget-reset');
+    if (reset) {
+      var w = reset.closest('.optima-widget');
+      w.querySelectorAll('.widget-options button').forEach(function (b) { b.classList.remove('selected', 'correct', 'incorrect'); });
+      w.querySelectorAll('.widget-feedback').forEach(function (f) { f.classList.remove('show'); f.textContent = ''; });
+      w.querySelectorAll('.row-feedback').forEach(function (f) { f.remove(); });
+      w.querySelectorAll('.ow-flip.flipped').forEach(function (c) { c.classList.remove('flipped'); });
+      if (w.classList.contains('ow-flip')) { w.classList.remove('flipped'); }
+      return;
+    }
+    var rBtn = e.target.closest('.ow-reflect .widget-options button');
+    if (rBtn) {
+      var rw = rBtn.closest('.optima-widget');
+      rw.querySelectorAll('.widget-options button').forEach(function (b) { b.classList.remove('selected'); });
+      rBtn.classList.add('selected');
+      var fb = rw.querySelector('.widget-feedback');
+      fb.textContent = rBtn.dataset.response || '';
+      fb.classList.add('show');
+      return;
+    }
+    var sBtn = e.target.closest('.ow-select .widget-row .widget-options button, .ow-scale .widget-row .widget-options button');
+    if (sBtn) {
+      var row = sBtn.closest('.widget-row');
+      var correct = row.dataset.correct;
+      row.querySelectorAll('.widget-options button').forEach(function (b) { b.classList.remove('selected', 'correct', 'incorrect'); });
+      var right = sBtn.dataset.choice === correct;
+      sBtn.classList.add(right ? 'correct' : 'incorrect');
+      var text = right ? (sBtn.dataset.fb || row.dataset.fb || 'Right.') : (sBtn.dataset.fb || row.dataset.hint || 'Not quite. Try again.');
+      var rf = row.querySelector('.row-feedback') || row.appendChild(document.createElement('div'));
+      rf.className = 'row-feedback ' + (right ? 'correct' : 'incorrect');
+      rf.textContent = text;
+      return;
+    }
+    var flip = e.target.closest('.ow-flip');
+    if (flip) { flip.classList.toggle('flipped'); return; }
+  });
+})();
+</script>
+
+</body>
+</html>
