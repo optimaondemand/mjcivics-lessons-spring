@@ -4,35 +4,12 @@
 <meta charset="utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1" />
 <title>M/J Civics &mdash; Lesson: The 19th, 24th, and 26th Amendments</title>
+<link rel="stylesheet" href="../../shared/widgets.css">
 <style>
     body { margin: 0; padding: 0; font-family: "Segoe UI", Roboto, Helvetica, Arial, sans-serif; background: #f4f6fa; }
     .canvas-frame { max-width: 1100px; margin: 0 auto; background: #ffffff; box-shadow: 0 2px 8px rgba(0,0,0,0.08); }
 
-    /* ===== WIDGET CSS (byte-consistent across this site) ===== */
-    .optima-widget { background: linear-gradient(135deg, #E8F6FB 0%, #F4F9FC 100%); border: 1px solid #C5DCE5; border-left: 5px solid #2196D0; border-radius: 8px; padding: 18px 22px; margin: 18px 0; }
-    .widget-kicker { font-size: 11px; color: #1B6A94; margin-bottom: 10px; letter-spacing: 0.4px; }
-    .widget-question { font-size: 17px; color: #0E1C42; margin-bottom: 14px; line-height: 1.55; }
-    .widget-row { background: #FFFFFF; border: 1px solid #D0D9E8; border-radius: 6px; padding: 12px 14px; margin-bottom: 10px; }
-    .widget-row-prompt { font-size: 15px; color: #0E1C42; margin-bottom: 8px; line-height: 1.5; font-style: italic; }
-    .widget-options { display: flex; flex-wrap: wrap; gap: 8px; }
-    .widget-options button { background: #FFFFFF; border: 1.5px solid #D0D9E8; border-radius: 8px; padding: 8px 14px; font-size: 14px; color: #0E1C42; cursor: pointer; transition: all 0.15s; font-family: inherit; }
-    .widget-options button:hover { background: #F4F6FA; border-color: #55C8E8; }
-    .widget-options button.selected { background: #0E1C42; color: #FFFFFF; border-color: #0E1C42; }
-    .widget-options button.correct { background: #D8F0DD; border-color: #2A9D5C; color: #1A6B3D; }
-    .widget-options button.incorrect { background: #FDECEC; border-color: #C0392B; color: #8A1F16; }
-    .widget-feedback { background: #FFFFFF; border-left: 3px solid #C7922C; padding: 10px 14px; font-size: 15px; color: #1a2340; line-height: 1.55; margin: 10px 0; display: none; border-radius: 4px; }
-    .widget-feedback.show { display: block; }
-    .row-feedback { padding: 8px 12px; margin-top: 8px; font-size: 14px; border-radius: 4px; line-height: 1.5; }
-    .row-feedback.correct { background: #D8F0DD; border-left: 3px solid #2A9D5C; color: #1A6B3D; }
-    .row-feedback.incorrect { background: #FDECEC; border-left: 3px solid #C0392B; color: #8A1F16; }
-    .widget-reset { background: transparent; border: 1px solid #C7922C; color: #C7922C; border-radius: 6px; padding: 6px 12px; font-size: 12px; cursor: pointer; font-family: inherit; margin-top: 6px; }
-    .widget-reset:hover { background: #FDF3E3; }
-    .ow-scale .widget-options { justify-content: space-between; }
-    .ow-scale .widget-options button { flex: 1; text-align: center; }
-    .ow-flip { background: #FFFFFF; border: 1px solid #D0D9E8; border-radius: 8px; padding: 18px 20px; cursor: pointer; text-align: center; }
-    .ow-flip .ow-flip-back { display: none; color: #1a2340; }
-    .ow-flip.flipped .ow-flip-front { display: none; }
-    .ow-flip.flipped .ow-flip-back { display: block; }
+    /* widget styles live in ../../shared/widgets.css (linked below) */
 
     /* ===== VOCABULARY GLOSSARY (byte-consistent across this site) ===== */
     .callout { border-radius: 6px; padding: 14px 20px; margin: 14px 0; }
@@ -388,6 +365,12 @@
         <h3 style="font-size: 20px; color: #0e1c42; margin: 18px 0 8px 0;">Seneca Falls, 1848</h3>
         <p style="font-size: 17px; color: #1a2340; line-height: 1.65; margin: 0 0 10px 0;">In July 1848, about three hundred people met in Seneca Falls, New York. Elizabeth Cady Stanton and Lucretia Mott had called the meeting to talk about the rights of women. Stanton wrote a document for it, the Declaration of <strong><span class="gloss" tabindex="0">Sentiments<button class="gloss-audio" aria-label="Play pronunciation" onclick="speakGloss(event,'sentiment')">&#128266;</button><span class="gloss-tip"><span class="gloss-pron">SEN-tih-ment</span>A feeling or opinion about something.</span></span></strong>. It was written on the model of the Declaration of Independence, and the copy was deliberate. The writers wanted to show that the American promise of liberty was meant for women too.</p>
         <p style="font-size: 17px; color: #1a2340; line-height: 1.65; margin: 0 0 10px 0;">The Declaration of Independence says, &ldquo;all men are created equal.&rdquo; The Declaration of <span class="gloss" tabindex="0">Sentiments<button class="gloss-audio" aria-label="Play pronunciation" onclick="speakGloss(event,'sentiment')">&#128266;</button><span class="gloss-tip"><span class="gloss-pron">SEN-tih-ment</span>A feeling or opinion about something.</span></span> says, &ldquo;all men and women are created equal.&rdquo; Like Jefferson&rsquo;s document, it listed grievances. It said that women could not vote, could not hold most property once they married, and could not enter most schools or trades. It asked for <strong><span class="gloss" tabindex="0">suffrage<button class="gloss-audio" aria-label="Play pronunciation" onclick="speakGloss(event,'suffrage')">&#128266;</button><span class="gloss-tip"><span class="gloss-pron">SUF-rij</span>The right to vote.</span></span></strong>. Frederick Douglass, who was there, spoke up for the demand when others hesitated. The call for the vote was the boldest demand, and it was the one that took longest to win.</p>
+    <div class="optima-widget ow-flip" data-engine="flip" data-widget="sentiments-cards">
+    <div class="widget-kicker">Flip the cards</div>
+    <div class="widget-question">Think of your answer first, then tap each card to check.</div>
+    <div class="ow-cards"><button type="button" class="ow-card"><span class="ow-front">The Declaration of Independence says, &ldquo;all men are created equal.&rdquo; What does the Declaration of Sentiments say?<span class="ow-hint">Tap to flip</span></span><span class="ow-back">&ldquo;All men and women are created equal.&rdquo; The copy was deliberate.</span></button><button type="button" class="ow-card"><span class="ow-front">What did the Declaration of Sentiments list, as Jefferson&rsquo;s document did?<span class="ow-hint">Tap to flip</span></span><span class="ow-back">Grievances. Women could not vote, could not hold most property once married, and could not enter most schools or trades.</span></button><button type="button" class="ow-card"><span class="ow-front">Which demand was the boldest, and the one that took longest to win?<span class="ow-hint">Tap to flip</span></span><span class="ow-back">The call for the vote, which is called suffrage.</span></button></div>
+    <button type="button" class="widget-reset">Reset</button>
+    </div>
         <h3 style="font-size: 20px; color: #0e1c42; margin: 18px 0 8px 0;">The Long Argument</h3>
         <p style="font-size: 17px; color: #1a2340; line-height: 1.65; margin: 0 0 10px 0;">Women then argued for decades. Susan B. Anthony traveled the country to speak. In 1872 she voted in a national election to test the law, and she was arrested and fined. She died in 1906, fourteen years before the amendment was passed. In the 1910s a new group led by Alice Paul held marches and stood outside the White House with signs. Some were jailed for it, and some went on hunger strikes in prison.</p>
         <p style="font-size: 17px; color: #1a2340; line-height: 1.65; margin: 0 0 10px 0;">Some places moved first and gave women the vote on their own. Wyoming did so as a territory in 1869. Yet the movement wanted a rule for the whole nation. That meant an amendment. Congress finally proposed the 19th Amendment in June 1919. It needed thirty-six states to <span class="gloss" tabindex="0">ratify<button class="gloss-audio" aria-label="Play pronunciation" onclick="speakGloss(event,'ratify')">&#128266;</button><span class="gloss-tip"><span class="gloss-pron">RAT-ih-fy</span>To approve something officially so that it becomes law.</span></span> it. By the summer of 1920, thirty-five had done so, and the last one needed was Tennessee.</p>
@@ -404,10 +387,25 @@
         <h3 style="font-size: 20px; color: #0e1c42; margin: 18px 0 8px 0;">The 26th Amendment, 1971</h3>
         <p style="font-size: 17px; color: #1a2340; line-height: 1.65; margin: 0 0 10px 0;">The last amendment of the three came out of a war. In the 1960s the United States drafted young men to fight in Vietnam. Many of them were eighteen, and they were too young to vote. People said, &ldquo;Old enough to fight, old enough to vote.&rdquo; Earlier in this course you studied President Johnson&rsquo;s speech defending the war. The war made the question of age hard to ignore.</p>
         <p style="font-size: 17px; color: #1a2340; line-height: 1.65; margin: 0 0 10px 0;">In 1970 Congress had passed a law setting the voting age at eighteen for all elections. The Supreme Court said Congress could do that only for federal elections. States would have needed two sets of ballots, so the nation chose an amendment. Congress proposed the 26th Amendment in March 1971. The states <span class="gloss" tabindex="0">ratified<button class="gloss-audio" aria-label="Play pronunciation" onclick="speakGloss(event,'ratify')">&#128266;</button><span class="gloss-tip"><span class="gloss-pron">RAT-ih-fy</span>To approve something officially so that it becomes law.</span></span> it in about one hundred days, faster than any amendment before it. It lowered the voting age to eighteen across the nation.</p>
+    <div class="optima-widget ow-sort" data-engine="sort" data-widget="problem-to-amendment">
+    <div class="widget-kicker">Sort it</div>
+    <div class="widget-question">Each clue points to one amendment. Tap a clue, then tap the amendment it belongs to.</div>
+    <div class="ow-pool"><button type="button" class="ow-item" data-bin="0" data-why="Right. This was the movement of Alice Paul in the 1910s." data-hint="Think about which amendment gave women the vote.">Women marched, stood outside the White House with signs, and some were jailed.</button><button type="button" class="ow-item" data-bin="1" data-why="Right. The poll tax was banned in federal elections in 1964." data-hint="Think about which amendment dealt with a fee to vote.">Voters had to pay a fee, and many poor citizens could not afford it.</button><button type="button" class="ow-item" data-bin="2" data-why="Right. &ldquo;Old enough to fight, old enough to vote.&rdquo;" data-hint="Think about which amendment changed the voting age.">Young men were drafted to fight in Vietnam but could not vote.</button><button type="button" class="ow-item" data-bin="2" data-why="Right. Two sets of ballots would have been needed, so the nation chose an amendment." data-hint="Think about which amendment was about age.">Congress set age eighteen by law, but the Court said that covered only federal elections.</button><button type="button" class="ow-item" data-bin="0" data-why="Right. Harry Burn changed his vote, and the amendment became law." data-hint="Think about which amendment depended on a vote in Tennessee.">The final count in the Tennessee House was 49 to 47.</button><button type="button" class="ow-item" data-bin="1" data-why="Right. Two years later the Court also struck down poll taxes in state elections." data-hint="Think about which amendment ended a fee for voters.">Only a handful of Southern states still used this fee by then.</button></div>
+    <div class="ow-bins"><div class="ow-bin" data-bin="0" role="button" tabindex="0"><div class="ow-bin-title">The 19th Amendment</div><ul></ul></div><div class="ow-bin" data-bin="1" role="button" tabindex="0"><div class="ow-bin-title">The 24th Amendment</div><ul></ul></div><div class="ow-bin" data-bin="2" role="button" tabindex="0"><div class="ow-bin-title">The 26th Amendment</div><ul></ul></div></div>
+    <div class="widget-feedback" role="status" aria-live="polite"></div>
+    <button type="button" class="widget-reset">Reset</button>
+    </div>
         <h3 style="font-size: 20px; color: #0e1c42; margin: 18px 0 8px 0;">What the Four Share</h3>
         <p style="font-size: 17px; color: #1a2340; line-height: 1.65; margin: 0 0 10px 0;">Look back at the four amendments you have now seen: the 15th, 19th, 24th, and 26th. None of them was handed down from above. Each widened the republic by working through the republic&rsquo;s own rules, with proposals in Congress and votes in the states. That shows a republic can widen its people without breaking itself.</p>
         <p style="font-size: 17px; color: #1a2340; line-height: 1.65; margin: 0 0 10px 0;">Was the slow pace a fault or a safeguard? Fair people disagree. The same rules that made these changes so slow also made them hard to undo. Nobody has ever repealed an amendment that widened the vote.</p>
         <p style="font-size: 17px; color: #1a2340; line-height: 1.65; margin: 0 0 10px 0;">It also shows what citizens have to do. The women of Seneca Falls spoke up. Anthony voted and was fined for it. Paul stood outside in the cold. Burn listened to his mother. The ballot had to be argued for, one person at a time.</p>
+    <div class="optima-widget ow-reflect" data-engine="reflect" data-widget="effort-check">
+    <div class="widget-kicker">Check in</div>
+    <div class="widget-question">Each of these people did something different. Which kind of effort would you find easiest to join? There is no wrong answer.</div>
+    <div class="widget-options"><button type="button" data-i="0" data-response="Speaking up was where the movement began, and it was the first step toward the vote.">Speaking up at a meeting, as the women at Seneca Falls did</button><button type="button" data-i="1" data-response="She was arrested and fined. She died in 1906, fourteen years before the amendment passed.">Voting to test the law, as Susan B. Anthony did</button><button type="button" data-i="2" data-response="Some of them were jailed for it, and some went on hunger strikes in prison.">Standing outside with a sign, as Alice Paul&rsquo;s group did</button><button type="button" data-i="3" data-response="Burn said a letter from his mother changed his mind. One vote changed the story.">Listening, and changing my mind, as Harry Burn did</button></div>
+    <div class="widget-feedback" role="status" aria-live="polite"></div>
+    <button type="button" class="widget-reset">Reset</button>
+    </div>
     </div>
 
     <div style="background: #FFFFFF; border-top: 3px solid #0E1C42; border: 1px solid #D0D9E8; border-radius: 8px; padding: 20px 24px; margin-bottom: 20px;">
@@ -448,46 +446,8 @@ function speakGloss(e, text) {
     window.speechSynthesis.speak(u);
   }
 }
-(function () {
-  document.addEventListener('click', function (e) {
-    var reset = e.target.closest('.widget-reset');
-    if (reset) {
-      var w = reset.closest('.optima-widget');
-      w.querySelectorAll('.widget-options button').forEach(function (b) { b.classList.remove('selected', 'correct', 'incorrect'); });
-      w.querySelectorAll('.widget-feedback').forEach(function (f) { f.classList.remove('show'); f.textContent = ''; });
-      w.querySelectorAll('.row-feedback').forEach(function (f) { f.remove(); });
-      w.querySelectorAll('.ow-flip.flipped').forEach(function (c) { c.classList.remove('flipped'); });
-      if (w.classList.contains('ow-flip')) { w.classList.remove('flipped'); }
-      return;
-    }
-    var rBtn = e.target.closest('.ow-reflect .widget-options button');
-    if (rBtn) {
-      var rw = rBtn.closest('.optima-widget');
-      rw.querySelectorAll('.widget-options button').forEach(function (b) { b.classList.remove('selected'); });
-      rBtn.classList.add('selected');
-      var fb = rw.querySelector('.widget-feedback');
-      fb.textContent = rBtn.dataset.response || '';
-      fb.classList.add('show');
-      return;
-    }
-    var sBtn = e.target.closest('.ow-select .widget-row .widget-options button, .ow-scale .widget-row .widget-options button');
-    if (sBtn) {
-      var row = sBtn.closest('.widget-row');
-      var correct = row.dataset.correct;
-      row.querySelectorAll('.widget-options button').forEach(function (b) { b.classList.remove('selected', 'correct', 'incorrect'); });
-      var right = sBtn.dataset.choice === correct;
-      sBtn.classList.add(right ? 'correct' : 'incorrect');
-      var text = right ? (sBtn.dataset.fb || row.dataset.fb || 'Right.') : (sBtn.dataset.fb || row.dataset.hint || 'Not quite. Try again.');
-      var rf = row.querySelector('.row-feedback') || row.appendChild(document.createElement('div'));
-      rf.className = 'row-feedback ' + (right ? 'correct' : 'incorrect');
-      rf.textContent = text;
-      return;
-    }
-    var flip = e.target.closest('.ow-flip');
-    if (flip) { flip.classList.toggle('flipped'); return; }
-  });
-})();
 </script>
+<script src="../../shared/widgets.js"></script>
 
 </body>
 </html>

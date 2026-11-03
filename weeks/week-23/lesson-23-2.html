@@ -4,35 +4,12 @@
 <meta charset="utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1" />
 <title>M/J Civics &mdash; Lesson: Florida&rsquo;s Constitution, Sources of Law, and Local Problems</title>
+<link rel="stylesheet" href="../../shared/widgets.css">
 <style>
     body { margin: 0; padding: 0; font-family: "Segoe UI", Roboto, Helvetica, Arial, sans-serif; background: #f4f6fa; }
     .canvas-frame { max-width: 1100px; margin: 0 auto; background: #ffffff; box-shadow: 0 2px 8px rgba(0,0,0,0.08); }
 
-    /* ===== WIDGET CSS (byte-consistent across this site) ===== */
-    .optima-widget { background: linear-gradient(135deg, #E8F6FB 0%, #F4F9FC 100%); border: 1px solid #C5DCE5; border-left: 5px solid #2196D0; border-radius: 8px; padding: 18px 22px; margin: 18px 0; }
-    .widget-kicker { font-size: 11px; color: #1B6A94; margin-bottom: 10px; letter-spacing: 0.4px; }
-    .widget-question { font-size: 17px; color: #0E1C42; margin-bottom: 14px; line-height: 1.55; }
-    .widget-row { background: #FFFFFF; border: 1px solid #D0D9E8; border-radius: 6px; padding: 12px 14px; margin-bottom: 10px; }
-    .widget-row-prompt { font-size: 15px; color: #0E1C42; margin-bottom: 8px; line-height: 1.5; font-style: italic; }
-    .widget-options { display: flex; flex-wrap: wrap; gap: 8px; }
-    .widget-options button { background: #FFFFFF; border: 1.5px solid #D0D9E8; border-radius: 8px; padding: 8px 14px; font-size: 14px; color: #0E1C42; cursor: pointer; transition: all 0.15s; font-family: inherit; }
-    .widget-options button:hover { background: #F4F6FA; border-color: #55C8E8; }
-    .widget-options button.selected { background: #0E1C42; color: #FFFFFF; border-color: #0E1C42; }
-    .widget-options button.correct { background: #D8F0DD; border-color: #2A9D5C; color: #1A6B3D; }
-    .widget-options button.incorrect { background: #FDECEC; border-color: #C0392B; color: #8A1F16; }
-    .widget-feedback { background: #FFFFFF; border-left: 3px solid #C7922C; padding: 10px 14px; font-size: 15px; color: #1a2340; line-height: 1.55; margin: 10px 0; display: none; border-radius: 4px; }
-    .widget-feedback.show { display: block; }
-    .row-feedback { padding: 8px 12px; margin-top: 8px; font-size: 14px; border-radius: 4px; line-height: 1.5; }
-    .row-feedback.correct { background: #D8F0DD; border-left: 3px solid #2A9D5C; color: #1A6B3D; }
-    .row-feedback.incorrect { background: #FDECEC; border-left: 3px solid #C0392B; color: #8A1F16; }
-    .widget-reset { background: transparent; border: 1px solid #C7922C; color: #C7922C; border-radius: 6px; padding: 6px 12px; font-size: 12px; cursor: pointer; font-family: inherit; margin-top: 6px; }
-    .widget-reset:hover { background: #FDF3E3; }
-    .ow-scale .widget-options { justify-content: space-between; }
-    .ow-scale .widget-options button { flex: 1; text-align: center; }
-    .ow-flip { background: #FFFFFF; border: 1px solid #D0D9E8; border-radius: 8px; padding: 18px 20px; cursor: pointer; text-align: center; }
-    .ow-flip .ow-flip-back { display: none; color: #1a2340; }
-    .ow-flip.flipped .ow-flip-front { display: none; }
-    .ow-flip.flipped .ow-flip-back { display: block; }
+    /* widget styles live in ../../shared/widgets.css (linked below) */
 
     /* ===== VOCABULARY GLOSSARY (byte-consistent across this site) ===== */
     .callout { border-radius: 6px; padding: 14px 20px; margin: 14px 0; }
@@ -393,11 +370,32 @@
         <p style="font-size: 17px; color: #1a2340; line-height: 1.65; margin: 0 0 10px 0;">Every state has its own constitution. Florida voters approved the one that governs the state today in 1968. It does the same work as the national Constitution. It sets up a legislature, a governor, and courts, and it limits what they can do. But it differs from the national one in some ways. A state constitution may not contradict the national Constitution. When the two clash, the national one wins.</p>
         <p style="font-size: 17px; color: #1a2340; line-height: 1.65; margin: 0 0 10px 0;">First, it begins with a Declaration of Rights. Article I lists the rights of the people before it says anything about government. The United States Constitution put its list in amendments, after the rest. Putting rights first says that they come before the government does.</p>
         <p style="font-size: 17px; color: #1a2340; line-height: 1.65; margin: 0 0 10px 0;">Second, Florida&rsquo;s constitution is much longer. State governments handle more of daily life, and so they need more rules. Third, it is easier to change. Citizens can sometimes put an amendment on the ballot themselves, and most changes need at least sixty percent of the voters. The Legislature and special commissions can also put amendments on the ballot. The national Constitution has been amended only twenty-seven times.</p>
+    <div class="optima-widget ow-flip" data-engine="flip" data-widget="florida-cards">
+    <div class="widget-kicker">Flip the cards</div>
+    <div class="widget-question">Think of your answer first, then tap each card to check.</div>
+    <div class="ow-cards"><button type="button" class="ow-card"><span class="ow-front">Where does Florida&rsquo;s constitution put the rights of the people?<span class="ow-hint">Tap to flip</span></span><span class="ow-back">First. Article I is a Declaration of Rights. The national Constitution put its list in amendments, after the rest.</span></button><button type="button" class="ow-card"><span class="ow-front">How long is Florida&rsquo;s constitution compared with the national one?<span class="ow-hint">Tap to flip</span></span><span class="ow-back">Much longer. State governments handle more of daily life, so they need more rules.</span></button><button type="button" class="ow-card"><span class="ow-front">How easy is it to change Florida&rsquo;s constitution?<span class="ow-hint">Tap to flip</span></span><span class="ow-back">Easier. Citizens can sometimes put an amendment on the ballot themselves, and most changes need at least sixty percent of the voters.</span></button><button type="button" class="ow-card"><span class="ow-front">What if the two constitutions clash?<span class="ow-hint">Tap to flip</span></span><span class="ow-back">The national Constitution wins.</span></button></div>
+    <button type="button" class="widget-reset">Reset</button>
+    </div>
         <h3 style="font-size: 20px; color: #0e1c42; margin: 18px 0 8px 0;">Four Sources of Law</h3>
         <p style="font-size: 17px; color: #1a2340; line-height: 1.65; margin: 0 0 10px 0;">Law comes from several places. A constitution is the highest law, and every other law must obey it. If a <span class="gloss" tabindex="0">statute<button class="gloss-audio" aria-label="Play pronunciation" onclick="speakGloss(event,'statute')">&#128266;</button><span class="gloss-tip"><span class="gloss-pron">STACH-oot</span>A written law passed by a legislature such as Congress or the Florida Legislature.</span></span> breaks the constitution, a court can strike it down. A <strong><span class="gloss" tabindex="0">statute<button class="gloss-audio" aria-label="Play pronunciation" onclick="speakGloss(event,'statute')">&#128266;</button><span class="gloss-tip"><span class="gloss-pron">STACH-oot</span>A written law passed by a legislature such as Congress or the Florida Legislature.</span></span></strong> is a law written by a legislature. When Congress or the Florida Legislature passes a bill and the executive signs it, the result is a <span class="gloss" tabindex="0">statute<button class="gloss-audio" aria-label="Play pronunciation" onclick="speakGloss(event,'statute')">&#128266;</button><span class="gloss-tip"><span class="gloss-pron">STACH-oot</span>A written law passed by a legislature such as Congress or the Florida Legislature.</span></span>.</p>
         <p style="font-size: 17px; color: #1a2340; line-height: 1.65; margin: 0 0 10px 0;"><strong><span class="gloss" tabindex="0">Case law<button class="gloss-audio" aria-label="Play pronunciation" onclick="speakGloss(event,'case law')">&#128266;</button><span class="gloss-tip"><span class="gloss-pron">KAYS law</span>Law made by judges when they decide cases and explain their reasons.</span></span></strong> is made by judges. When a court decides a case, it explains its reasons, and later courts look to that. Over time, these decisions build a body of law that judges follow when similar cases come up. A <strong><span class="gloss" tabindex="0">regulation<button class="gloss-audio" aria-label="Play pronunciation" onclick="speakGloss(event,'regulation')">&#128266;</button><span class="gloss-tip"><span class="gloss-pron">reg-yuh-LAY-shun</span>A rule written by a government agency to carry out a law.</span></span></strong> is a rule made by an <strong><span class="gloss" tabindex="0">agency<button class="gloss-audio" aria-label="Play pronunciation" onclick="speakGloss(event,'agency')">&#128266;</button><span class="gloss-tip"><span class="gloss-pron">AY-jen-see</span>A part of the government that carries out laws and does a particular job, such as a public works department.</span></span></strong> to carry out a <span class="gloss" tabindex="0">statute<button class="gloss-audio" aria-label="Play pronunciation" onclick="speakGloss(event,'statute')">&#128266;</button><span class="gloss-tip"><span class="gloss-pron">STACH-oot</span>A written law passed by a legislature such as Congress or the Florida Legislature.</span></span>. A law might say that restaurants must be clean. An <span class="gloss" tabindex="0">agency<button class="gloss-audio" aria-label="Play pronunciation" onclick="speakGloss(event,'agency')">&#128266;</button><span class="gloss-tip"><span class="gloss-pron">AY-jen-see</span>A part of the government that carries out laws and does a particular job, such as a public works department.</span></span> writes the details, such as how often a kitchen must be inspected.</p>
+    <div class="optima-widget ow-sort" data-engine="sort" data-widget="law-source-sort">
+    <div class="widget-kicker">Sort it</div>
+    <div class="widget-question">Law comes from four places. Tap an example, then tap the source it comes from.</div>
+    <div class="ow-pool"><button type="button" class="ow-item" data-bin="3" data-why="Right. An agency makes regulations to carry out a statute." data-hint="Think about a rule that fills in the details of a law.">An agency&rsquo;s rule on how often a restaurant kitchen must be inspected</button><button type="button" class="ow-item" data-bin="1" data-why="Right. This is also a statute." data-hint="Think about a law written by a legislature.">A bill that Congress passes and the executive signs</button><button type="button" class="ow-item" data-bin="0" data-why="Right. If a statute breaks the constitution, a court can strike it down." data-hint="Think about the law that sits above all others.">The highest law, which every other law must obey</button><button type="button" class="ow-item" data-bin="2" data-why="Right. Over time, court decisions build a body of law." data-hint="Think about law that builds up from judges&rsquo; decisions.">A body of decisions that judges follow when similar cases come up</button><button type="button" class="ow-item" data-bin="1" data-why="Right. A statute is a law written by a legislature." data-hint="Think about who writes a bill into law.">A bill passed by the Florida Legislature and signed by the governor</button><button type="button" class="ow-item" data-bin="2" data-why="Right. Judges make case law when they decide cases and explain their reasons." data-hint="Think about law made by judges.">A judge&rsquo;s reasons in a case, which later courts look to</button></div>
+    <div class="ow-bins"><div class="ow-bin" data-bin="0" role="button" tabindex="0"><div class="ow-bin-title">Constitution</div><ul></ul></div><div class="ow-bin" data-bin="1" role="button" tabindex="0"><div class="ow-bin-title">Statute</div><ul></ul></div><div class="ow-bin" data-bin="2" role="button" tabindex="0"><div class="ow-bin-title">Case law</div><ul></ul></div><div class="ow-bin" data-bin="3" role="button" tabindex="0"><div class="ow-bin-title">Regulation</div><ul></ul></div></div>
+    <div class="widget-feedback" role="status" aria-live="polite"></div>
+    <button type="button" class="widget-reset">Reset</button>
+    </div>
         <h3 style="font-size: 20px; color: #0e1c42; margin: 18px 0 8px 0;">Criminal and Civil</h3>
         <p style="font-size: 17px; color: #1a2340; line-height: 1.65; margin: 0 0 10px 0;">Law is also sorted into two large kinds. <strong><span class="gloss" tabindex="0">Criminal law<button class="gloss-audio" aria-label="Play pronunciation" onclick="speakGloss(event,'criminal law')">&#128266;</button><span class="gloss-tip"><span class="gloss-pron">KRIM-ih-nul law</span>Law about crimes. The government charges a person and may punish him or her.</span></span></strong> deals with crimes, such as theft or assault. The government brings the charge, and the punishment may be a fine or jail. <strong><span class="gloss" tabindex="0">Civil law<button class="gloss-audio" aria-label="Play pronunciation" onclick="speakGloss(event,'civil law')">&#128266;</button><span class="gloss-tip"><span class="gloss-pron">SIV-ul law</span>Law about disputes between people or groups, usually about money, property, or duties.</span></span></strong> deals with disputes between people or groups. Two neighbors may argue over a fence, or a customer may sue a business over a broken contract. The judge decides who must pay or who must act. You can meet both kinds of law in state courts. One event can lead to both. A driver who causes a crash may be charged with a crime and sued for the damage.</p>
+    <div class="optima-widget ow-reveal" data-engine="reveal" data-widget="crash-reveal">
+    <div class="widget-kicker">Try it, then check</div>
+    <div class="widget-question">In your notebook, answer this: a driver causes a crash. Could the event lead to criminal law, civil law, or both? Write your answer and your reason. Then show the answer to compare.</div>
+    <button type="button" class="ow-show">Show the answer</button>
+    <div class="ow-answer" hidden>Both. The driver may be charged with a crime, because the government brings criminal charges and the punishment may be a fine or jail. The driver may also be sued in a civil case over the damage, where the judge decides who must pay.</div>
+    <button type="button" class="widget-reset">Reset</button>
+    </div>
     </div>
 
     <div style="background: #FFFFFF; border-top: 3px solid #C7922C; border: 1px solid #D0D9E8; border-radius: 8px; padding: 20px 24px; margin-bottom: 20px;">
@@ -415,6 +413,13 @@
         <p style="font-size: 17px; color: #1a2340; line-height: 1.65; margin: 0 0 10px 0;">Here is a model. In parts of Miami Beach, streets flood during very high tides. A citizen would begin by learning when and where the water rises. The next step is to find the right <span class="gloss" tabindex="0">agency<button class="gloss-audio" aria-label="Play pronunciation" onclick="speakGloss(event,'agency')">&#128266;</button><span class="gloss-tip"><span class="gloss-pron">AY-jen-see</span>A part of the government that carries out laws and does a particular job, such as a public works department.</span></span>, which is likely the city&rsquo;s public works department and the city commission that oversees it. The citizen would learn that the city has installed pumps and raised some roads.</p>
         <p style="font-size: 17px; color: #1a2340; line-height: 1.65; margin: 0 0 10px 0;">Then comes the weighing. Pumps cost money, and so does raising a road. Who should pay, the homeowners on that street or the whole city? Each choice helps some people more than others. The citizen decides what to support and takes action by writing to officials, speaking at a public meeting, or joining a group of neighbors. A small group that attends a meeting often matters more than a large group that stays home. Officials hear most from the people who show up.</p>
         <p style="font-size: 17px; color: #1a2340; line-height: 1.65; margin: 0 0 10px 0;">Notice that this problem touches the whole lesson. The city runs the pumps, the state sets many of the rules, and the nation may offer money. A citizen who knows which level has the power can take the problem to the right door. Notice, too, that the same method works for a crowded school, a broken streetlight, or a dangerous crossing. The steps stay the same. Only the <span class="gloss" tabindex="0">agency<button class="gloss-audio" aria-label="Play pronunciation" onclick="speakGloss(event,'agency')">&#128266;</button><span class="gloss-tip"><span class="gloss-pron">AY-jen-see</span>A part of the government that carries out laws and does a particular job, such as a public works department.</span></span> and the choices change. Learn the method once, and you can use it for the rest of your life.</p>
+    <div class="optima-widget ow-step" data-engine="step" data-widget="local-problem-steps">
+    <div class="widget-kicker">Step through it</div>
+    <div class="widget-question">Follow the four steps a citizen can use to work on a local problem. Tap Next to move along.</div>
+    <div class="ow-frames"><div class="ow-frame on"><div class="ow-frame-title">Research the problem</div>Find out what is wrong, where, and for how long. In the Miami Beach example, a citizen would learn when and where the water rises.</div><div class="ow-frame"><div class="ow-frame-title">Find the right agency</div>Local agencies include the city council, the county commission, and the school board, and each has its own job. In the example, it is likely the public works department and the city commission.</div><div class="ow-frame"><div class="ow-frame-title">Weigh the alternatives</div>Think about what each choice would cost and who would gain. Pumps cost money and so does raising a road. Who should pay?</div><div class="ow-frame"><div class="ow-frame-title">Choose and act</div>Write to officials, speak at a public meeting, or join a group of neighbors. Officials hear most from the people who show up.</div></div>
+    <div class="ow-step-ctl"><button type="button" class="ow-prev" disabled>Back</button><button type="button" class="ow-next">Next</button><span class="ow-step-count">Step 1 of 4</span><span class="ow-dots"><span class="ow-dot on"></span><span class="ow-dot"></span><span class="ow-dot"></span><span class="ow-dot"></span></span></div>
+    <button type="button" class="widget-reset">Reset</button>
+    </div>
     </div>
 
     <div style="background: #FFFFFF; border-top: 3px solid #0E1C42; border: 1px solid #D0D9E8; border-radius: 8px; padding: 20px 24px; margin-bottom: 20px;">
@@ -457,46 +462,8 @@ function speakGloss(e, text) {
     window.speechSynthesis.speak(u);
   }
 }
-(function () {
-  document.addEventListener('click', function (e) {
-    var reset = e.target.closest('.widget-reset');
-    if (reset) {
-      var w = reset.closest('.optima-widget');
-      w.querySelectorAll('.widget-options button').forEach(function (b) { b.classList.remove('selected', 'correct', 'incorrect'); });
-      w.querySelectorAll('.widget-feedback').forEach(function (f) { f.classList.remove('show'); f.textContent = ''; });
-      w.querySelectorAll('.row-feedback').forEach(function (f) { f.remove(); });
-      w.querySelectorAll('.ow-flip.flipped').forEach(function (c) { c.classList.remove('flipped'); });
-      if (w.classList.contains('ow-flip')) { w.classList.remove('flipped'); }
-      return;
-    }
-    var rBtn = e.target.closest('.ow-reflect .widget-options button');
-    if (rBtn) {
-      var rw = rBtn.closest('.optima-widget');
-      rw.querySelectorAll('.widget-options button').forEach(function (b) { b.classList.remove('selected'); });
-      rBtn.classList.add('selected');
-      var fb = rw.querySelector('.widget-feedback');
-      fb.textContent = rBtn.dataset.response || '';
-      fb.classList.add('show');
-      return;
-    }
-    var sBtn = e.target.closest('.ow-select .widget-row .widget-options button, .ow-scale .widget-row .widget-options button');
-    if (sBtn) {
-      var row = sBtn.closest('.widget-row');
-      var correct = row.dataset.correct;
-      row.querySelectorAll('.widget-options button').forEach(function (b) { b.classList.remove('selected', 'correct', 'incorrect'); });
-      var right = sBtn.dataset.choice === correct;
-      sBtn.classList.add(right ? 'correct' : 'incorrect');
-      var text = right ? (sBtn.dataset.fb || row.dataset.fb || 'Right.') : (sBtn.dataset.fb || row.dataset.hint || 'Not quite. Try again.');
-      var rf = row.querySelector('.row-feedback') || row.appendChild(document.createElement('div'));
-      rf.className = 'row-feedback ' + (right ? 'correct' : 'incorrect');
-      rf.textContent = text;
-      return;
-    }
-    var flip = e.target.closest('.ow-flip');
-    if (flip) { flip.classList.toggle('flipped'); return; }
-  });
-})();
 </script>
+<script src="../../shared/widgets.js"></script>
 
 </body>
 </html>

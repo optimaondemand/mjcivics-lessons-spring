@@ -4,35 +4,12 @@
 <meta charset="utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1" />
 <title>M/J Civics &mdash; Lesson: Dred Scott to the 14th Amendment: Who Counts as a Citizen</title>
+<link rel="stylesheet" href="../../shared/widgets.css">
 <style>
     body { margin: 0; padding: 0; font-family: "Segoe UI", Roboto, Helvetica, Arial, sans-serif; background: #f4f6fa; }
     .canvas-frame { max-width: 1100px; margin: 0 auto; background: #ffffff; box-shadow: 0 2px 8px rgba(0,0,0,0.08); }
 
-    /* ===== WIDGET CSS (byte-consistent across this site) ===== */
-    .optima-widget { background: linear-gradient(135deg, #E8F6FB 0%, #F4F9FC 100%); border: 1px solid #C5DCE5; border-left: 5px solid #2196D0; border-radius: 8px; padding: 18px 22px; margin: 18px 0; }
-    .widget-kicker { font-size: 11px; color: #1B6A94; margin-bottom: 10px; letter-spacing: 0.4px; }
-    .widget-question { font-size: 17px; color: #0E1C42; margin-bottom: 14px; line-height: 1.55; }
-    .widget-row { background: #FFFFFF; border: 1px solid #D0D9E8; border-radius: 6px; padding: 12px 14px; margin-bottom: 10px; }
-    .widget-row-prompt { font-size: 15px; color: #0E1C42; margin-bottom: 8px; line-height: 1.5; font-style: italic; }
-    .widget-options { display: flex; flex-wrap: wrap; gap: 8px; }
-    .widget-options button { background: #FFFFFF; border: 1.5px solid #D0D9E8; border-radius: 8px; padding: 8px 14px; font-size: 14px; color: #0E1C42; cursor: pointer; transition: all 0.15s; font-family: inherit; }
-    .widget-options button:hover { background: #F4F6FA; border-color: #55C8E8; }
-    .widget-options button.selected { background: #0E1C42; color: #FFFFFF; border-color: #0E1C42; }
-    .widget-options button.correct { background: #D8F0DD; border-color: #2A9D5C; color: #1A6B3D; }
-    .widget-options button.incorrect { background: #FDECEC; border-color: #C0392B; color: #8A1F16; }
-    .widget-feedback { background: #FFFFFF; border-left: 3px solid #C7922C; padding: 10px 14px; font-size: 15px; color: #1a2340; line-height: 1.55; margin: 10px 0; display: none; border-radius: 4px; }
-    .widget-feedback.show { display: block; }
-    .row-feedback { padding: 8px 12px; margin-top: 8px; font-size: 14px; border-radius: 4px; line-height: 1.5; }
-    .row-feedback.correct { background: #D8F0DD; border-left: 3px solid #2A9D5C; color: #1A6B3D; }
-    .row-feedback.incorrect { background: #FDECEC; border-left: 3px solid #C0392B; color: #8A1F16; }
-    .widget-reset { background: transparent; border: 1px solid #C7922C; color: #C7922C; border-radius: 6px; padding: 6px 12px; font-size: 12px; cursor: pointer; font-family: inherit; margin-top: 6px; }
-    .widget-reset:hover { background: #FDF3E3; }
-    .ow-scale .widget-options { justify-content: space-between; }
-    .ow-scale .widget-options button { flex: 1; text-align: center; }
-    .ow-flip { background: #FFFFFF; border: 1px solid #D0D9E8; border-radius: 8px; padding: 18px 20px; cursor: pointer; text-align: center; }
-    .ow-flip .ow-flip-back { display: none; color: #1a2340; }
-    .ow-flip.flipped .ow-flip-front { display: none; }
-    .ow-flip.flipped .ow-flip-back { display: block; }
+    /* widget styles live in ../../shared/widgets.css (linked below) */
 
     /* ===== VOCABULARY GLOSSARY (byte-consistent across this site) ===== */
     .callout { border-radius: 6px; padding: 14px 20px; margin: 14px 0; }
@@ -402,6 +379,13 @@
             </dl>
         </div>
         <p style="font-size: 17px; color: #1a2340; line-height: 1.65; margin: 0 0 10px 0;">Countries have followed two old rules for birth. One is <strong>citizenship by place of birth</strong> (<em><span class="gloss" tabindex="0">jus soli<button class="gloss-audio" aria-label="Play pronunciation" onclick="speakGloss(event,'jus soli')">&#128266;</button><span class="gloss-tip"><span class="gloss-pron">yoos SOH-lee</span>Latin for &ldquo;right of the soil.&rdquo; The rule that a person born in a country is a citizen of it.</span></span></em>). You are a citizen because you were born on the country&rsquo;s soil. The other is <strong>citizenship by parentage</strong> (<em><span class="gloss" tabindex="0">jus sanguinis<button class="gloss-audio" aria-label="Play pronunciation" onclick="speakGloss(event,'jus sanguinis')">&#128266;</button><span class="gloss-tip"><span class="gloss-pron">yoos SANG-gwih-nis</span>Latin for &ldquo;right of blood.&rdquo; The rule that a child takes the citizenship of the parents.</span></span></em>). You are a citizen because your parents are. The United States mainly follows the first rule. It also gives citizenship to many children born abroad to American parents.</p>
+    <div class="optima-widget ow-reflect" data-engine="reflect" data-widget="club-membership">
+    <div class="widget-kicker">Check in</div>
+    <div class="widget-question">Think about a team or a club you belong to. What makes someone a real member of it? Pick the idea closest to yours. There is no wrong answer.</div>
+    <div class="widget-options"><button type="button" data-i="0" data-response="Some groups work that way. A country can too. Birth is one of the two roads to American citizenship.">Being born into it</button><button type="button" data-i="1" data-response="Some groups work that way too. A country can let newcomers join by following rules. That road is called naturalization.">Joining and following the rules</button><button type="button" data-i="2" data-response="That can matter in a club. In a republic, the rules for belonging are written into law, so they do not depend on who is liked.">Being accepted by the other members</button><button type="button" data-i="3" data-response="Hold on to your idea. Keep it in mind as you read how the United States has answered the question.">Something else</button></div>
+    <div class="widget-feedback" role="status" aria-live="polite"></div>
+    <button type="button" class="widget-reset">Reset</button>
+    </div>
         <h3 style="font-size: 20px; color: #0e1c42; margin: 18px 0 8px 0;">A Color Line in the Law</h3>
         <p style="font-size: 17px; color: #1a2340; line-height: 1.65; margin: 0 0 10px 0;">The first Congress passed a <span class="gloss" tabindex="0">naturalization<button class="gloss-audio" aria-label="Play pronunciation" onclick="speakGloss(event,'naturalization')">&#128266;</button><span class="gloss-tip"><span class="gloss-pron">nach-ur-uh-luh-ZAY-shun</span>The legal process by which an immigrant becomes a citizen. Congress sets the rules.</span></span> law in 1790. It said that only &ldquo;free white persons&rdquo; could be <span class="gloss" tabindex="0">naturalized<button class="gloss-audio" aria-label="Play pronunciation" onclick="speakGloss(event,'naturalization')">&#128266;</button><span class="gloss-tip"><span class="gloss-pron">nach-ur-uh-luh-ZAY-shun</span>The legal process by which an immigrant becomes a citizen. Congress sets the rules.</span></span>. That phrase told immigrants who were not white that they could not become citizens. For a long time, the nation&rsquo;s rules about who belonged were tied to race.</p>
         <h3 style="font-size: 20px; color: #0e1c42; margin: 18px 0 8px 0;">Dred Scott, 1857</h3>
@@ -423,12 +407,45 @@
                 <p style="font-size: 15px; color: #1a2340; line-height: 1.55; margin: 0;">Most newcomers in the late 1800s crossed the sea. Many from Europe landed at Ellis Island in New York. Many from Asia landed at Angel Island in San Francisco Bay. Most then settled where jobs and cheap land were, in port cities, mill towns, mining camps, and farm country.</p>
             </div>
         </div>
+    <div class="optima-widget ow-sel" data-engine="sel" data-widget="fourteenth-close-read">
+    <div class="widget-kicker">Read it closely</div>
+    <div class="widget-question">Look back at the first sentence of the 14th Amendment. Answer each question from what you just read.</div>
+    <div class="widget-row" data-correct="2" data-fb="Right. The sentence says that people born or naturalized in the United States are citizens." data-hint="Look at the sentence again. It names how a person is born into citizenship and how an immigrant joins.">
+      <div class="widget-row-prompt">Which two roads to citizenship does the sentence name?</div>
+      <div class="widget-options"><button type="button" data-choice="0">Birth and military service</button><button type="button" data-choice="1">Naturalization and owning land</button><button type="button" data-choice="2">Birth and naturalization</button></div>
+    </div>
+    <div class="widget-row" data-correct="0" data-fb="Right. It sets two roads and names no race. That wiped out Dred Scott on the question of citizenship." data-hint="Read the sentence once more. Does it list any race at all?">
+      <div class="widget-row-prompt">What does the sentence say about race?</div>
+      <div class="widget-options"><button type="button" data-choice="0">It names no race</button><button type="button" data-choice="1">It lists the races that may be citizens</button><button type="button" data-choice="2">It leaves the question to each state</button></div>
+    </div>
+    <div class="widget-row" data-correct="1" data-fb="Right. The phrase left some gaps, and many Native Americans waited until 1924." data-hint="Think about the group the lesson says was left waiting until a later law.">
+      <div class="widget-row-prompt">What gap did the phrase about jurisdiction leave?</div>
+      <div class="widget-options"><button type="button" data-choice="0">Immigrants could never be naturalized</button><button type="button" data-choice="1">Many Native Americans did not become citizens until a law of 1924</button><button type="button" data-choice="2">Children born abroad lost their citizenship</button></div>
+    </div>
+    <button type="button" class="widget-reset">Reset</button>
+    </div>
         <h3 style="font-size: 20px; color: #0e1c42; margin: 18px 0 8px 0;">The Amendment Is Tested</h3>
         <p style="font-size: 17px; color: #1a2340; line-height: 1.65; margin: 0 0 10px 0;">Rules written on paper have to survive hard cases. In 1882 Congress passed the Chinese <strong><span class="gloss" tabindex="0">Exclusion<button class="gloss-audio" aria-label="Play pronunciation" onclick="speakGloss(event,'exclusion')">&#128266;</button><span class="gloss-tip"><span class="gloss-pron">ex-KLOO-zhun</span>Keeping people out.</span></span></strong> Act. It stopped Chinese workers from coming to the United States. It also said that Chinese immigrants could not be <span class="gloss" tabindex="0">naturalized<button class="gloss-audio" aria-label="Play pronunciation" onclick="speakGloss(event,'naturalization')">&#128266;</button><span class="gloss-tip"><span class="gloss-pron">nach-ur-uh-luh-ZAY-shun</span>The legal process by which an immigrant becomes a citizen. Congress sets the rules.</span></span>. The law showed that a country can write a generous rule for birth and still be stingy about who may join.</p>
         <p style="font-size: 17px; color: #1a2340; line-height: 1.65; margin: 0 0 10px 0;">The 14th Amendment faced its test in 1898. Wong Kim Ark was born in San Francisco to Chinese parents. After a trip to China, officials refused to let him come home. They said he was not a citizen. The Supreme Court disagreed. It said that his birth on American soil made him a citizen, even though his parents could not be <span class="gloss" tabindex="0">naturalized<button class="gloss-audio" aria-label="Play pronunciation" onclick="speakGloss(event,'naturalization')">&#128266;</button><span class="gloss-tip"><span class="gloss-pron">nach-ur-uh-luh-ZAY-shun</span>The legal process by which an immigrant becomes a citizen. Congress sets the rules.</span></span>. The rule of birth held. Wong Kim Ark was one man, but the decision protected every child born here, whatever the nation of the parents.</p>
+    <div class="optima-widget ow-order" data-engine="order" data-widget="citizenship-sequence">
+    <div class="widget-kicker">Put it in order</div>
+    <div class="widget-question">These five events show how the answer to &ldquo;who counts?&rdquo; changed. Tap them in the order they happened, earliest first.</div>
+    <div class="ow-pool"><button type="button" class="ow-item" data-i="2" data-note="1868. The 14th Amendment names two roads, birth and naturalization, and no race." data-hint="">The nation writes a new citizenship sentence into the Constitution.</button><button type="button" class="ow-item" data-i="4" data-note="1898. This is the Wong Kim Ark decision. Birth on American soil decided it." data-hint="">The Court says a man born in San Francisco to Chinese parents is a citizen.</button><button type="button" class="ow-item" data-i="1" data-note="1857. This is the Dred Scott decision." data-hint="">The Supreme Court says no Black American can be a citizen.</button><button type="button" class="ow-item" data-i="3" data-note="1882. This is the Chinese Exclusion Act." data-hint="">Congress stops Chinese workers from coming and says they cannot be naturalized.</button><button type="button" class="ow-item" data-i="0" data-note="1790. The first naturalization law tied the rules to race." data-hint="">Congress says that only free white persons can be naturalized.</button></div>
+    <ol class="ow-seq"><li class="ow-slot"></li><li class="ow-slot"></li><li class="ow-slot"></li><li class="ow-slot"></li><li class="ow-slot"></li></ol>
+    <div class="widget-feedback" role="status" aria-live="polite"></div>
+    <button type="button" class="widget-reset">Reset</button>
+    </div>
         <h3 style="font-size: 20px; color: #0e1c42; margin: 18px 0 8px 0;">Lands Beyond the States</h3>
         <p style="font-size: 17px; color: #1a2340; line-height: 1.65; margin: 0 0 10px 0;">Geography adds a twist. The United States holds <strong><span class="gloss" tabindex="0">territories<button class="gloss-audio" aria-label="Play pronunciation" onclick="speakGloss(event,'territory')">&#128266;</button><span class="gloss-tip"><span class="gloss-pron">TAIR-ih-tor-ee</span>Land that belongs to a country but is not one of its states.</span></span></strong> that are not states. In 1917 Congress made the people of Puerto Rico citizens by a law. People born in American Samoa are <strong><span class="gloss" tabindex="0">U.S. nationals<button class="gloss-audio" aria-label="Play pronunciation" onclick="speakGloss(event,'U.S. national')">&#128266;</button><span class="gloss-tip"><span class="gloss-pron">NASH-uh-nul</span>A person who owes loyalty to the United States and is protected by it, but is not a full citizen.</span></span></strong>. They are protected by the United States and carry its passport, but they are not automatically citizens. Their status shows that citizenship is still set by Congress and the courts.</p>
         <p style="font-size: 17px; color: #1a2340; line-height: 1.65; margin: 0 0 10px 0;">So the republic&rsquo;s answer to &ldquo;who are the people?&rdquo; was not handed down by nature. It was fought over in the courts, settled by war, written into an amendment, and tested again. A citizen today holds something that earlier Americans had to win.</p>
+    <div class="optima-widget ow-sort" data-engine="sort" data-widget="door-sort">
+    <div class="widget-kicker">Sort it</div>
+    <div class="widget-question">Each of these actions changed who could be a citizen. Tap an action, then tap the box that fits. Did it close the door or open it?</div>
+    <div class="ow-pool"><button type="button" class="ow-item" data-bin="0" data-why="Right. It stopped Chinese workers from coming and said they could not be naturalized." data-hint="Ask who this law kept out.">The Chinese Exclusion Act</button><button type="button" class="ow-item" data-bin="1" data-why="Right. Congress made the people of Puerto Rico citizens by law." data-hint="Ask whether this law gave citizenship or took it away.">The law of 1917 about Puerto Rico</button><button type="button" class="ow-item" data-bin="1" data-why="Right. It set birth and naturalization as the roads and named no race." data-hint="Ask who this sentence let in.">The citizenship sentence of the 14th Amendment</button><button type="button" class="ow-item" data-bin="0" data-why="Right. It limited naturalization to free white persons." data-hint="Think about who this rule left out.">The naturalization law of 1790</button><button type="button" class="ow-item" data-bin="0" data-why="Right. His opinion closed citizenship to every Black American." data-hint="Think about what Taney said about Black Americans.">The Dred Scott opinion</button><button type="button" class="ow-item" data-bin="1" data-why="Right. The Court held that his birthplace settled it, whatever his parents&rsquo; nation." data-hint="Ask what the Court said about a man born in San Francisco.">The Wong Kim Ark decision</button></div>
+    <div class="ow-bins"><div class="ow-bin" data-bin="0" role="button" tabindex="0"><div class="ow-bin-title">Closed the door</div><ul></ul></div><div class="ow-bin" data-bin="1" role="button" tabindex="0"><div class="ow-bin-title">Opened the door</div><ul></ul></div></div>
+    <div class="widget-feedback" role="status" aria-live="polite"></div>
+    <button type="button" class="widget-reset">Reset</button>
+    </div>
     </div>
 
     <div style="background: #FFFFFF; border-top: 3px solid #0E1C42; border: 1px solid #D0D9E8; border-radius: 8px; padding: 20px 24px; margin-bottom: 20px;">
@@ -476,46 +493,8 @@ function speakGloss(e, text) {
     window.speechSynthesis.speak(u);
   }
 }
-(function () {
-  document.addEventListener('click', function (e) {
-    var reset = e.target.closest('.widget-reset');
-    if (reset) {
-      var w = reset.closest('.optima-widget');
-      w.querySelectorAll('.widget-options button').forEach(function (b) { b.classList.remove('selected', 'correct', 'incorrect'); });
-      w.querySelectorAll('.widget-feedback').forEach(function (f) { f.classList.remove('show'); f.textContent = ''; });
-      w.querySelectorAll('.row-feedback').forEach(function (f) { f.remove(); });
-      w.querySelectorAll('.ow-flip.flipped').forEach(function (c) { c.classList.remove('flipped'); });
-      if (w.classList.contains('ow-flip')) { w.classList.remove('flipped'); }
-      return;
-    }
-    var rBtn = e.target.closest('.ow-reflect .widget-options button');
-    if (rBtn) {
-      var rw = rBtn.closest('.optima-widget');
-      rw.querySelectorAll('.widget-options button').forEach(function (b) { b.classList.remove('selected'); });
-      rBtn.classList.add('selected');
-      var fb = rw.querySelector('.widget-feedback');
-      fb.textContent = rBtn.dataset.response || '';
-      fb.classList.add('show');
-      return;
-    }
-    var sBtn = e.target.closest('.ow-select .widget-row .widget-options button, .ow-scale .widget-row .widget-options button');
-    if (sBtn) {
-      var row = sBtn.closest('.widget-row');
-      var correct = row.dataset.correct;
-      row.querySelectorAll('.widget-options button').forEach(function (b) { b.classList.remove('selected', 'correct', 'incorrect'); });
-      var right = sBtn.dataset.choice === correct;
-      sBtn.classList.add(right ? 'correct' : 'incorrect');
-      var text = right ? (sBtn.dataset.fb || row.dataset.fb || 'Right.') : (sBtn.dataset.fb || row.dataset.hint || 'Not quite. Try again.');
-      var rf = row.querySelector('.row-feedback') || row.appendChild(document.createElement('div'));
-      rf.className = 'row-feedback ' + (right ? 'correct' : 'incorrect');
-      rf.textContent = text;
-      return;
-    }
-    var flip = e.target.closest('.ow-flip');
-    if (flip) { flip.classList.toggle('flipped'); return; }
-  });
-})();
 </script>
+<script src="../../shared/widgets.js"></script>
 
 </body>
 </html>

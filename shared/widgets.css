@@ -1,0 +1,94 @@
+/* Shared widget styles for lesson pages. One file, ten engines. */
+.optima-widget { background: linear-gradient(135deg, #E8F6FB 0%, #F4F9FC 100%); border: 1px solid #C5DCE5; border-left: 5px solid #2196D0; border-radius: 8px; padding: 18px 22px; margin: 18px 0; }
+.widget-kicker { font-size: 11px; color: #1B6A94; margin-bottom: 10px; letter-spacing: 0.4px; text-transform: uppercase; }
+.widget-question { font-size: 17px; color: #0E1C42; margin-bottom: 14px; line-height: 1.55; }
+.widget-note { font-size: 14px; color: #3a4666; margin: -6px 0 12px 0; line-height: 1.5; }
+.widget-row { background: #FFFFFF; border: 1px solid #D0D9E8; border-radius: 6px; padding: 12px 14px; margin-bottom: 10px; }
+.widget-row-prompt { font-size: 15px; color: #0E1C42; margin-bottom: 8px; line-height: 1.5; font-style: italic; }
+.widget-options { display: flex; flex-wrap: wrap; gap: 8px; }
+.optima-widget button { font-family: inherit; }
+.widget-options button { background: #FFFFFF; border: 1.5px solid #D0D9E8; border-radius: 8px; padding: 8px 14px; font-size: 14px; color: #0E1C42; cursor: pointer; transition: all 0.15s; }
+.widget-options button:hover { background: #F4F6FA; border-color: #55C8E8; }
+.widget-options button.selected { background: #0E1C42; color: #FFFFFF; border-color: #0E1C42; }
+.widget-options button.correct { background: #D8F0DD; border-color: #2A9D5C; color: #1A6B3D; }
+.widget-options button.incorrect { background: #FDECEC; border-color: #C0392B; color: #8A1F16; }
+.widget-feedback { background: #FFFFFF; border-left: 3px solid #C7922C; padding: 10px 14px; font-size: 15px; color: #1a2340; line-height: 1.55; margin: 10px 0; display: none; border-radius: 4px; }
+.widget-feedback.show { display: block; }
+.widget-feedback.good { border-left-color: #2A9D5C; }
+.widget-feedback.nudge { border-left-color: #C0392B; }
+.row-feedback { padding: 8px 12px; margin-top: 8px; font-size: 14px; border-radius: 4px; line-height: 1.5; }
+.row-feedback.correct { background: #D8F0DD; border-left: 3px solid #2A9D5C; color: #1A6B3D; }
+.row-feedback.incorrect { background: #FDECEC; border-left: 3px solid #C0392B; color: #8A1F16; }
+.row-feedback.note { background: #FFFFFF; border-left: 3px solid #C7922C; color: #1a2340; }
+.widget-reset { background: transparent; border: 1px solid #C7922C; color: #8A5F0E; border-radius: 6px; padding: 6px 12px; font-size: 12px; cursor: pointer; margin-top: 6px; }
+.widget-reset:hover { background: #FDF3E3; }
+.ow-scale .widget-options { justify-content: space-between; }
+.ow-scale .widget-options button { flex: 1; text-align: center; min-width: 90px; }
+
+/* FLIP */
+.ow-cards { display: grid; grid-template-columns: repeat(auto-fit, minmax(210px, 1fr)); gap: 10px; }
+.ow-card { background: #FFFFFF; border: 1px solid #D0D9E8; border-radius: 8px; padding: 16px 14px; cursor: pointer; text-align: center; font-size: 15px; line-height: 1.5; color: #0E1C42; min-height: 70px; }
+.ow-card:hover { border-color: #55C8E8; }
+.ow-card .ow-back { display: none; color: #1a2340; font-size: 14px; }
+.ow-card.flipped { background: #FDF3E3; border-color: #C7922C; }
+.ow-card.flipped .ow-front { display: none; }
+.ow-card.flipped .ow-back { display: block; }
+.ow-card .ow-hint { display: block; font-size: 11px; color: #1B6A94; margin-top: 6px; }
+.ow-card.flipped .ow-hint { display: none; }
+
+/* REVEAL */
+.ow-reveal .ow-show { background: #0E1C42; color: #FFFFFF; border: none; border-radius: 8px; padding: 9px 16px; font-size: 14px; cursor: pointer; }
+.ow-reveal .ow-show[disabled] { opacity: 0.5; cursor: default; }
+.ow-answer { background: #FFFFFF; border-left: 3px solid #2A9D5C; padding: 10px 14px; margin: 10px 0; font-size: 15px; line-height: 1.55; color: #1a2340; border-radius: 4px; }
+.ow-answer[hidden] { display: none; }
+
+/* ORDER and SORT */
+.ow-pool { display: flex; flex-wrap: wrap; gap: 8px; margin-bottom: 12px; min-height: 20px; }
+.ow-item { background: #FFFFFF; border: 1.5px solid #D0D9E8; border-radius: 8px; padding: 8px 12px; font-size: 14px; color: #0E1C42; cursor: pointer; text-align: left; line-height: 1.4; max-width: 100%; }
+.ow-item:hover { border-color: #55C8E8; background: #F4F6FA; }
+.ow-item.selected { background: #0E1C42; color: #FFFFFF; border-color: #0E1C42; }
+.ow-item.shake { border-color: #C0392B; background: #FDECEC; color: #8A1F16; }
+.ow-seq { list-style: none; margin: 0 0 8px 0; padding: 0; counter-reset: s; }
+.ow-slot { counter-increment: s; background: #FFFFFF; border: 1.5px dashed #B6C3DA; border-radius: 6px; padding: 9px 12px 9px 40px; margin-bottom: 6px; font-size: 14px; color: #6a7694; position: relative; min-height: 20px; line-height: 1.45; }
+.ow-slot::before { content: counter(s); position: absolute; left: 10px; top: 8px; width: 22px; height: 22px; border-radius: 50%; background: #E3E9F4; color: #0E1C42; font-size: 12px; text-align: center; line-height: 22px; }
+.ow-slot.filled { border-style: solid; border-color: #2A9D5C; background: #EFF9F1; color: #1a2340; }
+.ow-slot.filled::before { background: #2A9D5C; color: #FFFFFF; }
+.ow-bins { display: grid; grid-template-columns: repeat(auto-fit, minmax(190px, 1fr)); gap: 10px; margin-bottom: 8px; }
+.ow-bin { background: #FFFFFF; border: 1.5px dashed #B6C3DA; border-radius: 8px; padding: 10px 12px; cursor: pointer; min-height: 60px; }
+.ow-bin:hover { border-color: #2196D0; background: #F4F9FC; }
+.ow-bin-title { font-size: 14px; color: #0E1C42; margin-bottom: 6px; font-weight: 600; }
+.ow-bin ul { list-style: none; margin: 0; padding: 0; }
+.ow-bin li { font-size: 13px; background: #EFF9F1; border: 1px solid #2A9D5C; border-radius: 5px; padding: 5px 8px; margin-bottom: 4px; color: #1a2340; line-height: 1.4; }
+
+/* STEP */
+.ow-frame { display: none; background: #FFFFFF; border: 1px solid #D0D9E8; border-radius: 8px; padding: 14px 16px; font-size: 15px; line-height: 1.55; color: #1a2340; }
+.ow-frame.on { display: block; }
+.ow-frame-title { font-size: 16px; color: #0E1C42; font-weight: 600; margin-bottom: 6px; }
+.ow-step-ctl { display: flex; align-items: center; gap: 10px; margin-top: 10px; flex-wrap: wrap; }
+.ow-step-ctl button { background: #0E1C42; color: #FFFFFF; border: none; border-radius: 8px; padding: 8px 14px; font-size: 14px; cursor: pointer; }
+.ow-step-ctl button[disabled] { opacity: 0.35; cursor: default; }
+.ow-step-count { font-size: 13px; color: #3a4666; }
+.ow-dots { display: flex; gap: 5px; }
+.ow-dot { width: 10px; height: 10px; border-radius: 50%; background: #C9D3E6; }
+.ow-dot.on { background: #C7922C; }
+
+/* DECIDE */
+.ow-scenario { background: #FFFFFF; border: 1px solid #D0D9E8; border-radius: 8px; padding: 12px 14px; margin-bottom: 10px; font-size: 15px; line-height: 1.55; color: #1a2340; }
+.ow-choices { display: flex; flex-direction: column; gap: 8px; margin-bottom: 10px; }
+.ow-choice { background: #FFFFFF; border: 1.5px solid #D0D9E8; border-radius: 8px; padding: 10px 14px; font-size: 14px; text-align: left; color: #0E1C42; cursor: pointer; line-height: 1.45; }
+.ow-choice:hover { border-color: #55C8E8; background: #F4F6FA; }
+.ow-choice.selected { background: #0E1C42; color: #FFFFFF; border-color: #0E1C42; }
+.ow-result, .ow-actual { display: none; background: #FFFFFF; border-left: 3px solid #2196D0; padding: 10px 14px; margin: 8px 0; font-size: 15px; line-height: 1.55; color: #1a2340; border-radius: 4px; }
+.ow-result.on, .ow-actual.on { display: block; }
+.ow-actual { border-left-color: #C7922C; }
+
+/* HOT */
+.ow-diagram { display: flex; flex-wrap: wrap; gap: 8px; margin-bottom: 10px; align-items: stretch; }
+.ow-part { flex: 1 1 140px; background: #FFFFFF; border: 2px solid #B6C3DA; border-radius: 8px; padding: 12px 10px; font-size: 14px; color: #0E1C42; cursor: pointer; text-align: center; line-height: 1.4; }
+.ow-part:hover { border-color: #2196D0; }
+.ow-part.seen { background: #EAF4FA; border-color: #2196D0; }
+.ow-part.selected { background: #0E1C42; color: #FFFFFF; border-color: #0E1C42; }
+.ow-info { display: none; background: #FFFFFF; border-left: 3px solid #2196D0; padding: 10px 14px; margin: 8px 0; font-size: 15px; line-height: 1.55; color: #1a2340; border-radius: 4px; }
+.ow-info.on { display: block; }
+.ow-count { font-size: 13px; color: #3a4666; margin: 6px 0; }
+.ow-diagram-caption { font-size: 13px; color: #3a4666; margin: 0 0 8px 0; }

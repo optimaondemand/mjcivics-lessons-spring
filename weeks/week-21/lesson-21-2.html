@@ -4,35 +4,12 @@
 <meta charset="utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1" />
 <title>M/J Civics &mdash; Lesson: The Electoral College and the Election of 1800</title>
+<link rel="stylesheet" href="../../shared/widgets.css">
 <style>
     body { margin: 0; padding: 0; font-family: "Segoe UI", Roboto, Helvetica, Arial, sans-serif; background: #f4f6fa; }
     .canvas-frame { max-width: 1100px; margin: 0 auto; background: #ffffff; box-shadow: 0 2px 8px rgba(0,0,0,0.08); }
 
-    /* ===== WIDGET CSS (byte-consistent across this site) ===== */
-    .optima-widget { background: linear-gradient(135deg, #E8F6FB 0%, #F4F9FC 100%); border: 1px solid #C5DCE5; border-left: 5px solid #2196D0; border-radius: 8px; padding: 18px 22px; margin: 18px 0; }
-    .widget-kicker { font-size: 11px; color: #1B6A94; margin-bottom: 10px; letter-spacing: 0.4px; }
-    .widget-question { font-size: 17px; color: #0E1C42; margin-bottom: 14px; line-height: 1.55; }
-    .widget-row { background: #FFFFFF; border: 1px solid #D0D9E8; border-radius: 6px; padding: 12px 14px; margin-bottom: 10px; }
-    .widget-row-prompt { font-size: 15px; color: #0E1C42; margin-bottom: 8px; line-height: 1.5; font-style: italic; }
-    .widget-options { display: flex; flex-wrap: wrap; gap: 8px; }
-    .widget-options button { background: #FFFFFF; border: 1.5px solid #D0D9E8; border-radius: 8px; padding: 8px 14px; font-size: 14px; color: #0E1C42; cursor: pointer; transition: all 0.15s; font-family: inherit; }
-    .widget-options button:hover { background: #F4F6FA; border-color: #55C8E8; }
-    .widget-options button.selected { background: #0E1C42; color: #FFFFFF; border-color: #0E1C42; }
-    .widget-options button.correct { background: #D8F0DD; border-color: #2A9D5C; color: #1A6B3D; }
-    .widget-options button.incorrect { background: #FDECEC; border-color: #C0392B; color: #8A1F16; }
-    .widget-feedback { background: #FFFFFF; border-left: 3px solid #C7922C; padding: 10px 14px; font-size: 15px; color: #1a2340; line-height: 1.55; margin: 10px 0; display: none; border-radius: 4px; }
-    .widget-feedback.show { display: block; }
-    .row-feedback { padding: 8px 12px; margin-top: 8px; font-size: 14px; border-radius: 4px; line-height: 1.5; }
-    .row-feedback.correct { background: #D8F0DD; border-left: 3px solid #2A9D5C; color: #1A6B3D; }
-    .row-feedback.incorrect { background: #FDECEC; border-left: 3px solid #C0392B; color: #8A1F16; }
-    .widget-reset { background: transparent; border: 1px solid #C7922C; color: #C7922C; border-radius: 6px; padding: 6px 12px; font-size: 12px; cursor: pointer; font-family: inherit; margin-top: 6px; }
-    .widget-reset:hover { background: #FDF3E3; }
-    .ow-scale .widget-options { justify-content: space-between; }
-    .ow-scale .widget-options button { flex: 1; text-align: center; }
-    .ow-flip { background: #FFFFFF; border: 1px solid #D0D9E8; border-radius: 8px; padding: 18px 20px; cursor: pointer; text-align: center; }
-    .ow-flip .ow-flip-back { display: none; color: #1a2340; }
-    .ow-flip.flipped .ow-flip-front { display: none; }
-    .ow-flip.flipped .ow-flip-back { display: block; }
+    /* widget styles live in ../../shared/widgets.css (linked below) */
 
     /* ===== VOCABULARY GLOSSARY (byte-consistent across this site) ===== */
     .callout { border-radius: 6px; padding: 14px 20px; margin: 14px 0; }
@@ -389,6 +366,13 @@
         <p style="font-size: 17px; color: #1a2340; line-height: 1.65; margin: 0 0 10px 0;">The Framers did not let voters choose the President directly. Instead, each state chooses <strong><span class="gloss" tabindex="0">electors<button class="gloss-audio" aria-label="Play pronunciation" onclick="speakGloss(event,'elector')">&#128266;</button><span class="gloss-tip"><span class="gloss-pron">ih-LEK-tor</span>A person chosen to cast a state&rsquo;s vote for President.</span></span></strong>, and the <span class="gloss" tabindex="0">electors<button class="gloss-audio" aria-label="Play pronunciation" onclick="speakGloss(event,'elector')">&#128266;</button><span class="gloss-tip"><span class="gloss-pron">ih-LEK-tor</span>A person chosen to cast a state&rsquo;s vote for President.</span></span> choose the President. A state has as many <span class="gloss" tabindex="0">electors<button class="gloss-audio" aria-label="Play pronunciation" onclick="speakGloss(event,'elector')">&#128266;</button><span class="gloss-tip"><span class="gloss-pron">ih-LEK-tor</span>A person chosen to cast a state&rsquo;s vote for President.</span></span> as it has Representatives and Senators together. Today there are 538 <span class="gloss" tabindex="0">electors<button class="gloss-audio" aria-label="Play pronunciation" onclick="speakGloss(event,'elector')">&#128266;</button><span class="gloss-tip"><span class="gloss-pron">ih-LEK-tor</span>A person chosen to cast a state&rsquo;s vote for President.</span></span> in all. That number is 435 Representatives, 100 Senators, and 3 <span class="gloss" tabindex="0">electors<button class="gloss-audio" aria-label="Play pronunciation" onclick="speakGloss(event,'elector')">&#128266;</button><span class="gloss-tip"><span class="gloss-pron">ih-LEK-tor</span>A person chosen to cast a state&rsquo;s vote for President.</span></span> for Washington, D.C. A candidate needs a <strong><span class="gloss" tabindex="0">majority<button class="gloss-audio" aria-label="Play pronunciation" onclick="speakGloss(event,'majority')">&#128266;</button><span class="gloss-tip"><span class="gloss-pron">muh-JOR-ih-tee</span>More than half.</span></span></strong>, which is 270 votes, to win.</p>
         <p style="font-size: 17px; color: #1a2340; line-height: 1.65; margin: 0 0 10px 0;">Alexander Hamilton explained the reason in Federalist No. 68. He argued that a small group of <span class="gloss" tabindex="0">electors<button class="gloss-audio" aria-label="Play pronunciation" onclick="speakGloss(event,'elector')">&#128266;</button><span class="gloss-tip"><span class="gloss-pron">ih-LEK-tor</span>A person chosen to cast a state&rsquo;s vote for President.</span></span>, picked by the people, would judge better than a crowd. They would be harder to stir up by anger or tricks. The system was meant to keep the highest office out of the hands of a demagogue who could inflame the people. The Framers had seen how a clever speaker could lead a crowd, and they wanted a check on that danger.</p>
         <p style="font-size: 17px; color: #1a2340; line-height: 1.65; margin: 0 0 10px 0;">Each state decides how its <span class="gloss" tabindex="0">electors<button class="gloss-audio" aria-label="Play pronunciation" onclick="speakGloss(event,'elector')">&#128266;</button><span class="gloss-tip"><span class="gloss-pron">ih-LEK-tor</span>A person chosen to cast a state&rsquo;s vote for President.</span></span> are chosen. Today every state lets its voters pick them. In all but two states, Maine and Nebraska, the candidate who wins the most votes in the state gets all of its <span class="gloss" tabindex="0">electors<button class="gloss-audio" aria-label="Play pronunciation" onclick="speakGloss(event,'elector')">&#128266;</button><span class="gloss-tip"><span class="gloss-pron">ih-LEK-tor</span>A person chosen to cast a state&rsquo;s vote for President.</span></span>. A candidate can win the most votes across the whole country and still lose in the Electoral College, and that has happened a few times.</p>
+    <div class="optima-widget ow-step" data-engine="step" data-widget="elector-road">
+    <div class="widget-kicker">Step through it</div>
+    <div class="widget-question">Follow how electors choose a President. Tap Next to move along.</div>
+    <div class="ow-frames"><div class="ow-frame on"><div class="ow-frame-title">The states choose electors</div>Each state chooses electors, and the electors choose the President. Today every state lets its voters pick them.</div><div class="ow-frame"><div class="ow-frame-title">Count the electors</div>A state has as many electors as it has Representatives and Senators together. In all there are 538: 435 Representatives, 100 Senators, and 3 for Washington, D.C.</div><div class="ow-frame"><div class="ow-frame-title">Reach a majority</div>A candidate needs a majority of the electors, which is 270, to win.</div><div class="ow-frame"><div class="ow-frame-title">Winner takes all</div>In all but two states, Maine and Nebraska, the candidate with the most votes in the state gets all of its electors.</div></div>
+    <div class="ow-step-ctl"><button type="button" class="ow-prev" disabled>Back</button><button type="button" class="ow-next">Next</button><span class="ow-step-count">Step 1 of 4</span><span class="ow-dots"><span class="ow-dot on"></span><span class="ow-dot"></span><span class="ow-dot"></span><span class="ow-dot"></span></span></div>
+    <button type="button" class="widget-reset">Reset</button>
+    </div>
         <h3 style="font-size: 20px; color: #0e1c42; margin: 18px 0 8px 0;">A Tie Nobody Planned For</h3>
         <p style="font-size: 17px; color: #1a2340; line-height: 1.65; margin: 0 0 10px 0;">The Framers did not expect political parties. By 1800, though, there were two. The Federalists backed John Adams. The campaign was bitter. Federalists said Jefferson would bring chaos. Republicans called Adams a tyrant. The country was also nervous about a possible war with France, and you will see how that fear led to a harsh law. The Republicans backed Thomas Jefferson, with Aaron Burr of New York as his running mate. At that time, each <span class="gloss" tabindex="0">elector<button class="gloss-audio" aria-label="Play pronunciation" onclick="speakGloss(event,'elector')">&#128266;</button><span class="gloss-tip"><span class="gloss-pron">ih-LEK-tor</span>A person chosen to cast a state&rsquo;s vote for President.</span></span> cast two votes, and the top vote-getter became President. The runner-up became Vice President. Nobody said which vote was for which job.</p>
         <p style="font-size: 17px; color: #1a2340; line-height: 1.65; margin: 0 0 10px 0;">The Republicans won. But every one of their <span class="gloss" tabindex="0">electors<button class="gloss-audio" aria-label="Play pronunciation" onclick="speakGloss(event,'elector')">&#128266;</button><span class="gloss-tip"><span class="gloss-pron">ih-LEK-tor</span>A person chosen to cast a state&rsquo;s vote for President.</span></span> voted for both Jefferson and Burr, so the two men tied with 73 votes each. Adams had 65. Burr could have said at once that Jefferson was the choice. He stayed quiet, and that kept the contest alive. The Constitution said that a tie went to the House of Representatives, where each state casts one vote. A candidate needed a <span class="gloss" tabindex="0">majority<button class="gloss-audio" aria-label="Play pronunciation" onclick="speakGloss(event,'majority')">&#128266;</button><span class="gloss-tip"><span class="gloss-pron">muh-JOR-ih-tee</span>More than half.</span></span> of the states. The House was full of Federalists who had just lost, and they could choose between two men they did not like.</p>
@@ -400,6 +384,17 @@
         <p style="font-size: 17px; color: #1a2340; line-height: 1.65; margin: 0 0 10px 0;">The House began voting in February 1801. Day after day, the count was the same. Jefferson held eight states and Burr held six, and two were split. They voted again and again, thirty-six times in all. The new President had to take office on March 4.</p>
         <p style="font-size: 17px; color: #1a2340; line-height: 1.65; margin: 0 0 10px 0;">This was dangerous. Suppose the House had not chosen by March 4. Adams&rsquo;s term would have ended, and the Constitution did not say clearly who would lead the country. There would have been no President. Some Republican leaders talked about using state militias if the Federalists stole the election. Some Federalists talked about making a President by law. The country stood close to a break.</p>
         <p style="font-size: 17px; color: #1a2340; line-height: 1.65; margin: 0 0 10px 0;">Hamilton disliked Jefferson, but he trusted Burr much less. He wrote letters urging his fellow Federalists to choose Jefferson. He judged that Jefferson, though wrong on many things, was a man of principle. On the thirty-sixth ballot, enough Federalists left their votes blank, and Jefferson was elected on February 17.</p>
+    <div class="optima-widget ow-decide" data-engine="decide" data-widget="hamilton-choice">
+    <div class="widget-kicker">You decide</div>
+    <div class="widget-question">Put yourself in a hard spot. There is no wrong choice here. After you choose, you will see what Hamilton actually did.</div>
+    <div class="ow-scenario">It is early 1801. You are Alexander Hamilton, a Federalist leader. The House has voted over and over without a winner. You dislike Jefferson, but you trust Burr much less. What do you tell your fellow Federalists?</div>
+    <div class="ow-choices"><button type="button" class="ow-choice" data-i="0">Urge them to choose Jefferson, even though I disagree with him on many things.</button><button type="button" class="ow-choice" data-i="1">Urge them to choose Burr.</button><button type="button" class="ow-choice" data-i="2">Stay out of it and let the House sort it out.</button></div>
+    <div class="ow-result" data-i="0">You would be judging that Jefferson, though wrong on many things, is a man of principle.</div>
+    <div class="ow-result" data-i="1">You would be going against your own judgment. Hamilton trusted Burr much less than he trusted Jefferson.</div>
+    <div class="ow-result" data-i="2">You would be leaving the choice to others. Hamilton did not do that. He wrote letters to his fellow Federalists.</div>
+    <div class="ow-actual"><em>What actually happened.</em> Hamilton wrote letters urging his fellow Federalists to choose Jefferson. On the thirty-sixth ballot, enough Federalists left their votes blank, and Jefferson was elected on February 17.</div>
+    <button type="button" class="widget-reset">Reset</button>
+    </div>
         <h3 style="font-size: 20px; color: #0e1c42; margin: 18px 0 8px 0;">The Fix, and the Speech</h3>
         <p style="font-size: 17px; color: #1a2340; line-height: 1.65; margin: 0 0 10px 0;">The nation fixed the problem. The 12th Amendment, ratified in 1804, said that <span class="gloss" tabindex="0">electors<button class="gloss-audio" aria-label="Play pronunciation" onclick="speakGloss(event,'elector')">&#128266;</button><span class="gloss-tip"><span class="gloss-pron">ih-LEK-tor</span>A person chosen to cast a state&rsquo;s vote for President.</span></span> would cast one ballot for President and a separate ballot for Vice President. A tie like that of 1800 could no longer happen by accident. If no one wins a <span class="gloss" tabindex="0">majority<button class="gloss-audio" aria-label="Play pronunciation" onclick="speakGloss(event,'majority')">&#128266;</button><span class="gloss-tip"><span class="gloss-pron">muh-JOR-ih-tee</span>More than half.</span></span>, the House still decides among the top candidates, and the Senate chooses the Vice President.</p>
         <p style="font-size: 17px; color: #1a2340; line-height: 1.65; margin: 0 0 10px 0;">Look at what Hamilton did. He had fought Jefferson for years, and he did not trust him. Still, he put the safety of the republic ahead of his own feelings. That is civic virtue at work. A leader helped the other side win because he feared worse for the country.</p>
@@ -411,6 +406,14 @@
         </div>
         <p style="font-size: 17px; color: #1a2340; line-height: 1.65; margin: 0 0 10px 0;">Jefferson gave his <strong><span class="gloss" tabindex="0">inaugural address<button class="gloss-audio" aria-label="Play pronunciation" onclick="speakGloss(event,'inauguration')">&#128266;</button><span class="gloss-tip"><span class="gloss-pron">ih-naw-gyuh-RAY-shun</span>The ceremony in which a new President takes office.</span></span></strong> in a calm voice. He said that disagreements over ideas were not the same as disagreements over loyalty. &ldquo;We are all Republicans, we are all Federalists,&rdquo; he said. He added, &ldquo;Every difference of opinion is not a difference of principle.&rdquo; He wanted to calm the country after a bitter fight.</p>
         <p style="font-size: 17px; color: #1a2340; line-height: 1.65; margin: 0 0 10px 0;">Compare this with Rome. When Sulla wanted power, he marched his army on the city. When Caesar wanted it, he crossed a river with his soldiers. In America, power moved from one party to the other without a soldier. That <strong><span class="gloss" tabindex="0">transfer of power<button class="gloss-audio" aria-label="Play pronunciation" onclick="speakGloss(event,'transfer of power')">&#128266;</button><span class="gloss-tip"><span class="gloss-pron">TRANS-fur uv POW-ur</span>The handing of power from one leader or party to the next.</span></span></strong> was not guaranteed. It happened because many people chose to accept the result. President Adams, who had lost, left Washington before the ceremony. He gave up the office without a fight.</p>
+    <div class="optima-widget ow-order" data-engine="order" data-widget="election-1800-order">
+    <div class="widget-kicker">Put it in order</div>
+    <div class="widget-question">Tap these five events in the order they happened, from the tie to the fix.</div>
+    <div class="ow-pool"><button type="button" class="ow-item" data-i="2" data-note="Jefferson held eight states and Burr held six, and two were split." data-hint="">The House votes thirty-six times with no winner.</button><button type="button" class="ow-item" data-i="4" data-note="1804. The 12th Amendment meant a tie like this could no longer happen by accident." data-hint="">The nation passes an amendment so that electors cast separate ballots for President and Vice President.</button><button type="button" class="ow-item" data-i="1" data-note="A candidate needed a majority of the states." data-hint="">The Constitution sends the tie to the House, where each state casts one vote.</button><button type="button" class="ow-item" data-i="0" data-note="The two men tied with 73 votes each. Adams had 65." data-hint="">Every Republican elector votes for both Jefferson and Burr.</button><button type="button" class="ow-item" data-i="3" data-note="This happened on February 17, after Hamilton urged his fellow Federalists to choose Jefferson." data-hint="">Enough Federalists leave their votes blank, and Jefferson is elected.</button></div>
+    <ol class="ow-seq"><li class="ow-slot"></li><li class="ow-slot"></li><li class="ow-slot"></li><li class="ow-slot"></li><li class="ow-slot"></li></ol>
+    <div class="widget-feedback" role="status" aria-live="polite"></div>
+    <button type="button" class="widget-reset">Reset</button>
+    </div>
     </div>
 
     <div style="background: #FFFFFF; border-top: 3px solid #0E1C42; border: 1px solid #D0D9E8; border-radius: 8px; padding: 20px 24px; margin-bottom: 20px;">
@@ -451,46 +454,8 @@ function speakGloss(e, text) {
     window.speechSynthesis.speak(u);
   }
 }
-(function () {
-  document.addEventListener('click', function (e) {
-    var reset = e.target.closest('.widget-reset');
-    if (reset) {
-      var w = reset.closest('.optima-widget');
-      w.querySelectorAll('.widget-options button').forEach(function (b) { b.classList.remove('selected', 'correct', 'incorrect'); });
-      w.querySelectorAll('.widget-feedback').forEach(function (f) { f.classList.remove('show'); f.textContent = ''; });
-      w.querySelectorAll('.row-feedback').forEach(function (f) { f.remove(); });
-      w.querySelectorAll('.ow-flip.flipped').forEach(function (c) { c.classList.remove('flipped'); });
-      if (w.classList.contains('ow-flip')) { w.classList.remove('flipped'); }
-      return;
-    }
-    var rBtn = e.target.closest('.ow-reflect .widget-options button');
-    if (rBtn) {
-      var rw = rBtn.closest('.optima-widget');
-      rw.querySelectorAll('.widget-options button').forEach(function (b) { b.classList.remove('selected'); });
-      rBtn.classList.add('selected');
-      var fb = rw.querySelector('.widget-feedback');
-      fb.textContent = rBtn.dataset.response || '';
-      fb.classList.add('show');
-      return;
-    }
-    var sBtn = e.target.closest('.ow-select .widget-row .widget-options button, .ow-scale .widget-row .widget-options button');
-    if (sBtn) {
-      var row = sBtn.closest('.widget-row');
-      var correct = row.dataset.correct;
-      row.querySelectorAll('.widget-options button').forEach(function (b) { b.classList.remove('selected', 'correct', 'incorrect'); });
-      var right = sBtn.dataset.choice === correct;
-      sBtn.classList.add(right ? 'correct' : 'incorrect');
-      var text = right ? (sBtn.dataset.fb || row.dataset.fb || 'Right.') : (sBtn.dataset.fb || row.dataset.hint || 'Not quite. Try again.');
-      var rf = row.querySelector('.row-feedback') || row.appendChild(document.createElement('div'));
-      rf.className = 'row-feedback ' + (right ? 'correct' : 'incorrect');
-      rf.textContent = text;
-      return;
-    }
-    var flip = e.target.closest('.ow-flip');
-    if (flip) { flip.classList.toggle('flipped'); return; }
-  });
-})();
 </script>
+<script src="../../shared/widgets.js"></script>
 
 </body>
 </html>

@@ -4,35 +4,12 @@
 <meta charset="utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1" />
 <title>M/J Civics &mdash; Lesson: Amending the Constitution: The 13th, 14th, and 15th</title>
+<link rel="stylesheet" href="../../shared/widgets.css">
 <style>
     body { margin: 0; padding: 0; font-family: "Segoe UI", Roboto, Helvetica, Arial, sans-serif; background: #f4f6fa; }
     .canvas-frame { max-width: 1100px; margin: 0 auto; background: #ffffff; box-shadow: 0 2px 8px rgba(0,0,0,0.08); }
 
-    /* ===== WIDGET CSS (byte-consistent across this site) ===== */
-    .optima-widget { background: linear-gradient(135deg, #E8F6FB 0%, #F4F9FC 100%); border: 1px solid #C5DCE5; border-left: 5px solid #2196D0; border-radius: 8px; padding: 18px 22px; margin: 18px 0; }
-    .widget-kicker { font-size: 11px; color: #1B6A94; margin-bottom: 10px; letter-spacing: 0.4px; }
-    .widget-question { font-size: 17px; color: #0E1C42; margin-bottom: 14px; line-height: 1.55; }
-    .widget-row { background: #FFFFFF; border: 1px solid #D0D9E8; border-radius: 6px; padding: 12px 14px; margin-bottom: 10px; }
-    .widget-row-prompt { font-size: 15px; color: #0E1C42; margin-bottom: 8px; line-height: 1.5; font-style: italic; }
-    .widget-options { display: flex; flex-wrap: wrap; gap: 8px; }
-    .widget-options button { background: #FFFFFF; border: 1.5px solid #D0D9E8; border-radius: 8px; padding: 8px 14px; font-size: 14px; color: #0E1C42; cursor: pointer; transition: all 0.15s; font-family: inherit; }
-    .widget-options button:hover { background: #F4F6FA; border-color: #55C8E8; }
-    .widget-options button.selected { background: #0E1C42; color: #FFFFFF; border-color: #0E1C42; }
-    .widget-options button.correct { background: #D8F0DD; border-color: #2A9D5C; color: #1A6B3D; }
-    .widget-options button.incorrect { background: #FDECEC; border-color: #C0392B; color: #8A1F16; }
-    .widget-feedback { background: #FFFFFF; border-left: 3px solid #C7922C; padding: 10px 14px; font-size: 15px; color: #1a2340; line-height: 1.55; margin: 10px 0; display: none; border-radius: 4px; }
-    .widget-feedback.show { display: block; }
-    .row-feedback { padding: 8px 12px; margin-top: 8px; font-size: 14px; border-radius: 4px; line-height: 1.5; }
-    .row-feedback.correct { background: #D8F0DD; border-left: 3px solid #2A9D5C; color: #1A6B3D; }
-    .row-feedback.incorrect { background: #FDECEC; border-left: 3px solid #C0392B; color: #8A1F16; }
-    .widget-reset { background: transparent; border: 1px solid #C7922C; color: #C7922C; border-radius: 6px; padding: 6px 12px; font-size: 12px; cursor: pointer; font-family: inherit; margin-top: 6px; }
-    .widget-reset:hover { background: #FDF3E3; }
-    .ow-scale .widget-options { justify-content: space-between; }
-    .ow-scale .widget-options button { flex: 1; text-align: center; }
-    .ow-flip { background: #FFFFFF; border: 1px solid #D0D9E8; border-radius: 8px; padding: 18px 20px; cursor: pointer; text-align: center; }
-    .ow-flip .ow-flip-back { display: none; color: #1a2340; }
-    .ow-flip.flipped .ow-flip-front { display: none; }
-    .ow-flip.flipped .ow-flip-back { display: block; }
+    /* widget styles live in ../../shared/widgets.css (linked below) */
 
     /* ===== VOCABULARY GLOSSARY (byte-consistent across this site) ===== */
     .callout { border-radius: 6px; padding: 14px 20px; margin: 14px 0; }
@@ -393,10 +370,34 @@
         <p style="font-size: 17px; color: #1a2340; line-height: 1.65; margin: 0 0 10px 0;">The Framers did not think they had written a perfect Constitution. They also did not want it changed every time a crowd felt angry. So they wrote Article V, which sets out how to amend the Constitution. The road is hard, but it can be traveled.</p>
         <p style="font-size: 17px; color: #1a2340; line-height: 1.65; margin: 0 0 10px 0;">There are two steps. First, an amendment must be proposed. Two-thirds of both houses of Congress can propose it. The other way is a convention called by two-thirds of the states, which has never been used. Second, the amendment must be <strong><span class="gloss" tabindex="0">ratified<button class="gloss-audio" aria-label="Play pronunciation" onclick="speakGloss(event,'ratify')">&#128266;</button><span class="gloss-tip"><span class="gloss-pron">RAT-ih-fy</span>To approve something officially so that it becomes law.</span></span></strong>. Three-fourths of the states must approve it. That is why a small group cannot change the Constitution alone. The President does not sign an amendment, and it goes straight to the states. Thousands of amendments have been proposed, but only twenty-seven have been <span class="gloss" tabindex="0">ratified<button class="gloss-audio" aria-label="Play pronunciation" onclick="speakGloss(event,'ratify')">&#128266;</button><span class="gloss-tip"><span class="gloss-pron">RAT-ih-fy</span>To approve something officially so that it becomes law.</span></span>.</p>
         <p style="font-size: 17px; color: #1a2340; line-height: 1.65; margin: 0 0 10px 0;">The Framers remembered the Articles of Confederation, which could be changed only if every state agreed. That rule had trapped the country. Article V is a middle path. It is hard enough to protect the Constitution from passing moods. It is open enough that a determined people can still change it.</p>
+    <div class="optima-widget ow-step" data-engine="step" data-widget="amend-road">
+    <div class="widget-kicker">Step through it</div>
+    <div class="widget-question">Here is the road for changing the Constitution. Tap Next to move along it.</div>
+    <div class="ow-frames"><div class="ow-frame on"><div class="ow-frame-title">Step one: propose</div>Two-thirds of both houses of Congress can propose an amendment. The other way is a convention called by two-thirds of the states, which has never been used.</div><div class="ow-frame"><div class="ow-frame-title">Step two: ratify</div>Three-fourths of the states must approve the amendment. That is why a small group cannot change the Constitution alone.</div><div class="ow-frame"><div class="ow-frame-title">No signature needed</div>The President does not sign an amendment. It goes straight to the states.</div><div class="ow-frame"><div class="ow-frame-title">The result</div>Thousands of amendments have been proposed, but only twenty-seven have been ratified. The road is hard, but it can be traveled.</div></div>
+    <div class="ow-step-ctl"><button type="button" class="ow-prev" disabled>Back</button><button type="button" class="ow-next">Next</button><span class="ow-step-count">Step 1 of 4</span><span class="ow-dots"><span class="ow-dot on"></span><span class="ow-dot"></span><span class="ow-dot"></span><span class="ow-dot"></span></span></div>
+    <button type="button" class="widget-reset">Reset</button>
+    </div>
         <h3 style="font-size: 20px; color: #0e1c42; margin: 18px 0 8px 0;">The 13th Amendment, 1865</h3>
         <p style="font-size: 17px; color: #1a2340; line-height: 1.65; margin: 0 0 10px 0;">The first test came in the Civil War. In 1864 the Senate passed an amendment to end slavery. The House did not give it the two-thirds it needed. Then Abraham Lincoln won reelection in November. Congress still had a few months left before the new members arrived, so it was a <strong><span class="gloss" tabindex="0">lame-duck<button class="gloss-audio" aria-label="Play pronunciation" onclick="speakGloss(event,'lame duck')">&#128266;</button><span class="gloss-tip"><span class="gloss-pron">LAYM duk</span>An official or a Congress that is still in office but has been voted out or is about to leave.</span></span></strong> Congress. Lincoln pressed it to act before the term ended, and his allies worked on members one by one.</p>
         <p style="font-size: 17px; color: #1a2340; line-height: 1.65; margin: 0 0 10px 0;">On January 31, 1865, the House voted 119 to 56. That was only a handful of votes more than the two-thirds required. Some members changed their minds. Others stayed away and let the vote pass. The amendment went to the states. Lincoln was killed in April, before the states had finished. In December 1865 it became part of the Constitution.</p>
         <p style="font-size: 17px; color: #1a2340; line-height: 1.65; margin: 0 0 10px 0;">Think about how close this was. If the House had failed again, the question would have waited for the next Congress, and the war might have ended in a different way. The 13th Amendment says that neither slavery nor involuntary servitude may exist in the United States, except as punishment for a crime.</p>
+    <div class="optima-widget ow-scale" data-engine="scale" data-widget="hard-scale">
+    <div class="widget-kicker">Place it on the scale</div>
+    <div class="widget-question">The Framers wanted a rule for change that was neither too easy nor too hard. Place each rule on the scale.</div>
+    <div class="widget-row" data-correct="2" data-fb="Right. The lesson says that rule trapped the country." data-hint="Think about how hard it is to get every single state to agree.">
+      <div class="widget-row-prompt">The Articles of Confederation could be changed only if every state agreed. Where does that rule sit?</div>
+      <div class="widget-options"><button type="button" data-choice="0">Too easy to change</button><button type="button" data-choice="1">About right</button><button type="button" data-choice="2">Too hard to change</button></div>
+    </div>
+    <div class="widget-row" data-correct="1" data-fb="Right. This middle path guards against passing moods, yet a determined people can still act." data-hint="The 13th, 14th, and 15th Amendments all passed this way.">
+      <div class="widget-row-prompt">Article V asks for two-thirds of Congress and three-fourths of the states. Where does it sit?</div>
+      <div class="widget-options"><button type="button" data-choice="0">Too easy: a crowd could change it</button><button type="button" data-choice="1">A middle path: hard but possible</button><button type="button" data-choice="2">Too hard: nothing could change</button></div>
+    </div>
+    <div class="widget-row" data-correct="0" data-fb="Right. The Framers did not want the Constitution changed every time a crowd felt angry." data-hint="Think about how quickly a mood could turn into a new rule.">
+      <div class="widget-row-prompt">Suppose a simple majority of Congress could change the Constitution. Where would that sit?</div>
+      <div class="widget-options"><button type="button" data-choice="0">Too easy to change</button><button type="button" data-choice="1">About right</button><button type="button" data-choice="2">Too hard to change</button></div>
+    </div>
+    <button type="button" class="widget-reset">Reset</button>
+    </div>
     </div>
 
     <div style="background: #FFFFFF; border-top: 3px solid #C7922C; border: 1px solid #D0D9E8; border-radius: 8px; padding: 20px 24px; margin-bottom: 20px;">
@@ -411,6 +412,14 @@
         <p style="font-size: 17px; color: #1a2340; line-height: 1.65; margin: 0 0 10px 0;">Notice, too, who was still left out. The 15th Amendment said nothing about sex. Women of every race could not vote in most of the country. Their story is the next part of this lesson.</p>
         <p style="font-size: 17px; color: #1a2340; line-height: 1.65; margin: 0 0 10px 0;">You have already seen how the Court dealt with this period. In <em>Plessy v. Ferguson</em> it allowed separate public places, and for many decades it did not stop the evasions. In <em>Brown v. Board of Education</em> it finally said that separate schools were unequal. The 14th Amendment&rsquo;s promise was kept slowly and at a high cost.</p>
         <p style="font-size: 17px; color: #1a2340; line-height: 1.65; margin: 0 0 10px 0;">Notice what these three amendments teach. The nation did not tear up the Constitution to widen the republic. It used Article V. The change was hard won, and the evasions were hard fought. But every step began as an argument about what the people&rsquo;s own rules should say.</p>
+    <div class="optima-widget ow-order" data-engine="order" data-widget="three-amendments-order">
+    <div class="widget-kicker">Put it in order</div>
+    <div class="widget-question">Tap these five events in the order they happened, earliest first.</div>
+    <div class="ow-pool"><button type="button" class="ow-item" data-i="4" data-note="1877. The protection for Black voters left with them." data-hint="">Reconstruction ends and federal troops leave the South.</button><button type="button" class="ow-item" data-i="0" data-note="January 31, 1865. The vote was 119 to 56, a close margin over what was needed." data-hint="">The House passes the amendment to end slavery.</button><button type="button" class="ow-item" data-i="1" data-note="December 1865, after the states had finished ratifying it." data-hint="">The 13th Amendment becomes part of the Constitution.</button><button type="button" class="ow-item" data-i="2" data-note="1868. It promises due process and equal protection of the laws." data-hint="">The 14th Amendment is ratified.</button><button type="button" class="ow-item" data-i="3" data-note="1870. The right to vote cannot be denied because of race, color, or previous condition of servitude." data-hint="">The 15th Amendment is ratified.</button></div>
+    <ol class="ow-seq"><li class="ow-slot"></li><li class="ow-slot"></li><li class="ow-slot"></li><li class="ow-slot"></li><li class="ow-slot"></li></ol>
+    <div class="widget-feedback" role="status" aria-live="polite"></div>
+    <button type="button" class="widget-reset">Reset</button>
+    </div>
     </div>
 
     <div style="background: #FFFFFF; border-top: 3px solid #0E1C42; border: 1px solid #D0D9E8; border-radius: 8px; padding: 20px 24px; margin-bottom: 20px;">
@@ -458,46 +467,8 @@ function speakGloss(e, text) {
     window.speechSynthesis.speak(u);
   }
 }
-(function () {
-  document.addEventListener('click', function (e) {
-    var reset = e.target.closest('.widget-reset');
-    if (reset) {
-      var w = reset.closest('.optima-widget');
-      w.querySelectorAll('.widget-options button').forEach(function (b) { b.classList.remove('selected', 'correct', 'incorrect'); });
-      w.querySelectorAll('.widget-feedback').forEach(function (f) { f.classList.remove('show'); f.textContent = ''; });
-      w.querySelectorAll('.row-feedback').forEach(function (f) { f.remove(); });
-      w.querySelectorAll('.ow-flip.flipped').forEach(function (c) { c.classList.remove('flipped'); });
-      if (w.classList.contains('ow-flip')) { w.classList.remove('flipped'); }
-      return;
-    }
-    var rBtn = e.target.closest('.ow-reflect .widget-options button');
-    if (rBtn) {
-      var rw = rBtn.closest('.optima-widget');
-      rw.querySelectorAll('.widget-options button').forEach(function (b) { b.classList.remove('selected'); });
-      rBtn.classList.add('selected');
-      var fb = rw.querySelector('.widget-feedback');
-      fb.textContent = rBtn.dataset.response || '';
-      fb.classList.add('show');
-      return;
-    }
-    var sBtn = e.target.closest('.ow-select .widget-row .widget-options button, .ow-scale .widget-row .widget-options button');
-    if (sBtn) {
-      var row = sBtn.closest('.widget-row');
-      var correct = row.dataset.correct;
-      row.querySelectorAll('.widget-options button').forEach(function (b) { b.classList.remove('selected', 'correct', 'incorrect'); });
-      var right = sBtn.dataset.choice === correct;
-      sBtn.classList.add(right ? 'correct' : 'incorrect');
-      var text = right ? (sBtn.dataset.fb || row.dataset.fb || 'Right.') : (sBtn.dataset.fb || row.dataset.hint || 'Not quite. Try again.');
-      var rf = row.querySelector('.row-feedback') || row.appendChild(document.createElement('div'));
-      rf.className = 'row-feedback ' + (right ? 'correct' : 'incorrect');
-      rf.textContent = text;
-      return;
-    }
-    var flip = e.target.closest('.ow-flip');
-    if (flip) { flip.classList.toggle('flipped'); return; }
-  });
-})();
 </script>
+<script src="../../shared/widgets.js"></script>
 
 </body>
 </html>

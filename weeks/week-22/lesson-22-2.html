@@ -4,35 +4,12 @@
 <meta charset="utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1" />
 <title>M/J Civics &mdash; Lesson: Sedition, Interest Groups, and Propaganda</title>
+<link rel="stylesheet" href="../../shared/widgets.css">
 <style>
     body { margin: 0; padding: 0; font-family: "Segoe UI", Roboto, Helvetica, Arial, sans-serif; background: #f4f6fa; }
     .canvas-frame { max-width: 1100px; margin: 0 auto; background: #ffffff; box-shadow: 0 2px 8px rgba(0,0,0,0.08); }
 
-    /* ===== WIDGET CSS (byte-consistent across this site) ===== */
-    .optima-widget { background: linear-gradient(135deg, #E8F6FB 0%, #F4F9FC 100%); border: 1px solid #C5DCE5; border-left: 5px solid #2196D0; border-radius: 8px; padding: 18px 22px; margin: 18px 0; }
-    .widget-kicker { font-size: 11px; color: #1B6A94; margin-bottom: 10px; letter-spacing: 0.4px; }
-    .widget-question { font-size: 17px; color: #0E1C42; margin-bottom: 14px; line-height: 1.55; }
-    .widget-row { background: #FFFFFF; border: 1px solid #D0D9E8; border-radius: 6px; padding: 12px 14px; margin-bottom: 10px; }
-    .widget-row-prompt { font-size: 15px; color: #0E1C42; margin-bottom: 8px; line-height: 1.5; font-style: italic; }
-    .widget-options { display: flex; flex-wrap: wrap; gap: 8px; }
-    .widget-options button { background: #FFFFFF; border: 1.5px solid #D0D9E8; border-radius: 8px; padding: 8px 14px; font-size: 14px; color: #0E1C42; cursor: pointer; transition: all 0.15s; font-family: inherit; }
-    .widget-options button:hover { background: #F4F6FA; border-color: #55C8E8; }
-    .widget-options button.selected { background: #0E1C42; color: #FFFFFF; border-color: #0E1C42; }
-    .widget-options button.correct { background: #D8F0DD; border-color: #2A9D5C; color: #1A6B3D; }
-    .widget-options button.incorrect { background: #FDECEC; border-color: #C0392B; color: #8A1F16; }
-    .widget-feedback { background: #FFFFFF; border-left: 3px solid #C7922C; padding: 10px 14px; font-size: 15px; color: #1a2340; line-height: 1.55; margin: 10px 0; display: none; border-radius: 4px; }
-    .widget-feedback.show { display: block; }
-    .row-feedback { padding: 8px 12px; margin-top: 8px; font-size: 14px; border-radius: 4px; line-height: 1.5; }
-    .row-feedback.correct { background: #D8F0DD; border-left: 3px solid #2A9D5C; color: #1A6B3D; }
-    .row-feedback.incorrect { background: #FDECEC; border-left: 3px solid #C0392B; color: #8A1F16; }
-    .widget-reset { background: transparent; border: 1px solid #C7922C; color: #C7922C; border-radius: 6px; padding: 6px 12px; font-size: 12px; cursor: pointer; font-family: inherit; margin-top: 6px; }
-    .widget-reset:hover { background: #FDF3E3; }
-    .ow-scale .widget-options { justify-content: space-between; }
-    .ow-scale .widget-options button { flex: 1; text-align: center; }
-    .ow-flip { background: #FFFFFF; border: 1px solid #D0D9E8; border-radius: 8px; padding: 18px 20px; cursor: pointer; text-align: center; }
-    .ow-flip .ow-flip-back { display: none; color: #1a2340; }
-    .ow-flip.flipped .ow-flip-front { display: none; }
-    .ow-flip.flipped .ow-flip-back { display: block; }
+    /* widget styles live in ../../shared/widgets.css (linked below) */
 
     /* ===== VOCABULARY GLOSSARY (byte-consistent across this site) ===== */
     .callout { border-radius: 6px; padding: 14px 20px; margin: 14px 0; }
@@ -393,6 +370,14 @@
         <p style="font-size: 17px; color: #1a2340; line-height: 1.65; margin: 0 0 10px 0;">Supporters said that a country at war could not allow lies that weaken it. The trouble was how the law was used. Almost every person tried was a Republican editor or writer who criticized the Federalists. Matthew Lyon, a congressman from Vermont, was jailed for four months for printing criticism of President Adams. Voters in his state reelected him while he sat in jail.</p>
         <p style="font-size: 17px; color: #1a2340; line-height: 1.65; margin: 0 0 10px 0;">Jefferson and James Madison answered with the Virginia and Kentucky Resolutions. They said that the <span class="gloss" tabindex="0">Sedition<button class="gloss-audio" aria-label="Play pronunciation" onclick="speakGloss(event,'sedition')">&#128266;</button><span class="gloss-tip"><span class="gloss-pron">sih-DISH-un</span>Speech or writing that urges people to turn against the government.</span></span> Act broke the First Amendment, and that states could speak out against it. The law ended in March 1801, and President Jefferson <strong><span class="gloss" tabindex="0">pardoned<button class="gloss-audio" aria-label="Play pronunciation" onclick="speakGloss(event,'pardon')">&#128266;</button><span class="gloss-tip"><span class="gloss-pron">PAR-dun</span>An official act that forgives a person for a crime and ends the punishment.</span></span></strong> the people who had been convicted. A republic that had defended a printer in 1735 had come close to silencing printers in 1798.</p>
         <p style="font-size: 17px; color: #1a2340; line-height: 1.65; margin: 0 0 10px 0;">Think about the two sides. Congress felt it was protecting a young country. Critics felt it was using the law to punish its enemies. This is a hard question, and you will argue about it in the discussion that follows. The Act did allow truth as a defense, which Zenger&rsquo;s lawyer had asked for. Yet it was used mostly against one party&rsquo;s writers, and it left the Vice President unprotected. Ask yourself whether a law can be fair on paper and unfair in use.</p>
+    <div class="optima-widget ow-sort" data-engine="sort" data-widget="who-did-what-sort">
+    <div class="widget-kicker">Sort it</div>
+    <div class="widget-question">In 1798 two sides took very different actions. Tap an action, then tap the side that took it.</div>
+    <div class="ow-pool"><button type="button" class="ow-item" data-bin="1" data-why="Right. The law ended in March 1801, and President Jefferson pardoned them." data-hint="Think about who became President in 1801.">Pardoned the people convicted under the Act</button><button type="button" class="ow-item" data-bin="0" data-why="Right. It was one of the set of new laws the Federalists passed." data-hint="Think about who passed the new laws.">Passed a law letting the President deport foreigners thought to be dangerous</button><button type="button" class="ow-item" data-bin="0" data-why="Right. The Vice President then was Jefferson, the leader of the other party." data-hint="Think about who wrote the law, and who the Vice President was.">Left the Vice President out of the law&rsquo;s protection</button><button type="button" class="ow-item" data-bin="1" data-why="Right. They answered the Sedition Act." data-hint="Think about who spoke out against the Act.">Wrote the Virginia and Kentucky Resolutions</button><button type="button" class="ow-item" data-bin="1" data-why="Right. They also said states could speak out against it." data-hint="Think about who argued against the law.">Said the Act broke the First Amendment</button><button type="button" class="ow-item" data-bin="0" data-why="Right. President Adams and a Congress controlled by Federalists passed it." data-hint="Think about who held power in Congress in 1798.">Passed the Sedition Act</button></div>
+    <div class="ow-bins"><div class="ow-bin" data-bin="0" role="button" tabindex="0"><div class="ow-bin-title">Adams and the Federalists</div><ul></ul></div><div class="ow-bin" data-bin="1" role="button" tabindex="0"><div class="ow-bin-title">Jefferson and Madison</div><ul></ul></div></div>
+    <div class="widget-feedback" role="status" aria-live="polite"></div>
+    <button type="button" class="widget-reset">Reset</button>
+    </div>
     </div>
 
     <div style="background: #FFFFFF; border-top: 3px solid #C7922C; border: 1px solid #D0D9E8; border-radius: 8px; padding: 20px 24px; margin-bottom: 20px;">
@@ -401,12 +386,42 @@
         <p style="font-size: 17px; color: #1a2340; line-height: 1.65; margin: 0 0 10px 0;">A citizen alone has a small voice. Citizens who join together have a bigger one. An <strong><span class="gloss" tabindex="0">interest group<button class="gloss-audio" aria-label="Play pronunciation" onclick="speakGloss(event,'interest group')">&#128266;</button><span class="gloss-tip"><span class="gloss-pron">IN-trist groop</span>A group of citizens who join together to influence government on an issue they care about.</span></span></strong> is a group of people who unite to influence government on a cause they share. Madison saw this in Federalist No. 10. He called such groups factions, and he feared they could hurt the common good. He also knew that you cannot ban them without banning freedom itself.</p>
         <p style="font-size: 17px; color: #1a2340; line-height: 1.65; margin: 0 0 10px 0;">Alexis de Tocqueville, a Frenchman who visited America in the 1830s, noticed how often Americans formed groups. They started clubs, churches, and societies to solve problems themselves. He thought this habit helped keep the republic free. Today <span class="gloss" tabindex="0">interest groups<button class="gloss-audio" aria-label="Play pronunciation" onclick="speakGloss(event,'interest group')">&#128266;</button><span class="gloss-tip"><span class="gloss-pron">IN-trist groop</span>A group of citizens who join together to influence government on an issue they care about.</span></span> write letters, hold marches, and speak to lawmakers. Used well, they help citizens take part. The First Amendment protects the right to assemble and to petition the government, and that is the right they use.</p>
         <p style="font-size: 17px; color: #1a2340; line-height: 1.65; margin: 0 0 10px 0;">The news media do a related job. They watch the government and tell citizens what they find. Ordinary people do this too when they write a letter to a local paper or call an official. Each of these is a way to monitor those in power and to try to influence them.</p>
+    <div class="optima-widget ow-reflect" data-engine="reflect" data-widget="groups-check">
+    <div class="widget-kicker">Check in</div>
+    <div class="widget-question">Think of a group you or someone you know has joined to change something, like a club, a team, or a neighborhood effort. What did joining together make possible? There is no wrong answer.</div>
+    <div class="widget-options"><button type="button" data-i="0" data-response="That is the idea of an interest group: citizens who join together to influence government on a cause they share.">A louder voice</button><button type="button" data-i="1" data-response="Tocqueville noticed that Americans start clubs, churches, and societies to solve problems themselves.">Help with a problem close to home</button><button type="button" data-i="2" data-response="The First Amendment protects the right to assemble, which is the right to gather in a group like this.">Meeting people who care about the same thing</button><button type="button" data-i="3" data-response="That is fine. A citizen alone has a small voice, and groups are one way to make it bigger.">I have not joined a group yet</button></div>
+    <div class="widget-feedback" role="status" aria-live="polite"></div>
+    <button type="button" class="widget-reset">Reset</button>
+    </div>
         <h3 style="font-size: 20px; color: #0e1c42; margin: 18px 0 8px 0;">Reading With Care</h3>
         <p style="font-size: 17px; color: #1a2340; line-height: 1.65; margin: 0 0 10px 0;">Citizens also need to judge what they read. Every source has a point of view. A source may show <strong><span class="gloss" tabindex="0">bias<button class="gloss-audio" aria-label="Play pronunciation" onclick="speakGloss(event,'bias')">&#128266;</button><span class="gloss-tip"><span class="gloss-pron">BY-us</span>A leaning toward one side that keeps a person or a source from being fair.</span></span></strong> in its loaded words, which are words that push a feeling. It may use symbols, such as flags or pictures, to stir pride or fear. It may leave out facts that would change your mind. Omission can be the quietest kind of <span class="gloss" tabindex="0">bias<button class="gloss-audio" aria-label="Play pronunciation" onclick="speakGloss(event,'bias')">&#128266;</button><span class="gloss-tip"><span class="gloss-pron">BY-us</span>A leaning toward one side that keeps a person or a source from being fair.</span></span>. Even a single word can lean. Two writers describe the same crowd in the street. One calls it a gathering, and the other calls it a mob. The facts are the same, but the feeling is not.</p>
         <p style="font-size: 17px; color: #1a2340; line-height: 1.65; margin: 0 0 10px 0;">The worst case is <strong><span class="gloss" tabindex="0">propaganda<button class="gloss-audio" aria-label="Play pronunciation" onclick="speakGloss(event,'propaganda')">&#128266;</button><span class="gloss-tip"><span class="gloss-pron">prop-uh-GAN-duh</span>Information, often one-sided or misleading, that is spread to push people toward a belief or an action.</span></span></strong>, which is information spread to push people toward a belief or an action. It is often one-sided or misleading. Two famous examples come from American history. In the 1890s, two rival New York newspapers fought for readers with huge headlines and dramatic stories. This was called the yellow press. After the battleship <em>Maine</em> exploded in 1898, many papers blamed Spain with little proof, and the public demanded war.</p>
         <p style="font-size: 17px; color: #1a2340; line-height: 1.65; margin: 0 0 10px 0;">In 1917 the government itself did something similar. President Wilson created the Committee on Public Information. It put out posters, films, and speeches to build support for the war. Many of them told the truth, and many played on fear. A citizen needs to know the difference. A poster that shows a smiling soldier, a waving flag, and the words &ldquo;Do your part&rdquo; is built to make you feel something before you think. That is not always wrong. But it is always worth noticing.</p>
+    <div class="optima-widget ow-flip" data-engine="flip" data-widget="source-cards">
+    <div class="widget-kicker">Flip the cards</div>
+    <div class="widget-question">Think of what each term means, then tap the card to check.</div>
+    <div class="ow-cards"><button type="button" class="ow-card"><span class="ow-front">Bias<span class="ow-hint">Tap to flip</span></span><span class="ow-back">A leaning toward one side that keeps a source from being fair. It can show up in loaded words, symbols, or things left out.</span></button><button type="button" class="ow-card"><span class="ow-front">Loaded words<span class="ow-hint">Tap to flip</span></span><span class="ow-back">Words that push a feeling. One writer calls a crowd a gathering, and another calls it a mob.</span></button><button type="button" class="ow-card"><span class="ow-front">Omission<span class="ow-hint">Tap to flip</span></span><span class="ow-back">Leaving out facts that would change your mind. It can be the quietest kind of bias.</span></button><button type="button" class="ow-card"><span class="ow-front">Propaganda<span class="ow-hint">Tap to flip</span></span><span class="ow-back">Information spread to push people toward a belief or an action. It is often one-sided or misleading.</span></button></div>
+    <button type="button" class="widget-reset">Reset</button>
+    </div>
         <h3 style="font-size: 20px; color: #0e1c42; margin: 18px 0 8px 0;">Three Questions</h3>
         <p style="font-size: 17px; color: #1a2340; line-height: 1.65; margin: 0 0 10px 0;">Here is a method for judging any source. Ask who made it. Ask who it was made for. Ask what it wants you to do. If you can answer all three, you are less likely to be fooled. You will use these questions again when you study a republic that was undone by <span class="gloss" tabindex="0">propaganda<button class="gloss-audio" aria-label="Play pronunciation" onclick="speakGloss(event,'propaganda')">&#128266;</button><span class="gloss-tip"><span class="gloss-pron">prop-uh-GAN-duh</span>Information, often one-sided or misleading, that is spread to push people toward a belief or an action.</span></span>.</p>
+    <div class="optima-widget ow-sel" data-engine="sel" data-widget="three-questions-apply">
+    <div class="widget-kicker">Apply the method</div>
+    <div class="widget-question">Use the lesson&rsquo;s examples to practice judging a source.</div>
+    <div class="widget-row" data-correct="1" data-fb="Right. It wants you to support the war, and it is built to make you feel something before you think." data-hint="Look at the words &ldquo;Do your part.&rdquo; What action do they ask for?">
+      <div class="widget-row-prompt">A poster shows a smiling soldier, a waving flag, and the words &ldquo;Do your part.&rdquo; Which question gets at what it is built to do?</div>
+      <div class="widget-options"><button type="button" data-choice="0">Who made it?</button><button type="button" data-choice="1">What does it want me to do?</button><button type="button" data-choice="2">Who was it made for?</button></div>
+    </div>
+    <div class="widget-row" data-correct="0" data-fb="Right. The government itself made them." data-hint="Ask whether this fact tells you about the maker, the audience, or the goal.">
+      <div class="widget-row-prompt">In 1917 the Committee on Public Information put out posters, films, and speeches. Which question does that fact answer?</div>
+      <div class="widget-options"><button type="button" data-choice="0">Who made it?</button><button type="button" data-choice="1">What does it want me to do?</button><button type="button" data-choice="2">Who was it made for?</button></div>
+    </div>
+    <div class="widget-row" data-correct="1" data-fb="Right. The facts are the same, but the feeling is not." data-hint="Think about single words that push a feeling.">
+      <div class="widget-row-prompt">Two writers describe the same crowd. One says gathering and the other says mob. What does this show?</div>
+      <div class="widget-options"><button type="button" data-choice="0">A symbol</button><button type="button" data-choice="1">Loaded words that can show bias</button><button type="button" data-choice="2">An omission</button></div>
+    </div>
+    <button type="button" class="widget-reset">Reset</button>
+    </div>
     </div>
 
     <div style="background: #FFFFFF; border-top: 3px solid #0E1C42; border: 1px solid #D0D9E8; border-radius: 8px; padding: 20px 24px; margin-bottom: 20px;">
@@ -447,46 +462,8 @@ function speakGloss(e, text) {
     window.speechSynthesis.speak(u);
   }
 }
-(function () {
-  document.addEventListener('click', function (e) {
-    var reset = e.target.closest('.widget-reset');
-    if (reset) {
-      var w = reset.closest('.optima-widget');
-      w.querySelectorAll('.widget-options button').forEach(function (b) { b.classList.remove('selected', 'correct', 'incorrect'); });
-      w.querySelectorAll('.widget-feedback').forEach(function (f) { f.classList.remove('show'); f.textContent = ''; });
-      w.querySelectorAll('.row-feedback').forEach(function (f) { f.remove(); });
-      w.querySelectorAll('.ow-flip.flipped').forEach(function (c) { c.classList.remove('flipped'); });
-      if (w.classList.contains('ow-flip')) { w.classList.remove('flipped'); }
-      return;
-    }
-    var rBtn = e.target.closest('.ow-reflect .widget-options button');
-    if (rBtn) {
-      var rw = rBtn.closest('.optima-widget');
-      rw.querySelectorAll('.widget-options button').forEach(function (b) { b.classList.remove('selected'); });
-      rBtn.classList.add('selected');
-      var fb = rw.querySelector('.widget-feedback');
-      fb.textContent = rBtn.dataset.response || '';
-      fb.classList.add('show');
-      return;
-    }
-    var sBtn = e.target.closest('.ow-select .widget-row .widget-options button, .ow-scale .widget-row .widget-options button');
-    if (sBtn) {
-      var row = sBtn.closest('.widget-row');
-      var correct = row.dataset.correct;
-      row.querySelectorAll('.widget-options button').forEach(function (b) { b.classList.remove('selected', 'correct', 'incorrect'); });
-      var right = sBtn.dataset.choice === correct;
-      sBtn.classList.add(right ? 'correct' : 'incorrect');
-      var text = right ? (sBtn.dataset.fb || row.dataset.fb || 'Right.') : (sBtn.dataset.fb || row.dataset.hint || 'Not quite. Try again.');
-      var rf = row.querySelector('.row-feedback') || row.appendChild(document.createElement('div'));
-      rf.className = 'row-feedback ' + (right ? 'correct' : 'incorrect');
-      rf.textContent = text;
-      return;
-    }
-    var flip = e.target.closest('.ow-flip');
-    if (flip) { flip.classList.toggle('flipped'); return; }
-  });
-})();
 </script>
+<script src="../../shared/widgets.js"></script>
 
 </body>
 </html>

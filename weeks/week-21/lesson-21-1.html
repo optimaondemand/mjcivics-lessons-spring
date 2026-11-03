@@ -4,35 +4,12 @@
 <meta charset="utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1" />
 <title>M/J Civics &mdash; Lesson: How We Vote: Local, State, National</title>
+<link rel="stylesheet" href="../../shared/widgets.css">
 <style>
     body { margin: 0; padding: 0; font-family: "Segoe UI", Roboto, Helvetica, Arial, sans-serif; background: #f4f6fa; }
     .canvas-frame { max-width: 1100px; margin: 0 auto; background: #ffffff; box-shadow: 0 2px 8px rgba(0,0,0,0.08); }
 
-    /* ===== WIDGET CSS (byte-consistent across this site) ===== */
-    .optima-widget { background: linear-gradient(135deg, #E8F6FB 0%, #F4F9FC 100%); border: 1px solid #C5DCE5; border-left: 5px solid #2196D0; border-radius: 8px; padding: 18px 22px; margin: 18px 0; }
-    .widget-kicker { font-size: 11px; color: #1B6A94; margin-bottom: 10px; letter-spacing: 0.4px; }
-    .widget-question { font-size: 17px; color: #0E1C42; margin-bottom: 14px; line-height: 1.55; }
-    .widget-row { background: #FFFFFF; border: 1px solid #D0D9E8; border-radius: 6px; padding: 12px 14px; margin-bottom: 10px; }
-    .widget-row-prompt { font-size: 15px; color: #0E1C42; margin-bottom: 8px; line-height: 1.5; font-style: italic; }
-    .widget-options { display: flex; flex-wrap: wrap; gap: 8px; }
-    .widget-options button { background: #FFFFFF; border: 1.5px solid #D0D9E8; border-radius: 8px; padding: 8px 14px; font-size: 14px; color: #0E1C42; cursor: pointer; transition: all 0.15s; font-family: inherit; }
-    .widget-options button:hover { background: #F4F6FA; border-color: #55C8E8; }
-    .widget-options button.selected { background: #0E1C42; color: #FFFFFF; border-color: #0E1C42; }
-    .widget-options button.correct { background: #D8F0DD; border-color: #2A9D5C; color: #1A6B3D; }
-    .widget-options button.incorrect { background: #FDECEC; border-color: #C0392B; color: #8A1F16; }
-    .widget-feedback { background: #FFFFFF; border-left: 3px solid #C7922C; padding: 10px 14px; font-size: 15px; color: #1a2340; line-height: 1.55; margin: 10px 0; display: none; border-radius: 4px; }
-    .widget-feedback.show { display: block; }
-    .row-feedback { padding: 8px 12px; margin-top: 8px; font-size: 14px; border-radius: 4px; line-height: 1.5; }
-    .row-feedback.correct { background: #D8F0DD; border-left: 3px solid #2A9D5C; color: #1A6B3D; }
-    .row-feedback.incorrect { background: #FDECEC; border-left: 3px solid #C0392B; color: #8A1F16; }
-    .widget-reset { background: transparent; border: 1px solid #C7922C; color: #C7922C; border-radius: 6px; padding: 6px 12px; font-size: 12px; cursor: pointer; font-family: inherit; margin-top: 6px; }
-    .widget-reset:hover { background: #FDF3E3; }
-    .ow-scale .widget-options { justify-content: space-between; }
-    .ow-scale .widget-options button { flex: 1; text-align: center; }
-    .ow-flip { background: #FFFFFF; border: 1px solid #D0D9E8; border-radius: 8px; padding: 18px 20px; cursor: pointer; text-align: center; }
-    .ow-flip .ow-flip-back { display: none; color: #1a2340; }
-    .ow-flip.flipped .ow-flip-front { display: none; }
-    .ow-flip.flipped .ow-flip-back { display: block; }
+    /* widget styles live in ../../shared/widgets.css (linked below) */
 
     /* ===== VOCABULARY GLOSSARY (byte-consistent across this site) ===== */
     .callout { border-radius: 6px; padding: 14px 20px; margin: 14px 0; }
@@ -391,9 +368,34 @@
         <p style="font-size: 17px; color: #1a2340; line-height: 1.65; margin: 0 0 10px 0;">Americans vote for leaders at three levels. At the local level, they choose mayors, city councils, county commissions, and school boards. At the state level, they choose a governor and a state legislature. At the national level, they choose a President, two Senators, and a member of the House of Representatives. A citizen may vote for dozens of offices in a lifetime. Senators were once chosen by state legislatures. The 17th Amendment, ratified in 1913, gave that choice to the voters.</p>
         <p style="font-size: 17px; color: #1a2340; line-height: 1.65; margin: 0 0 10px 0;">The local level is the one that touches daily life. A school board decides what your school can afford. A city council decides where a road will go. Local elections often have the fewest voters, yet the people elected can change your life sooner than a President can.</p>
         <p style="font-size: 17px; color: #1a2340; line-height: 1.65; margin: 0 0 10px 0;">Most people are surprised to learn who runs these elections. It is not the President. Under the Elections Clause in Article I, Section 4, each state decides the &ldquo;times, places and manner&rdquo; of holding elections for Congress. Congress may step in and change the rules. In practice, states and local officials run nearly every election. The Framers did this on purpose. They did not want one central power to control how the people choose their rulers. Amendments protect who may vote, but states still set many details, such as polling places, hours, and whether voters may vote early or by mail.</p>
+    <div class="optima-widget ow-sort" data-engine="sort" data-widget="office-sort">
+    <div class="widget-kicker">Sort it</div>
+    <div class="widget-question">Americans vote for leaders at three levels. Tap an office, then tap the level where citizens vote for it.</div>
+    <div class="ow-pool"><button type="button" class="ow-item" data-bin="2" data-why="Right. At the national level citizens choose a President, two Senators, and a member of the House." data-hint="Think about the one office chosen for the whole country.">President</button><button type="button" class="ow-item" data-bin="0" data-why="Right. Mayors, city councils, county commissions, and school boards are local." data-hint="Think about the offices that touch daily life in your town.">Mayor</button><button type="button" class="ow-item" data-bin="1" data-why="Right. At the state level, citizens choose a governor and a state legislature." data-hint="Think about the leader of a whole state.">Governor</button><button type="button" class="ow-item" data-bin="1" data-why="Right. The state legislature is chosen at the state level." data-hint="Think about who makes laws for the whole state.">Member of the state legislature</button><button type="button" class="ow-item" data-bin="2" data-why="Right. Since the 17th Amendment in 1913, voters choose Senators." data-hint="Think about who sits in Congress.">Senator</button><button type="button" class="ow-item" data-bin="0" data-why="Right. A school board decides what your school can afford." data-hint="Think about who decides things for your own school.">School board member</button></div>
+    <div class="ow-bins"><div class="ow-bin" data-bin="0" role="button" tabindex="0"><div class="ow-bin-title">Local</div><ul></ul></div><div class="ow-bin" data-bin="1" role="button" tabindex="0"><div class="ow-bin-title">State</div><ul></ul></div><div class="ow-bin" data-bin="2" role="button" tabindex="0"><div class="ow-bin-title">National</div><ul></ul></div></div>
+    <div class="widget-feedback" role="status" aria-live="polite"></div>
+    <button type="button" class="widget-reset">Reset</button>
+    </div>
         <h3 style="font-size: 20px; color: #0e1c42; margin: 18px 0 8px 0;">Who May Hold Office</h3>
         <p style="font-size: 17px; color: #1a2340; line-height: 1.65; margin: 0 0 10px 0;">The Constitution sets a few simple rules for the highest offices. A member of the House must be at least 25 years old and a citizen for seven years. A Senator must be at least 30 and a citizen for nine years. A President must be at least 35, a <strong><span class="gloss" tabindex="0">natural-born citizen<button class="gloss-audio" aria-label="Play pronunciation" onclick="speakGloss(event,'natural-born citizen')">&#128266;</button><span class="gloss-tip"><span class="gloss-pron">NACH-ur-ul born</span>A person who was a citizen from birth.</span></span></strong>, and a resident of the United States for fourteen years.</p>
         <p style="font-size: 17px; color: #1a2340; line-height: 1.65; margin: 0 0 10px 0;">Why different ages? The Framers thought the Senate should be a steady, experienced body. They thought the President needed even more years behind him. The rules about citizenship connect to what you learned about who counts as a citizen. A republic wants its leaders to have a long connection to it. The rule that a President be <span class="gloss" tabindex="0">natural-born<button class="gloss-audio" aria-label="Play pronunciation" onclick="speakGloss(event,'natural-born citizen')">&#128266;</button><span class="gloss-tip"><span class="gloss-pron">NACH-ur-ul born</span>A person who was a citizen from birth.</span></span> came from a fear of foreign influence. The Framers did not want a foreign prince to win the office.</p>
+    <div class="optima-widget ow-sel" data-engine="sel" data-widget="office-rules">
+    <div class="widget-kicker">Apply the rules</div>
+    <div class="widget-question">Use the Constitution&rsquo;s rules for office to answer each question.</div>
+    <div class="widget-row" data-correct="1" data-fb="Right. A House member must be at least 25 and a citizen for seven years. A Senator must be 30, and a President 35." data-hint="Compare 27 with the minimum age for each office.">
+      <div class="widget-row-prompt">A person is 27 and has been a citizen for eight years. Which of these offices could this person hold?</div>
+      <div class="widget-options"><button type="button" data-choice="0">President</button><button type="button" data-choice="1">Member of the House of Representatives</button><button type="button" data-choice="2">Senator</button></div>
+    </div>
+    <div class="widget-row" data-correct="2" data-fb="Right. A President must be a natural-born citizen." data-hint="Look for the rule that depends on how a person became a citizen.">
+      <div class="widget-row-prompt">A person is 36, was born in another country, and became a citizen at 20. Which office is closed to this person?</div>
+      <div class="widget-options"><button type="button" data-choice="0">Senator</button><button type="button" data-choice="1">Member of the House of Representatives</button><button type="button" data-choice="2">President</button></div>
+    </div>
+    <div class="widget-row" data-correct="0" data-fb="Right. Fear of a foreign ruler lay behind that rule." data-hint="Think about the worry the lesson names about who might win the office.">
+      <div class="widget-row-prompt">Why did the Framers require a President to be natural-born?</div>
+      <div class="widget-options"><button type="button" data-choice="0">They feared foreign influence and did not want a foreign prince to win the office</button><button type="button" data-choice="1">They wanted Presidents to be older than Senators</button><button type="button" data-choice="2">They wanted every President to come from a large state</button></div>
+    </div>
+    <button type="button" class="widget-reset">Reset</button>
+    </div>
         <h3 style="font-size: 20px; color: #0e1c42; margin: 18px 0 8px 0;">The Steps of an Election</h3>
         <p style="font-size: 17px; color: #1a2340; line-height: 1.65; margin: 0 0 10px 0;">An election has several steps. First, a citizen must <strong><span class="gloss" tabindex="0">register<button class="gloss-audio" aria-label="Play pronunciation" onclick="speakGloss(event,'register')">&#128266;</button><span class="gloss-tip"><span class="gloss-pron">REJ-ih-ster</span>To put your name on the official list of people who may vote.</span></span></strong>, which means putting his or her name on the voting list. Most states require this ahead of time. Second, the parties hold <strong><span class="gloss" tabindex="0">primary elections<button class="gloss-audio" aria-label="Play pronunciation" onclick="speakGloss(event,'primary election')">&#128266;</button><span class="gloss-tip"><span class="gloss-pron">PRY-mair-ee ee-LEK-shun</span>A vote within a party to choose who will be its candidate in the main election.</span></span></strong> to choose their candidates. Third comes the general election, when voters pick among the candidates. Fourth, officials count the ballots and announce the winner. American voting is secret. Nobody may force you to show how you voted, so no boss or neighbor can punish you for your choice. The losing side is expected to accept an honest count and try again next time.</p>
         <p style="font-size: 17px; color: #1a2340; line-height: 1.65; margin: 0 0 10px 0;">Each step is a place where a mistake or a trick could change the result. That is why a republic needs honest officials and watchful citizens. A fair count is not an accident. It is a habit that many people keep every election day. Ordinary citizens also work at the polls, check names on the list, and count ballots. A citizen who signs up as a poll worker is taking a direct part in the republic.</p>
@@ -408,6 +410,13 @@
         <p style="font-size: 17px; color: #1a2340; line-height: 1.65; margin: 0 0 10px 0;">Geography is the reason the contest matters. For much of the last century, Americans moved from the Northeast and Midwest toward the South and West. Jobs, warm weather, and new cities pulled them. The seats moved with them. In 1950 Florida had eight seats in the House. Today it has twenty-eight.</p>
         <p style="font-size: 17px; color: #1a2340; line-height: 1.65; margin: 0 0 10px 0;">Seats in the House also decide votes in the Electoral College, which you will study in the next lesson. When a state gains people, it gains a voice twice. That is why the <span class="gloss" tabindex="0">census<button class="gloss-audio" aria-label="Play pronunciation" onclick="speakGloss(event,'census')">&#128266;</button><span class="gloss-tip"><span class="gloss-pron">SEN-sus</span>A count of everyone living in the country, taken every ten years.</span></span> is more than a head count. It is a map of power that is redrawn every ten years.</p>
         <p style="font-size: 17px; color: #1a2340; line-height: 1.65; margin: 0 0 10px 0;">Think about what this means for you. The same rules that count and divide the people also depend on the people to answer. Each ten years, citizens decide how the republic sees itself by taking part in a count.</p>
+    <div class="optima-widget ow-step" data-engine="step" data-widget="census-steps">
+    <div class="widget-kicker">Step through it</div>
+    <div class="widget-question">Follow how a count of the people can change who holds power. Tap Next to move along.</div>
+    <div class="ow-frames"><div class="ow-frame on"><div class="ow-frame-title">Count</div>The census counts the people living in the country every ten years, citizens or not.</div><div class="ow-frame"><div class="ow-frame-title">Divide</div>Congress divides the 435 seats in the House among the states by population. This is called apportionment.</div><div class="ow-frame"><div class="ow-frame-title">Shift</div>Seats move as people move. In 1950 Florida had eight seats in the House. Today it has twenty-eight.</div><div class="ow-frame"><div class="ow-frame-title">Power</div>Seats in the House also decide votes in the Electoral College, so a state that gains people gains a voice twice.</div></div>
+    <div class="ow-step-ctl"><button type="button" class="ow-prev" disabled>Back</button><button type="button" class="ow-next">Next</button><span class="ow-step-count">Step 1 of 4</span><span class="ow-dots"><span class="ow-dot on"></span><span class="ow-dot"></span><span class="ow-dot"></span><span class="ow-dot"></span></span></div>
+    <button type="button" class="widget-reset">Reset</button>
+    </div>
     </div>
 
     <div style="background: #FFFFFF; border-top: 3px solid #0E1C42; border: 1px solid #D0D9E8; border-radius: 8px; padding: 20px 24px; margin-bottom: 20px;">
@@ -455,46 +464,8 @@ function speakGloss(e, text) {
     window.speechSynthesis.speak(u);
   }
 }
-(function () {
-  document.addEventListener('click', function (e) {
-    var reset = e.target.closest('.widget-reset');
-    if (reset) {
-      var w = reset.closest('.optima-widget');
-      w.querySelectorAll('.widget-options button').forEach(function (b) { b.classList.remove('selected', 'correct', 'incorrect'); });
-      w.querySelectorAll('.widget-feedback').forEach(function (f) { f.classList.remove('show'); f.textContent = ''; });
-      w.querySelectorAll('.row-feedback').forEach(function (f) { f.remove(); });
-      w.querySelectorAll('.ow-flip.flipped').forEach(function (c) { c.classList.remove('flipped'); });
-      if (w.classList.contains('ow-flip')) { w.classList.remove('flipped'); }
-      return;
-    }
-    var rBtn = e.target.closest('.ow-reflect .widget-options button');
-    if (rBtn) {
-      var rw = rBtn.closest('.optima-widget');
-      rw.querySelectorAll('.widget-options button').forEach(function (b) { b.classList.remove('selected'); });
-      rBtn.classList.add('selected');
-      var fb = rw.querySelector('.widget-feedback');
-      fb.textContent = rBtn.dataset.response || '';
-      fb.classList.add('show');
-      return;
-    }
-    var sBtn = e.target.closest('.ow-select .widget-row .widget-options button, .ow-scale .widget-row .widget-options button');
-    if (sBtn) {
-      var row = sBtn.closest('.widget-row');
-      var correct = row.dataset.correct;
-      row.querySelectorAll('.widget-options button').forEach(function (b) { b.classList.remove('selected', 'correct', 'incorrect'); });
-      var right = sBtn.dataset.choice === correct;
-      sBtn.classList.add(right ? 'correct' : 'incorrect');
-      var text = right ? (sBtn.dataset.fb || row.dataset.fb || 'Right.') : (sBtn.dataset.fb || row.dataset.hint || 'Not quite. Try again.');
-      var rf = row.querySelector('.row-feedback') || row.appendChild(document.createElement('div'));
-      rf.className = 'row-feedback ' + (right ? 'correct' : 'incorrect');
-      rf.textContent = text;
-      return;
-    }
-    var flip = e.target.closest('.ow-flip');
-    if (flip) { flip.classList.toggle('flipped'); return; }
-  });
-})();
 </script>
+<script src="../../shared/widgets.js"></script>
 
 </body>
 </html>
